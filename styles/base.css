@@ -1,4 +1,4 @@
-/* Base Styles - Reset & Global - LANCH Minimalist */
+/* Base Styles - Tech Humanism with Paper Texture & Hand-drawn Feel */
 
 *,
 *::before,
@@ -21,21 +21,22 @@ body {
     font-size: var(--text-base);
     font-weight: var(--font-regular);
     line-height: var(--leading-relaxed);
-    /* Increased for LANCH airiness */
     color: var(--color-text-primary);
     background-color: var(--color-bg);
+    /* Paper texture overlay */
+    background-image: var(--paper-texture);
     overflow-x: hidden;
 }
 
-/* Typography - Generous Spacing */
+/* Typography - Serif for Headings (Humanism) */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+    font-family: var(--font-secondary);
     font-weight: var(--font-bold);
-    /* Bolder for LANCH style */
     line-height: var(--leading-tight);
     margin: 0;
     letter-spacing: var(--tracking-tight);

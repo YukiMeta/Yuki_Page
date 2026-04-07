@@ -1,21 +1,43 @@
-/* Design Tokens - LANCH Pure Minimalist Style */
+/* Design Tokens - Tech Humanism (Classical Oil Painting × Robot) */
 
 :root {
-  /* Colors - Pure Monochrome Palette */
-  --color-bg: #FFFFFF;              /* Pure White */
-  --color-bg-secondary: #F5F5F5;    /* Light Gray for cards */
-  --color-bg-tertiary: #E0E0E0;     /* Medium Gray for subtle elements */
-  --color-text-primary: #000000;    /* Pure Black */
-  --color-text-secondary: #666666;  /* Medium Gray for secondary text */
-  --color-text-tertiary: #999999;   /* Light Gray for tertiary text */
-  --color-border: #E0E0E0;          /* Border gray */
-  --color-border-light: #F0F0F0;    /* Lighter border */
-  --color-accent: #000000;          /* Pure Black accent */
-  --color-accent-hover: #333333;    /* Slightly lighter on hover */
-  
-  /* Typography - Generous Spacing */
-  --font-primary: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-secondary: 'Inter', sans-serif;
+  /* Colors - Inspired by Classical Oil Painting with Robot Elements */
+  --color-bg: #F5F3EF;              /* Canvas/Cream White */
+  --color-bg-secondary: #EBE7DD;    /* Warm Stone */
+  --color-bg-tertiary: #D8D4C8;     /* Aged Paper */
+
+  /* Sky & Cloud Palette */
+  --color-sky-light: #C5D5E4;       /* Soft Morning Sky */
+  --color-sky: #8BA8B8;             /* Classical Sky Blue */
+  --color-sky-deep: #5A7A8A;        /* Deep Sky */
+  --color-cloud: #F7F5F0;           /* Cloud White */
+  --color-cloud-shadow: #D4CFC7;    /* Cloud Shadow */
+
+  /* Metal & Robot Elements */
+  --color-metal: #C8C8C8;           /* Silver Metal */
+  --color-metal-light: #E0E0E0;     /* Highlighted Metal */
+  --color-metal-dark: #8A8A8A;      /* Shadowed Metal */
+  --color-accent-blue: #4A7BA7;     /* Robot Blue Accent */
+
+  /* Earth & Nature */
+  --color-tree: #5A6B5A;            /* Olive Tree */
+  --color-tree-deep: #3D4A3D;       /* Deep Forest */
+  --color-earth: #B8A890;           /* Warm Earth */
+
+  /* Text Colors */
+  --color-text-primary: #2C2C2C;    /* Soft Charcoal */
+  --color-text-secondary: #5A5A5A;  /* Warm Gray */
+  --color-text-tertiary: #8C8C8C;   /* Light Gray */
+
+  /* Borders */
+  --color-border: #D4CFC7;          /* Warm Border */
+  --color-border-light: #E6E2D8;    /* Light Border */
+  --color-accent: #4A7BA7;          /* Blue Accent */
+  --color-accent-hover: #3D6A97;    /* Darker Blue on Hover */
+
+  /* Typography - Serif + Sans-serif Mix */
+  --font-primary: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-secondary: 'Cormorant Garamond', 'Inter', sans-serif;
   
   /* Font Sizes - Larger Scale */
   --text-xs: 0.75rem;      /* 12px */
@@ -89,6 +111,18 @@
   /* Borders */
   --border-width: 1px;
   --border-dotted: 1px dotted var(--color-border);
+
+  /* Sky Gradient Background */
+  --sky-gradient: linear-gradient(180deg, var(--color-sky-light) 0%, var(--color-cloud) 50%, var(--color-bg) 100%);
+
+  /* Oil Painting Frame Effect */
+  --frame-shadow: 0 0 0 8px var(--color-cloud), 0 0 0 10px var(--color-metal), 0 20px 40px rgba(0,0,0,0.15);
+
+  /* Paper Texture - Oil Painting Canvas Feel */
+  --paper-texture: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+
+  /* Torn Paper Edge SVG */
+  --torn-edge-bottom: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0 L2 3 L4 1 L6 4 L8 2 L10 5 L12 2 L14 4 L16 1 L18 4 L20 2 L22 5 L24 2 L26 4 L28 1 L30 4 L32 2 L34 5 L36 2 L38 4 L40 1 L42 4 L44 2 L46 5 L48 2 L50 4 L52 1 L54 4 L56 2 L58 5 L60 2 L62 4 L64 1 L66 4 L68 2 L70 5 L72 2 L74 4 L76 1 L78 4 L80 2 L82 5 L84 2 L86 4 L88 1 L90 4 L92 2 L94 5 L96 2 L98 4 L100 1 L100 20 L0 20 Z' fill='%23D4CFC7'/%3E%3C/svg%3E");
   
   /* Z-index */
   --z-base: 1;

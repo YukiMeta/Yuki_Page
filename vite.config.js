@@ -10,13 +10,6 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    minify: 'terser',
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['gsap']
-        }
-      }
-    }
+    minify: false
   }
 })
