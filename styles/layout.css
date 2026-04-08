@@ -5,19 +5,19 @@ body {
     min-height: 100vh;
 }
 
-/* Sidebar - Fixed Left Column */
+/* Sidebar - Fixed Left Column with Oil Painting Frame */
 .sidebar {
     position: fixed;
     left: 0;
     top: 0;
     width: clamp(var(--sidebar-width-min), var(--sidebar-width), var(--sidebar-width-max));
     height: 100vh;
-    background-color: var(--color-bg);
-    /* Pure white */
-    border-right: var(--border-dotted);
-    /* Dotted separator */
+    background: linear-gradient(180deg, var(--color-bg-secondary) 0%, var(--color-bg) 100%);
+    border-right: 3px solid var(--color-metal);
     z-index: var(--z-fixed);
     overflow-y: auto;
+    background-image: var(--paper-texture);
+    box-shadow: 8px 0 30px rgba(74, 123, 167, 0.15);
 }
 
 .sidebar-inner {
@@ -25,6 +25,16 @@ body {
     flex-direction: column;
     height: 100%;
     padding: var(--space-8) var(--space-6);
+    position: relative;
+}
+
+/* Sidebar Brand - Hand-drawn Frame */
+.sidebar-brand {
+    padding: var(--space-5);
+    border: 2px solid var(--color-text-primary);
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    background-color: var(--color-bg);
+    margin-bottom: var(--space-8);
 }
 
 /* Main Content - Scrollable Right Column */
@@ -111,13 +121,17 @@ body {
 }
 
 .section-number {
-    display: block;
+    display: inline-block;
     font-size: var(--text-sm);
     font-weight: var(--font-regular);
-    color: var(--color-text-tertiary);
+    color: var(--color-sky-deep);
     margin-bottom: var(--space-2);
     letter-spacing: var(--tracking-wider);
     text-transform: uppercase;
+    padding: var(--space-2) var(--space-3);
+    background: linear-gradient(135deg, var(--color-sky-light) 0%, var(--color-sky) 100%);
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    border: 1px solid var(--color-metal);
 }
 
 .section-title {
@@ -125,6 +139,8 @@ body {
     font-weight: var(--font-bold);
     color: var(--color-text-primary);
     letter-spacing: var(--tracking-tight);
+    font-family: var(--font-secondary);
+    text-shadow: 2px 2px 0 var(--color-cloud);
 }
 
 /* Subsection Titles */

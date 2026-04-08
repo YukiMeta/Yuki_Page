@@ -17,11 +17,22 @@
     margin-top: var(--space-10);
 }
 
-/* Gallery Item - Card Style */
+/* Gallery Item - Collage Style with Hand-drawn Border */
 .gallery-item {
     display: flex;
     flex-direction: column;
     gap: var(--space-3);
+    padding: var(--space-4);
+    background: var(--color-bg);
+    border: 2px solid var(--color-text-primary);
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    box-shadow: 8px 8px 0 rgba(74, 123, 167, 0.15);
+    transition: all var(--transition-base);
+}
+
+.gallery-item:hover {
+    transform: translate(-4px, -4px) rotate(-1deg);
+    box-shadow: 12px 12px 0 rgba(74, 123, 167, 0.25);
 }
 
 /* Gallery Image Container */

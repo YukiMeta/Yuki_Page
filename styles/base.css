@@ -23,8 +23,9 @@ body {
     line-height: var(--leading-relaxed);
     color: var(--color-text-primary);
     background-color: var(--color-bg);
-    /* Paper texture overlay */
-    background-image: var(--paper-texture);
+    /* Paper texture + Sky gradient */
+    background-image: var(--paper-texture), linear-gradient(180deg, var(--color-sky-light) 0%, var(--color-cloud) 30%, var(--color-bg) 100%);
+    background-attachment: fixed;
     overflow-x: hidden;
 }
 
