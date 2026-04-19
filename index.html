@@ -1,498 +1,190 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yuki Peng | AI Product Manager</title>
-
-  <!-- SEO Meta Tags -->
+  <title>Yuki Peng — AI Product Manager</title>
   <meta name="description" content="彭誉（Yuki），AI Product Manager，专注于视觉与记忆的压缩、LLM 应用与全球化产品创新。">
-  <meta name="keywords" content="Yuki Peng, AI Product Manager, LLM, 全球化，产品创新">
-
-  <!-- Open Graph / Social Media -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Yuki Peng | AI Product Manager">
-  <meta property="og:description" content="彭誉（Yuki），AI Product Manager，专注于视觉与记忆的压缩、LLM 应用与全球化产品创新。">
-  <meta property="og:image" content="/og-image.jpg">
-  <meta property="og:locale" content="zh_CN">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Yuki Peng | AI Product Manager">
-  <meta name="twitter:description" content="彭誉（Yuki），AI Product Manager，专注于视觉与记忆的压缩、LLM 应用与全球化产品创新。">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="/styles/tokens.css">
-  <link rel="stylesheet" href="/styles/base.css">
-  <link rel="stylesheet" href="/styles/layout.css">
-  <link rel="stylesheet" href="/styles/components.css">
-  <link rel="stylesheet" href="/styles/gallery.css">
-  <link rel="stylesheet" href="/styles/animations.css">
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/main.css">
 </head>
-
 <body>
-  <!-- Top Navigation Bar -->
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar-inner">
-      <!-- Brand -->
-      <div class="sidebar-brand">
-        <h1 class="brand-name">Yuki Peng</h1>
-      </div>
-
-      <!-- Navigation Tabs -->
-      <nav class="sidebar-nav" id="sidebarNav">
-        <a href="#intro" class="nav-tab active" data-section="intro">
-          <span class="nav-label">About</span>
-        </a>
-        <a href="#works" class="nav-tab" data-section="works">
-          <span class="nav-label">Works</span>
-        </a>
-        <a href="#blog" class="nav-tab" data-section="blog">
-          <span class="nav-label">Writing</span>
-        </a>
-      </nav>
-
-      <!-- Language Toggle -->
-      <div class="language-toggle">
-        <button class="lang-btn" data-lang="zh">中文</button>
-        <span class="lang-separator">/</span>
-        <button class="lang-btn" data-lang="en">EN</button>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="brand">
+          <h1 class="brand-name">Yuki Peng</h1>
+          <p class="brand-title">AI Product Manager</p>
+        </div>
+        <nav class="nav">
+          <a href="#about" class="nav-link">关于</a>
+          <a href="#works" class="nav-link">作品</a>
+          <a href="#writing" class="nav-link">文字</a>
+        </nav>
       </div>
     </div>
-  </aside>
+  </header>
 
-  <!-- Main Content Area -->
-  <main class="main-content" id="mainContent">
-    <!-- Section 01: Personal Introduction -->
-    <section class="content-section active" id="intro" data-section="intro">
-      <div class="section-inner">
-        <div class="section-header fade-in">
-          <h2 class="section-title">About Yuki</h2>
-        </div>
+  <!-- Main Content -->
+  <main class="main">
 
-        <div class="intro-content fade-in-up">
-          <div class="intro-text">
-            <div class="intro-body" data-i18n="intro_content">
-              <p>
-                彭誉（Yuki），世界经济论坛全球杰出青年，毕业于北京大学光华管理学院与中国人民大学商学院。她曾获北京市优秀毕业生、北大五四奖学金、国家奖学金、北京大学优秀学生干部等荣誉，并长期在校园与公共参与中承担组织与领导角色：主办北大美学集市、光华新年晚会、人大校歌赛等大型活动；担任光华网球队队长期间，带领新成立的队伍一年内跻身校内三强。对她而言，优秀并非偶然，而是持续自我驱动下的秩序与行动力。
-              </p>
-
-              <p>她将"全球化"视为一条贯穿成长的主线。入选北大—巴政"全球治理人才塑造力提升项目"后，Yuki 前往巴黎参访 UNESCO 总部，并在巴黎政治学院课堂中聆听前 UNESCO
-                总干事伊琳娜·博科娃女士分享其职业历程与地缘政治实践。这段经历让她真正理解：国际视野并非观光式见闻，而是面对差异时的包容、谦逊与主动选择。此后她积极申请世界经济论坛全球杰出青年，并在施瓦布教授来北大演讲期间主动交流，将对国际议题的热情延伸为持续的公共参与。
-              </p>
-
-              <p>在校外，她发起公益项目「SheShapes
-                Impact」，聚焦国际组织与社会企业方向的职业路径与影响力；组织「全球好物市集」与青年发展论坛，围绕"一带一路"倡议下中国青年"走出去"与"引进来"展开讨论。她相信全球化的意义不止于"看见世界"，更在于让世界看见中国——理解规则，更要参与塑造规则。
-              </p>
-
-              <p>职业选择上，她曾在咨询、PE/VC 与初创公司多线探索，获得 MBB 战略咨询顾问 offer。出于对科技前沿的长期好奇，她最终选择加入全球前五手机硬件公司 OPPO，任 CEO
-                办公室助理，参与用户调研与创始人日常会议体系，沉淀对战略、产品与品牌的第一手理解，并获评公司优秀校招生。2025 年中旬，她转向 AI
-                产品经理方向，开始聚焦视觉与记忆的"压缩"——让世界更高效地被感知、被存储与被调用。</p>
-
-              <p>她相信，真正的产品不是功能堆砌，而是价值观的外化；真正的国际化也不是地理跨度，而是心智上的开放与连接。未来，她希望在全球化与 AI
-                交汇的浪潮中持续探索，用产品降低跨文化、跨信息结构的沟通成本，让个人与组织在更大的世界里拥有更清晰的目标、更稳健的行动与更自由的选择。</p>
-            </div>
+    <!-- About Section -->
+    <section id="about" class="section section-about">
+      <div class="container">
+        <div class="section-content">
+          <p class="lead">
+            彭誉（Yuki），世界经济论坛全球杰出青年，毕业于北京大学光华管理学院与中国人民大学商学院。
+          </p>
+          <div class="about-body">
+            <p>
+              她曾获北京市优秀毕业生、北大五四奖学金、国家奖学金、北京大学优秀学生干部等荣誉，并长期在校园与公共参与中承担组织与领导角色：主办北大美学集市、光华新年晚会、人大校歌赛等大型活动；担任光华网球队队长期间，带领新成立的队伍一年内跻身校内三强。
+            </p>
+            <p>
+              她将"全球化"视为一条贯穿成长的主线。入选北大—巴政"全球治理人才塑造力提升项目"后，Yuki 前往巴黎参访 UNESCO 总部，并在巴黎政治学院课堂中聆听前 UNESCO 总干事伊琳娜·博科娃女士分享其职业历程与地缘政治实践。
+            </p>
+            <p>
+              在校外，她发起公益项目「SheShapes Impact」，聚焦国际组织与社会企业方向的职业路径与影响力；组织「全球好物市集」与青年发展论坛，围绕"一带一路"倡议下中国青年"走出去"与"引进来"展开讨论。
+            </p>
+            <p>
+              职业选择上，她曾在咨询、PE/VC 与初创公司多线探索，获得 MBB 战略咨询顾问 offer。出于对科技前沿的长期好奇，她最终选择加入全球前五手机硬件公司 OPPO，任 CEO 办公室助理，参与用户调研与创始人日常会议体系，沉淀对战略、产品与品牌的第一手理解，并获评公司优秀校招生。2025 年中旬，她转向 AI 产品经理方向，开始聚焦视觉与记忆的"压缩"——让世界更高效地被感知、被存储与被调用。
+            </p>
+            <p>
+              她相信，真正的产品不是功能堆砌，而是价值观的外化；真正的国际化也不是地理跨度，而是心智上的开放与连接。
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 02: Works -->
-    <section class="content-section" id="works" data-section="works">
-      <div class="section-inner">
-        <div class="section-header fade-in">
-          <h2 class="section-title">Works</h2>
-          <p class="section-subtitle">影像集 - 生活的瞬间与记忆</p>
-        </div>
+    <!-- Works Section -->
+    <section id="works" class="section section-works">
+      <div class="container">
+        <h2 class="section-title">Works</h2>
+        <p class="section-subtitle">影像集 — 生活的瞬间与记忆</p>
 
-        <!-- Photo Gallery Grid -->
-        <div class="gallery-grid fade-in-up">
+        <div class="gallery-grid">
           <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="/gallery/微信图片_20260116235220_132_731.jpg" alt="旅行瞬间" loading="lazy">
-            </div>
-            <p class="gallery-caption">旅途中的光影</p>
+            <img src="/gallery/微信图片_20260116235220_132_731.jpg" alt="旅途中的光影" loading="lazy">
+            <span class="caption">旅途中的光影</span>
           </div>
-
           <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="/gallery/微信图片_20260116235223_133_731.jpg" alt="城市印象" loading="lazy">
-            </div>
-            <p class="gallery-caption">城市的另一面</p>
+            <img src="/gallery/微信图片_20260116235223_133_731.jpg" alt="城市印象" loading="lazy">
+            <span class="caption">城市的另一面</span>
           </div>
-
           <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="/gallery/微信图片_20260116235248_134_731.jpg" alt="自然风光" loading="lazy">
-            </div>
-            <p class="gallery-caption">自然的馈赠</p>
+            <img src="/gallery/微信图片_20260116235248_134_731.jpg" alt="自然风光" loading="lazy">
+            <span class="caption">自然的馈赠</span>
           </div>
-
           <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="/gallery/微信图片_20260116235327_135_731.jpg" alt="建筑美学" loading="lazy">
-            </div>
-            <p class="gallery-caption">建筑与空间</p>
+            <img src="/gallery/微信图片_20260116235327_135_731.jpg" alt="建筑美学" loading="lazy">
+            <span class="caption">建筑与空间</span>
           </div>
-
           <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="/gallery/微信图片_20260116235414_136_731.jpg" alt="日常记录" loading="lazy">
-            </div>
-            <p class="gallery-caption">平凡中的诗意</p>
+            <img src="/gallery/微信图片_20260116235414_136_731.jpg" alt="日常记录" loading="lazy">
+            <span class="caption">平凡中的诗意</span>
           </div>
-
           <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="/gallery/微信图片_20260116235433_137_731.jpg" alt="人文瞬间" loading="lazy">
-            </div>
-            <p class="gallery-caption">人与环境</p>
-          </div>
-
-          <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="/gallery/微信图片_20260116235450_138_731.jpg" alt="色彩印象" loading="lazy">
-            </div>
-            <p class="gallery-caption">色彩的对话</p>
-          </div>
-
-          <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="/gallery/微信图片_20260116235457_139_731.jpg" alt="时光碎片" loading="lazy">
-            </div>
-            <p class="gallery-caption">时间的痕迹</p>
-          </div>
-
-          <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="/gallery/微信图片_20260116235526_140_731.jpg" alt="街头故事" loading="lazy">
-            </div>
-            <p class="gallery-caption">街角的故事</p>
-          </div>
-
-          <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="/gallery/微信图片_20260116235544_141_731.jpg" alt="光影交错" loading="lazy">
-            </div>
-            <p class="gallery-caption">光与影的游戏</p>
-          </div>
-
-          <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="/gallery/微信图片_20260116235556_142_731.jpg" alt="静谧时刻" loading="lazy">
-            </div>
-            <p class="gallery-caption">安静的力量</p>
-          </div>
-
-          <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="/gallery/微信图片_20260116235614_143_731.jpg" alt="细节之美" loading="lazy">
-            </div>
-            <p class="gallery-caption">细节里的世界</p>
-          </div>
-
-          <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="/gallery/微信图片_20260116235637_144_731.jpg" alt="远方的呼唤" loading="lazy">
-            </div>
-            <p class="gallery-caption">远方与梦想</p>
-          </div>
-
-          <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="/gallery/微信图片_20260116235647_145_731.jpg" alt="生活切片" loading="lazy">
-            </div>
-            <p class="gallery-caption">生活的切片</p>
-          </div>
-
-          <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="/gallery/微信图片_20260116235703_146_731.jpg" alt="记忆拼图" loading="lazy">
-            </div>
-            <p class="gallery-caption">记忆的拼图</p>
-          </div>
-
-          <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="/gallery/微信图片_20260116235715_147_731.jpg" alt="时空快照" loading="lazy">
-            </div>
-            <p class="gallery-caption">时空的快照</p>
+            <img src="/gallery/微信图片_20260116235433_137_731.jpg" alt="人文瞬间" loading="lazy">
+            <span class="caption">人与环境</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 03: Blog & Media -->
-    <section class="content-section" id="blog" data-section="blog">
-      <div class="section-inner">
-        <div class="section-header fade-in">
-          <h2 class="section-title">Writing</h2>
+    <!-- Writing Section -->
+    <section id="writing" class="section section-writing">
+      <div class="container">
+        <h2 class="section-title">Writing</h2>
+
+        <!-- AI Thoughts -->
+        <div class="writing-category">
+          <h3 class="category-title">AI 随想</h3>
+
+          <article class="article">
+            <div class="article-meta">
+              <time datetime="2024-10-21">2024.10.21</time>
+            </div>
+            <h4 class="article-title">从 LLM OS 到 Agent OS：算法与工程的黄金分工</h4>
+            <p class="article-excerpt">
+              当我们谈"LLM OS/Agent OS"，分歧不在"是否会发生"，而在"以什么形式发生"。工程与算法的黄金分工：把可规则化的部分工程化，把可复用的流程固化，把可压缩的上下文压缩。
+            </p>
+            <a href="#" class="read-more">阅读全文 →</a>
+          </article>
+
+          <article class="article">
+            <div class="article-meta">
+              <time datetime="2025-01-13">2025.01.13</time>
+            </div>
+            <h4 class="article-title">影像、记忆与压缩：从照片到"时空快照"</h4>
+            <p class="article-excerpt">
+              我挑的每一张照片，都不是照片本身，而是一个 hook，一个"时空快照"。它牵连着体验、情绪与概念的网络。
+            </p>
+            <a href="#" class="read-more">阅读全文 →</a>
+          </article>
         </div>
 
-        <!-- AI Thoughts Section -->
-        <div class="blog-thoughts">
-          <h3 class="subsection-title fade-in">AI 随想</h3>
-          <div class="featured-articles">
-            <!-- Article 1: LLM OS to Agent OS -->
-            <article class="featured-article fade-in-up">
-              <div class="article-hero-image">
-                <img src="/ai_llm_os_vibrant_1768580178834.png" alt="AI Operating Systems" loading="lazy">
-              </div>
-              <div class="article-header">
-                <div class="article-meta">
-                  <time class="article-date">2024 年 10 月 21 日</time>
-                </div>
-                <h4 class="article-title">从 LLM OS 到 Agent OS：算法与工程的黄金分工</h4>
-              </div>
+        <!-- Media Articles -->
+        <div class="writing-category">
+          <h3 class="category-title">媒体文章</h3>
 
-              <div class="article-content">
-                <p class="article-lead">
-                  当我们谈"LLM OS/Agent OS"，分歧不在"是否会发生"，而在"以什么形式发生"。最近 OpenAI、ElevenLabs 的可视化流程编辑器，以及 Flowith 这类产品出现，像是在给
-                  Agent OS 搭脚手架：它不再只是抽象的"智能"，而开始具备可配置、可复用、可运营的结构。
-                </p>
-
-                <section class="article-section">
-                  <h5>从问答到流程：智能形态在结构化</h5>
-                  <p>
-                    最初是 GPT-2/3 的续写和问答；后来是成对 QA；再到工具调用型问答；DeepSeek-R1 把思维链与工具调用融合，形成 ReAct
-                    式回合工作流。模型能力越来越强，但真正让它"能用"的不是能力，而是流程结构。
-                  </p>
-                  <p>
-                    理想状态当然是"苦涩的教训"：让模型学会一切。现实是 token 太贵、上下文太长、稳定性太差。于是工程开始介入：把可规则化的部分工程化，把可复用的流程固化，把可压缩的上下文压缩。这不是退步，而是
-                    Agent 走向实用的起点。
-                  </p>
-                </section>
-
-                <section class="article-section">
-                  <h5>工程与算法的黄金分工</h5>
-                  <p>
-                    一个任务同时包含"确定性部分"和"不确定性部分"。工程解决确定性：正则、黑白名单、Hook 做工具调用安全检查、信息匿名化。这些是 if-else
-                    能覆盖的世界：精准、廉价、可靠。算法解决不确定性：理解、推理、创造等开放任务，才动用 LLM 这个"重武器"。
-                  </p>
-                </section>
-
-                <p class="article-conclusion">
-                  LLM OS 的愿景是"智能即操作系统"，Agent OS 的现实路径是"流程即操作系统"。从 prompt 到 context，从个性化到可复用，都指向同一件事：系统工程将成为 AI 落地的核心竞争力。
-                </p>
-              </div>
-            </article>
-
-            <!-- Article 2: Image, Memory & Compression -->
-            <article class="featured-article fade-in-up">
-              <div class="article-hero-image">
-                <img src="/ai_memory_vibrant_1768580198082.png" alt="Memory and Compression" loading="lazy">
-              </div>
-              <div class="article-header">
-                <div class="article-meta">
-                  <time class="article-date">2025 年 1 月 13 日</time>
-                </div>
-                <h4 class="article-title">影像、记忆与压缩：从照片到"时空快照"</h4>
-              </div>
-
-              <div class="article-content">
-                <p class="article-lead">
-                  元旦旅行回来，新相机拍了很多照片。我以为在整理"影像"，但在普洱最后一天的咖啡店里突然意识到：我挑的每一张照片，都不是照片本身，而是一个 hook，一个"时空快照"。它牵连着体验、情绪与概念的网络。
-                </p>
-
-                <section class="article-section">
-                  <h5>图像的层次由"词语"决定</h5>
-                  <p>
-                    和导师交流时提到"信息压缩"。李飞飞在《我看见的世界》中解释 ImageNet 约 3
-                    万概念，是因为人类语言中的基础概念大致是这个数量。这揭示了一个关键：图像的层次与理解，很大程度由它背后的"词语系统"决定。
-                  </p>
-                  <p>
-                    文字能拆解成 token，那图像能拆成什么？我想到手帐里的贴纸。一张照片的信息密度不均匀，大量区域是背景噪音。贴纸像是对图像的"提炼与压缩"，甚至反过来影响我们的拍摄行为：主动做减法。
-                  </p>
-                </section>
-
-                <section class="article-section">
-                  <h5>记忆不是照片，而是时空捆绑</h5>
-                  <p>
-                    在《追寻记忆的痕迹》中，最有触感的一点是：长时记忆与空间记忆密切相关。每次体验在大脑里会形成两条坐标系：时间线与空间线。多感官信息先在各自皮层编码，再通过海马体整合为"情境 - 时间捆绑"的记忆痕迹。
-                  </p>
-                  <p>
-                    大脑不会存一张"纯照片"。视觉信息与声音、气味、动作被绑成多维特征。当某一天遇到
-                    hook，少数关键突触被触发，随后在皮层网络扩散，系统用周边神经元补全细节、删改错误。所以记忆是一种重建：找到关键零散元素后，补全"氛围感"，而不是恢复"事实细节"。
-                  </p>
-                </section>
-
-                <p class="article-conclusion">
-                  照片不是照片，而是记忆的触发索引。真正有价值的不是"像素"，而是"能重建的关键"。当压缩成为影像与记忆的核心机制，下一代相机、相册、甚至个人 AI 的产品形态都会被重写。
-                </p>
-              </div>
-            </article>
+          <div class="article-list">
+            <a href="/YukiMeta/尘埃落定 _ 我知道我可以永远相信自己.html" class="article-link" target="_blank">
+              <span class="article-link-title">尘埃落定 | 我知道我可以永远相信自己</span>
+              <span class="article-link-source">个人博客</span>
+            </a>
+            <a href="/YukiMeta/光华故事集 _ 彭誉：须信百年俱是梦，天地阔，且徜徉.html" class="article-link" target="_blank">
+              <span class="article-link-title">光华故事集 | 彭誉：须信百年俱是梦，天地阔，且徜徉</span>
+              <span class="article-link-source">光华管理学院</span>
+            </a>
+            <a href="/YukiMeta/Reflection _ &quot;一二·九&quot;的陈年幕后日记.html" class="article-link" target="_blank">
+              <span class="article-link-title">Reflection | "一二·九"的陈年幕后日记</span>
+              <span class="article-link-source">个人博客</span>
+            </a>
+            <a href="/YukiMeta/继续出发，向更辽阔的世界丨北大光华 2024 年毕业典礼举行.html" class="article-link" target="_blank">
+              <span class="article-link-title">继续出发，向更辽阔的世界 | 北大光华 2024 年毕业典礼</span>
+              <span class="article-link-source">光华管理学院</span>
+            </a>
           </div>
         </div>
 
-        <!-- Media Articles Section -->
-        <div class="blog-featured">
-          <h3 class="subsection-title fade-in">媒体文章</h3>
-          <div class="section-hero-image fade-in">
-            <img src="/media_landscape_vibrant_1768580214891.png" alt="Media Articles" loading="lazy">
-          </div>
-          <div class="media-articles">
-            <article class="media-article fade-in-up">
-              <h4 class="article-title">尘埃落定 | 我知道我可以永远相信自己</h4>
-              <p class="article-excerpt">
-                在人生的重要转折点，我学会了如何相信自己的选择，即使面对不确定性，也能坚定前行。
-              </p>
-              <div class="article-meta">
-                <span class="article-source">个人博客</span>
-                <span class="article-date">2024</span>
-              </div>
-              <a href="/YukiMeta/尘埃落定 _ 我知道我可以永远相信自己.html" class="article-link" target="_blank">
-                阅读全文
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" />
-                </svg>
-              </a>
-            </article>
-
-            <article class="media-article fade-in-up">
-              <h4 class="article-title">光华故事集 | 彭誉：须信百年俱是梦，天地阔，且徜徉</h4>
-              <p class="article-excerpt">
-                关于成长、选择与人生态度的深度思考。在快节奏的时代里，如何保持内心的从容与笃定。
-              </p>
-              <div class="article-meta">
-                <span class="article-source">光华故事集</span>
-                <span class="article-date">2024</span>
-              </div>
-              <a href="/YukiMeta/光华故事集 _ 彭誉：须信百年俱是梦，天地阔，且徜徉.html" class="article-link" target="_blank">
-                阅读全文
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" />
-                </svg>
-              </a>
-            </article>
-
-            <article class="media-article fade-in-up">
-              <h4 class="article-title">Reflection | "一二·九"的陈年幕后日记</h4>
-              <p class="article-excerpt">
-                回顾那段难忘的经历，记录下组织活动背后的思考与成长。
-              </p>
-              <div class="article-meta">
-                <span class="article-source">个人博客</span>
-                <span class="article-date">2023</span>
-              </div>
-              <a href="/YukiMeta/Reflection _ &quot;一二·九&quot;的陈年幕后日记.html" class="article-link" target="_blank">
-                阅读全文
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" />
-                </svg>
-              </a>
-            </article>
-
-            <article class="media-article fade-in-up">
-              <h4 class="article-title">Reflection | 放弃的借口千千万万，坚持只需一个喜欢</h4>
-              <p class="article-excerpt">
-                关于坚持与热爱的思考。在面对困难时，真正的动力来自内心深处的热爱。
-              </p>
-              <div class="article-meta">
-                <span class="article-source">个人博客</span>
-                <span class="article-date">2023</span>
-              </div>
-              <a href="/YukiMeta/Reflection _放弃的借口千千万万，坚持只需一个喜欢.html" class="article-link" target="_blank">
-                阅读全文
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" />
-                </svg>
-              </a>
-            </article>
-
-            <article class="media-article fade-in-up">
-              <h4 class="article-title">继续出发，向更辽阔的世界 | 北大光华 2024 年毕业典礼举行</h4>
-              <p class="article-excerpt">
-                毕业典礼上的发言与思考，关于未来、梦想与更广阔的世界。
-              </p>
-              <div class="article-meta">
-                <span class="article-source">光华管理学院</span>
-                <span class="article-date">2024</span>
-              </div>
-              <a href="/YukiMeta/继续出发，向更辽阔的世界丨北大光华 2024 年毕业典礼举行.html" class="article-link" target="_blank">
-                阅读全文
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" />
-                </svg>
-              </a>
-            </article>
-          </div>
-        </div>
-
-        <!-- Social Media Links -->
-        <div class="blog-social">
-          <h3 class="subsection-title fade-in">社交媒体</h3>
+        <!-- Social Links -->
+        <div class="social-section">
+          <h3 class="category-title">社交媒体</h3>
           <div class="social-links">
-            <a href="https://www.xiaohongshu.com/user/profile/溜掉 de 小鱼" class="social-link fade-in-up" target="_blank">
-              <div class="social-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.5" />
-                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" />
-                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
-                </svg>
-              </div>
-              <div class="social-info">
-                <span class="social-name">小红书</span>
-                <span class="social-handle">溜掉 de 小鱼</span>
-              </div>
-              <svg class="social-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M3 13l10-10M13 3v10M13 3H3" stroke="currentColor" stroke-width="1.5" />
-              </svg>
+            <a href="https://www.xiaohongshu.com/user/profile/溜掉 de 小鱼" class="social-link" target="_blank">
+              <span>小红书</span>
+              <span class="social-handle">溜掉 de 小鱼</span>
             </a>
-
-            <a href="https://www.instagram.com/yukiipeng" class="social-link fade-in-up" target="_blank">
-              <div class="social-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.5" />
-                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" />
-                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
-                </svg>
-              </div>
-              <div class="social-info">
-                <span class="social-name">Instagram</span>
-                <span class="social-handle">@yukiipeng</span>
-              </div>
-              <svg class="social-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M3 13l10-10M13 3v10M13 3H3" stroke="currentColor" stroke-width="1.5" />
-              </svg>
+            <a href="https://www.instagram.com/yukiipeng" class="social-link" target="_blank">
+              <span>Instagram</span>
+              <span class="social-handle">@yukiipeng</span>
             </a>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
-  <!-- WeChat QR Modal -->
-  <div class="wechat-modal" id="wechatModal">
-    <div class="modal-overlay"></div>
-    <div class="modal-content">
-      <button class="modal-close" id="wechatClose">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" />
-        </svg>
-      </button>
-      <div class="wechat-qr">
-        <h3>微信二维码</h3>
-        <div class="qr-placeholder">
-          <!-- Add your WeChat QR code image here -->
-          <p>扫码添加微信</p>
-        </div>
-      </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Yuki Peng. All rights reserved.</p>
     </div>
-  </div>
+  </footer>
 
   <!-- Scripts -->
   <script type="module" src="/js/main.js"></script>
 </body>
-
 </html>
