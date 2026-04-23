@@ -1,142 +1,156 @@
-/* Design Tokens - Tech Humanism (Classical Oil Painting × Robot) */
+/* Design Tokens — Yuki Peng Portfolio v3 */
+/* Aesthetic: Tech Poetry × Feminine Sensitivity */
+/* Reference: departuremono's philosophy, not its surface */
 
 :root {
-  /* Colors - Inspired by Classical Oil Painting with Robot Elements */
-  --color-bg: #F5F3EF;              /* Canvas/Cream White */
-  --color-bg-secondary: #EBE7DD;    /* Warm Stone */
-  --color-bg-tertiary: #D8D4C8;     /* Aged Paper */
+  /* === 基础设置 — 11px 像素网格 === */
+  font-size: 11px;
+  line-height: 1.6;
 
-  /* Sky & Cloud Palette */
-  --color-sky-light: #C5D5E4;       /* Soft Morning Sky */
-  --color-sky: #8BA8B8;             /* Classical Sky Blue */
-  --color-sky-deep: #5A7A8A;        /* Deep Sky */
-  --color-cloud: #F7F5F0;           /* Cloud White */
-  --color-cloud-shadow: #D4CFC7;    /* Cloud Shadow */
+  /* === 字体系统 — 等宽字体前卫感 === */
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+  --font-sans: 'Inter', -apple-system, sans-serif;
 
-  /* Metal & Robot Elements */
-  --color-metal: #C8C8C8;           /* Silver Metal */
-  --color-metal-light: #E0E0E0;     /* Highlighted Metal */
-  --color-metal-dark: #8A8A8A;      /* Shadowed Metal */
-  --color-accent-blue: #4A7BA7;     /* Robot Blue Accent */
+  /* === 色彩系统 — 大地与科技 === */
+  /* 主色调 - 琥珀色（温暖科技） */
+  --amber: #ffa133;
+  --amber-light: #ffb866;
+  --amber-dark: #e68a00;
 
-  /* Earth & Nature */
-  --color-tree: #5A6B5A;            /* Olive Tree */
-  --color-tree-deep: #3D4A3D;       /* Deep Forest */
-  --color-earth: #B8A890;           /* Warm Earth */
+  /* 辅助色 - 灰绿色（女性细腻） */
+  --sage: #a8b8a8;
+  --sage-light: #bccbb8;
+  --sage-dark: #8a9a8a;
 
-  /* Text Colors */
-  --color-text-primary: #2C2C2C;    /* Soft Charcoal */
-  --color-text-secondary: #5A5A5A;  /* Warm Gray */
-  --color-text-tertiary: #8C8C8C;   /* Light Gray */
+  /* 中性色 - 大地系 */
+  --sand: #f5f4f0;      /* 暖白背景 */
+  --bone: #e8e6e0;      /* 浅灰 */
+  --stone: #c8c6c0;     /* 中灰 */
+  --clay: #8a8678;      /* 陶土 */
+  --charcoal: #4a4840;  /* 深灰 */
+  --ink: #2a2824;       /* 墨黑 */
 
-  /* Borders */
-  --color-border: #D4CFC7;          /* Warm Border */
-  --color-border-light: #E6E2D8;    /* Light Border */
-  --color-accent: #4A7BA7;          /* Blue Accent */
-  --color-accent-hover: #3D6A97;    /* Darker Blue on Hover */
+  /* 语义色 */
+  --accent: var(--amber);
+  --accent-secondary: var(--sage);
 
-  /* Typography - Serif + Sans-serif Mix */
-  --font-primary: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-secondary: 'Cormorant Garamond', 'Inter', sans-serif;
-  
-  /* Font Sizes - Larger Scale */
-  --text-xs: 0.75rem;      /* 12px */
-  --text-sm: 0.875rem;     /* 14px */
-  --text-base: 1rem;       /* 16px - increased base */
-  --text-lg: 1.125rem;     /* 18px */
-  --text-xl: 1.375rem;     /* 22px - increased */
-  --text-2xl: 1.75rem;     /* 28px - increased */
-  --text-3xl: 2.25rem;     /* 36px - increased */
-  --text-4xl: 3rem;        /* 48px - increased */
-  --text-5xl: 3.75rem;     /* 60px - increased */
-  
-  /* Font Weights */
-  --font-light: 300;
-  --font-regular: 400;
-  --font-medium: 500;
-  --font-semibold: 600;
-  --font-bold: 700;
-  
-  /* Line Heights - Airy and Spacious */
-  --leading-tight: 1.4;
-  --leading-normal: 1.6;
-  --leading-relaxed: 1.8;   /* LANCH default */
-  --leading-loose: 2.2;
-  
-  /* Letter Spacing */
-  --tracking-tight: -0.02em;
-  --tracking-normal: 0;
-  --tracking-wide: 0.02em;
-  --tracking-wider: 0.05em;
-  --tracking-widest: 0.1em;
-  
-  /* Spacing - 8px base grid for more generous spacing */
-  --space-1: 0.5rem;    /* 8px */
-  --space-2: 1rem;      /* 16px */
-  --space-3: 1.5rem;    /* 24px */
-  --space-4: 2rem;      /* 32px */
-  --space-5: 2.5rem;    /* 40px */
-  --space-6: 3rem;      /* 48px */
-  --space-8: 4rem;      /* 64px */
-  --space-10: 5rem;     /* 80px */
-  --space-12: 6rem;     /* 96px */
-  --space-16: 8rem;     /* 128px */
-  --space-20: 10rem;    /* 160px */
-  --space-24: 12rem;    /* 192px */
-  --space-32: 16rem;    /* 256px */
-  
-  /* Layout - LANCH Proportions */
-  --sidebar-width: 28vw;           /* 28% of viewport width */
-  --sidebar-width-min: 320px;      /* Minimum sidebar width */
-  --sidebar-width-max: 480px;      /* Maximum sidebar width */
-  --content-max-width: 1200px;
-  --container-padding: var(--space-4);
-  
-  /* Transitions - Subtle and Smooth */
-  --transition-fast: 200ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-  /* Easing Functions */
-  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
-  --ease-out: cubic-bezier(0, 0, 0.2, 1);
-  --ease-in: cubic-bezier(0.4, 0, 1, 1);
-  
-  /* Border Radius - Removed for pure minimalism */
-  --radius-none: 0;
-  
-  /* Shadows - Removed for flat design */
-  --shadow-none: none;
-  
-  /* Borders */
+  /* 前景/背景 */
+  --fg: var(--ink);
+  --fg-muted: var(--clay);
+  --bg: var(--sand);
+  --bg-alt: var(--bone);
+
+  /* === 动画曲线 — 弹性过冲 === */
+  /* departuremono 的核心秘密 */
+  --flick: cubic-bezier(0.36, 2.09, 0.07, -1.52);
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* === 间距系统 — 11px 基数 === */
+  --space-1: 0.5rem;    /* 5.5px */
+  --space-2: 1rem;      /* 11px */
+  --space-3: 2rem;      /* 22px */
+  --space-4: 4rem;      /* 44px */
+  --space-5: 6rem;      /* 66px */
+  --space-6: 8rem;      /* 88px */
+  --space-7: 10rem;     /* 110px */
+  --space-8: 12rem;     /* 132px */
+
+  /* === 排版层级 === */
+  --text-xs: 1rem;      /* 11px */
+  --text-sm: 1.5rem;    /* 16.5px */
+  --text-base: 1.5rem;
+  --text-lg: 2rem;      /* 22px */
+  --text-xl: 3rem;      /* 33px */
+  --text-2xl: 4rem;     /* 44px */
+  --text-3xl: 6rem;     /* 66px */
+  --text-4xl: 8rem;     /* 88px */
+
+  /* === 布局 === */
+  --max-width: 1440px;
+  --content-width: 900px;
+
+  /* === 边框 === */
+  --border-color: var(--stone);
   --border-width: 1px;
-  --border-dotted: 1px dotted var(--color-border);
-
-  /* Sky Gradient Background */
-  --sky-gradient: linear-gradient(180deg, var(--color-sky-light) 0%, var(--color-cloud) 50%, var(--color-bg) 100%);
-
-  /* Oil Painting Frame Effect */
-  --frame-shadow: 0 0 0 8px var(--color-cloud), 0 0 0 10px var(--color-metal), 0 20px 40px rgba(0,0,0,0.15);
-
-  /* Paper Texture - Oil Painting Canvas Feel */
-  --paper-texture: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
-
-  /* Torn Paper Edge SVG */
-  --torn-edge-bottom: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0 L2 3 L4 1 L6 4 L8 2 L10 5 L12 2 L14 4 L16 1 L18 4 L20 2 L22 5 L24 2 L26 4 L28 1 L30 4 L32 2 L34 5 L36 2 L38 4 L40 1 L42 4 L44 2 L46 5 L48 2 L50 4 L52 1 L54 4 L56 2 L58 5 L60 2 L62 4 L64 1 L66 4 L68 2 L70 5 L72 2 L74 4 L76 1 L78 4 L80 2 L82 5 L84 2 L86 4 L88 1 L90 4 L92 2 L94 5 L96 2 L98 4 L100 1 L100 20 L0 20 Z' fill='%23D4CFC7'/%3E%3C/svg%3E");
-  
-  /* Z-index */
-  --z-base: 1;
-  --z-dropdown: 100;
-  --z-sticky: 200;
-  --z-fixed: 300;
-  --z-modal-backdrop: 400;
-  --z-modal: 500;
-  --z-popover: 600;
-  --z-tooltip: 700;
 }
 
-/* Responsive Breakpoints */
-@custom-media --mobile (max-width: 767px);
-@custom-media --tablet (min-width: 768px) and (max-width: 1023px);
-@custom-media --desktop (min-width: 1024px);
-@custom-media --large (min-width: 1440px);
+/* === 全局重置 === */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--fg);
+  background-color: var(--bg);
+  line-height: 1.7;
+}
+
+/* === 排版 === */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: var(--text-4xl); }
+h2 { font-size: var(--text-2xl); }
+h3 { font-size: var(--text-xl); }
+h4 { font-size: var(--text-lg); }
+
+p {
+  margin-bottom: var(--space-2);
+}
+
+/* === 链接 === */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s var(--ease-in-out);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+/* === 选择效果 === */
+::selection {
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
+/* === 图片 === */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === 容器 === */
+.container {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 var(--space-3);
+  }
+}
+
+/* === 工具类 === */
+.text-muted { color: var(--fg-muted); }
+.text-accent { color: var(--accent); }
+.bg-alt { background-color: var(--bg-alt); }
