@@ -9,13 +9,13 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/tokens.css">
   <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
@@ -42,7 +42,7 @@
     <!-- About Section -->
     <section id="about" class="section section-about">
       <div class="container">
-        <div class="section-content">
+        <div class="about-content">
           <p class="lead">
             彭誉（Yuki），世界经济论坛全球杰出青年，毕业于北京大学光华管理学院与中国人民大学商学院。
           </p>
@@ -73,30 +73,42 @@
         <h2 class="section-title">Works</h2>
         <p class="section-subtitle">影像集 — 生活的瞬间与记忆</p>
 
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img src="/gallery/微信图片_20260116235220_132_731.jpg" alt="旅途中的光影" loading="lazy">
-            <span class="caption">旅途中的光影</span>
+        <div class="works-grid">
+          <div class="work-item">
+            <div class="work-image">
+              <img src="/gallery/微信图片_20260116235220_132_731.jpg" alt="旅途中的光影" loading="lazy">
+            </div>
+            <span class="work-caption">旅途中的光影</span>
           </div>
-          <div class="gallery-item">
-            <img src="/gallery/微信图片_20260116235223_133_731.jpg" alt="城市印象" loading="lazy">
-            <span class="caption">城市的另一面</span>
+          <div class="work-item">
+            <div class="work-image">
+              <img src="/gallery/微信图片_20260116235223_133_731.jpg" alt="城市印象" loading="lazy">
+            </div>
+            <span class="work-caption">城市的另一面</span>
           </div>
-          <div class="gallery-item">
-            <img src="/gallery/微信图片_20260116235248_134_731.jpg" alt="自然风光" loading="lazy">
-            <span class="caption">自然的馈赠</span>
+          <div class="work-item">
+            <div class="work-image">
+              <img src="/gallery/微信图片_20260116235248_134_731.jpg" alt="自然风光" loading="lazy">
+            </div>
+            <span class="work-caption">自然的馈赠</span>
           </div>
-          <div class="gallery-item">
-            <img src="/gallery/微信图片_20260116235327_135_731.jpg" alt="建筑美学" loading="lazy">
-            <span class="caption">建筑与空间</span>
+          <div class="work-item">
+            <div class="work-image">
+              <img src="/gallery/微信图片_20260116235327_135_731.jpg" alt="建筑美学" loading="lazy">
+            </div>
+            <span class="work-caption">建筑与空间</span>
           </div>
-          <div class="gallery-item">
-            <img src="/gallery/微信图片_20260116235414_136_731.jpg" alt="日常记录" loading="lazy">
-            <span class="caption">平凡中的诗意</span>
+          <div class="work-item">
+            <div class="work-image">
+              <img src="/gallery/微信图片_20260116235414_136_731.jpg" alt="日常记录" loading="lazy">
+            </div>
+            <span class="work-caption">平凡中的诗意</span>
           </div>
-          <div class="gallery-item">
-            <img src="/gallery/微信图片_20260116235433_137_731.jpg" alt="人文瞬间" loading="lazy">
-            <span class="caption">人与环境</span>
+          <div class="work-item">
+            <div class="work-image">
+              <img src="/gallery/微信图片_20260116235433_137_731.jpg" alt="人文瞬间" loading="lazy">
+            </div>
+            <span class="work-caption">人与环境</span>
           </div>
         </div>
       </div>
@@ -109,12 +121,10 @@
 
         <!-- AI Thoughts -->
         <div class="writing-category">
-          <h3 class="category-title">AI 随想</h3>
+          <span class="category-label">AI 随想</span>
 
-          <article class="article">
-            <div class="article-meta">
-              <time datetime="2024-10-21">2024.10.21</time>
-            </div>
+          <article class="article-card">
+            <time class="article-date">2024.10.21</time>
             <h4 class="article-title">从 LLM OS 到 Agent OS：算法与工程的黄金分工</h4>
             <p class="article-excerpt">
               当我们谈"LLM OS/Agent OS"，分歧不在"是否会发生"，而在"以什么形式发生"。工程与算法的黄金分工：把可规则化的部分工程化，把可复用的流程固化，把可压缩的上下文压缩。
@@ -122,10 +132,8 @@
             <a href="#" class="read-more">阅读全文 →</a>
           </article>
 
-          <article class="article">
-            <div class="article-meta">
-              <time datetime="2025-01-13">2025.01.13</time>
-            </div>
+          <article class="article-card">
+            <time class="article-date">2025.01.13</time>
             <h4 class="article-title">影像、记忆与压缩：从照片到"时空快照"</h4>
             <p class="article-excerpt">
               我挑的每一张照片，都不是照片本身，而是一个 hook，一个"时空快照"。它牵连着体验、情绪与概念的网络。
@@ -136,9 +144,9 @@
 
         <!-- Media Articles -->
         <div class="writing-category">
-          <h3 class="category-title">媒体文章</h3>
+          <span class="category-label">媒体文章</span>
 
-          <div class="article-list">
+          <div class="article-link-list">
             <a href="/YukiMeta/尘埃落定 _ 我知道我可以永远相信自己.html" class="article-link" target="_blank">
               <span class="article-link-title">尘埃落定 | 我知道我可以永远相信自己</span>
               <span class="article-link-source">个人博客</span>
@@ -160,8 +168,8 @@
 
         <!-- Social Links -->
         <div class="social-section">
-          <h3 class="category-title">社交媒体</h3>
-          <div class="social-links">
+          <span class="category-label">社交媒体</span>
+          <div class="social-link-list">
             <a href="https://www.xiaohongshu.com/user/profile/溜掉 de 小鱼" class="social-link" target="_blank">
               <span>小红书</span>
               <span class="social-handle">溜掉 de 小鱼</span>
