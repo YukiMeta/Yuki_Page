@@ -1,0 +1,62 @@
+{
+    "manifest_version": 3,
+    "name": "Video Intelligence - 视频智能笔记",
+    "version": "1.0.0",
+    "description": "自动提取 YouTube/B站 视频金句和摘要",
+    "permissions": [
+        "storage",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://www.youtube.com/*",
+        "https://www.bilibili.com/*",
+        "https://api.bilibili.com/*",
+        "http://localhost:11434/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "lib/ai-analyzer.js",
+                "content/youtube.js",
+                "content/sidebar.js"
+            ],
+            "css": [
+                "styles/sidebar.css"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "https://www.bilibili.com/*"
+            ],
+            "js": [
+                "lib/ai-analyzer.js",
+                "content/bilibili.js",
+                "content/sidebar.js"
+            ],
+            "css": [
+                "styles/sidebar.css"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}

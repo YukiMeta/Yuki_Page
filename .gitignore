@@ -12,6 +12,7 @@ pnpm-lock.yaml
 dist/
 build/
 .vite/
+.vercel/
 *.local
 
 # Environment variables

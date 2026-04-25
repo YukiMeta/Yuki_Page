@@ -1,0 +1,10847 @@
+1
+00:00:00,000 --> 00:00:03,690
+- Basically, this entire
+roundtable session here
+- 这整个圆桌会议
+
+2
+00:00:03,690 --> 00:00:06,450
+is just gonna be focused
+mainly on prompt engineering.
+主要将集中在提示工程上。
+
+3
+00:00:06,450 --> 00:00:10,440
+A variety of perspectives at
+this table around prompting
+在桌子上的各种视角围绕提示
+
+4
+00:00:10,440 --> 00:00:11,877
+from a research side,
+from a consumer side,
+从研究方面，
+从消费者方面，
+
+5
+00:00:11,877 --> 00:00:13,890
+and from the enterprise side.
+以及企业方面展开。
+
+6
+00:00:13,890 --> 00:00:16,950
+And I want to just get the
+whole wide range of opinions
+我想就整个范围的意见
+
+7
+00:00:16,950 --> 00:00:18,450
+because there's a lot of them.
+因为有很多不同的意见。
+
+8
+00:00:18,450 --> 00:00:20,670
+And just open it up to discussion
+并且开放讨论以探索
+
+9
+00:00:20,670 --> 00:00:24,060
+and explore what prompt
+engineering really is
+提示工程到底是什么
+
+10
+00:00:24,060 --> 00:00:25,530
+and what it's all about.
+以及它涉及到什么。
+
+11
+00:00:25,530 --> 00:00:28,020
+And yeah, we'll just take it from there.
+好的，我们就从这里开始吧。
+
+12
+00:00:28,020 --> 00:00:30,540
+So maybe we can go around
+the horn with intros.
+或许我们可以绕过障碍，以自我介绍的形式进行交流。
+
+13
+00:00:30,540 --> 00:00:32,010
+I can kick it off. I'm Alex.
+我可以先开始。我是亚历克斯。
+
+14
+00:00:32,010 --> 00:00:35,040
+I lead Developer Relations
+here at Anthropic.
+我在Anthropic负责开发者关系。
+
+15
+00:00:35,040 --> 00:00:36,270
+Before that,
+在那之前，
+
+16
+00:00:36,270 --> 00:00:39,600
+I was technically a prompt
+engineer at Anthropic.
+我实际上是一名来自Anthropic的提示工程师。
+
+17
+00:00:39,600 --> 00:00:41,823
+I worked on our prompt engineering team,
+我在我们的提示工程团队工作。
+
+18
+00:00:43,620 --> 00:00:45,330
+and did a variety of roles spanning
+并担任了各种角色跨越
+
+19
+00:00:45,330 --> 00:00:48,720
+from a solutions architect type of thing,
+从架构师的角度来看，
+
+20
+00:00:48,720 --> 00:00:51,510
+to working on the research side.
+从事研究工作。
+
+21
+00:00:51,510 --> 00:00:53,880
+So with that, maybe I can
+hand it over to David.
+
+
+22
+00:00:53,880 --> 00:00:56,070
+- Heck, yeah. My name's David Hershey.
+所以这样，或许我可以把话筒递给大卫。
+
+23
+00:00:56,070 --> 00:00:59,850
+I work with customers mostly at Anthropic
+- 简单说，我叫大卫·赫舍尔。
+
+24
+00:00:59,850 --> 00:01:02,940
+on a bunch of stuff technical,
+我在安德鲁皮克公司主要与客户合作，
+
+25
+00:01:02,940 --> 00:01:04,290
+I help people with finetuning,
+处理各种技术问题，
+
+26
+00:01:04,290 --> 00:01:06,360
+but also just a lot of the generic things
+帮助人们进行微调，
+
+27
+00:01:06,360 --> 00:01:08,670
+that make it hard to adopt
+language models of prompting.
+但更多的是帮助解决采用语言模型提示的通用问题。
+
+28
+00:01:08,670 --> 00:01:11,970
+And just like how to build
+systems with language models,
+就像如何使用语言模型构建系统，
+
+29
+00:01:11,970 --> 00:01:14,610
+but spend most of my time
+working with customers.
+但我大部分时间都在与客户打交道。
+
+30
+00:01:14,610 --> 00:01:16,530
+- Cool. I'm Amanda Askell.
+- 很酷。我是阿曼达·阿斯卡尔。
+
+31
+00:01:16,530 --> 00:01:19,890
+I lead one of the Finetuning
+teams at Anthropic,
+我在Anthropic的一个微调团队中担任领导。
+
+32
+00:01:19,890 --> 00:01:23,613
+where I guess I try to make
+Claude be honest and kind.
+我在试图让克劳德诚实和善良。
+
+33
+00:01:24,990 --> 00:01:26,400
+Yeah.
+好的。
+
+34
+00:01:26,400 --> 00:01:27,449
+- My name is Zack Witten.
+我叫扎克·温特。
+
+35
+00:01:27,449 --> 00:01:30,720
+I'm a Prompt Engineer at Anthropic.
+我在Anthropic担任Prompt工程师。
+
+36
+00:01:30,720 --> 00:01:32,550
+Alex and I always argue
+about who the first one was.
+我和亚历克斯总是争论谁是第一个。
+
+37
+00:01:32,550 --> 00:01:33,990
+He says it's him, I say it's me.
+他说是他，我说是我。
+
+38
+00:01:33,990 --> 00:01:35,550
+- Contested.
+- Yeah.
+争议中。  
+是的。
+
+39
+00:01:35,550 --> 00:01:38,520
+I used to work a lot with
+individual customers,
+我以前经常与个人客户打交道，
+
+40
+00:01:38,520 --> 00:01:40,290
+kind of the same way David does now.
+就像大卫现在所做的那样。
+
+41
+00:01:40,290 --> 00:01:44,130
+And then as we brought
+more solutions architects
+然后当我们带来了更多的解决方案架构师
+
+42
+00:01:44,130 --> 00:01:46,950
+to the team, I started working on things
+给团队成员，我开始着手做事情了。
+
+43
+00:01:46,950 --> 00:01:50,670
+that are meant to raise the overall levels
+旨在提高整体水平的那些
+
+44
+00:01:50,670 --> 00:01:53,310
+of ambient prompting in society,
+社会中的环境提示
+
+45
+00:01:53,310 --> 00:01:55,470
+I guess, like the prompt generator
+我觉得，就像提示生成器一样
+
+46
+00:01:55,470 --> 00:01:59,640
+and the various educational
+materials that people use.
+以及人们使用的各种教育资源。
+
+47
+00:01:59,640 --> 00:02:02,959
+- Nice, cool. Well, thanks
+guys for all coming here.
+好的，非常棒。谢谢大家来参加。
+
+48
+00:02:02,959 --> 00:02:05,850
+I'm gonna start with a very broad question
+我先从一个非常宽泛的问题开始。
+
+49
+00:02:05,850 --> 00:02:07,200
+just so we have a frame
+为了有一个框架
+
+50
+00:02:07,200 --> 00:02:09,570
+going into the rest of
+our conversations here.
+进入我们在这里的其他对话。
+
+51
+00:02:09,570 --> 00:02:14,340
+What is prompt engineering?
+Why is it engineering?
+什么是提示工程？
+为什么它是工程？
+
+52
+00:02:14,340 --> 00:02:15,990
+What's prompt, really?
+什么是真正的提示？
+
+53
+00:02:15,990 --> 00:02:17,610
+If anyone wants to kick that off,
+如果有人想先开始的话，
+
+54
+00:02:17,610 --> 00:02:19,500
+give your own perspective on it,
+谈谈你自己的看法。
+
+55
+00:02:19,500 --> 00:02:21,300
+feel free to take the rein here.
+你随时可以接管。
+
+56
+00:02:21,300 --> 00:02:23,364
+- I feel like we have a prompt engineer.
+我觉得我们有一个提示工程师。
+
+57
+00:02:23,364 --> 00:02:24,990
+It's his job.
+这是他的工作。
+
+58
+00:02:24,990 --> 00:02:27,900
+- We're all prompt
+engineers in our own form.
+我们都是自己形式的提示工程师。
+
+59
+00:02:27,900 --> 00:02:28,980
+- But one of us has a job.
+但是我们其中一个人有工作。
+
+60
+00:02:28,980 --> 00:02:30,630
+- Yeah. Zack, maybe
+since it's in your title.
+- 嗯。扎克，或许是因为你在标题里用了这个名字吧。
+
+61
+00:02:30,630 --> 00:02:34,767
+- One of us has a job, but the
+other three don't have jobs.
+我们当中有一个有工作，但其他三个都没有工作。
+
+62
+00:02:35,974 --> 00:02:37,560
+- I guess I feel like prompt engineering
+我觉得我像是在做提示工程。
+
+63
+00:02:37,560 --> 00:02:40,860
+is trying to get the model to do things,
+正在尝试让模型去做事。
+
+64
+00:02:40,860 --> 00:02:42,780
+trying to bring the most out of the model.
+试图从模型中榨取最大价值。
+
+65
+00:02:42,780 --> 00:02:46,320
+Trying to work with the
+model to get things done
+试图与模型合作完成任务。
+
+66
+00:02:46,320 --> 00:02:49,380
+that you wouldn't have
+been able to do otherwise.
+那否则你无法做到。
+
+67
+00:02:49,380 --> 00:02:52,500
+So a lot of it is just
+clear communicating.
+所以主要就是
+清楚沟通。
+
+68
+00:02:52,500 --> 00:02:55,530
+I think at heart,
+我认为根本上，
+
+69
+00:02:55,530 --> 00:02:57,870
+talking to a model is a lot
+like talking to a person.
+与模型对话就像与人对话。
+
+70
+00:02:57,870 --> 00:02:59,610
+And getting in there
+进入其中
+
+71
+00:02:59,610 --> 00:03:02,280
+and understanding the
+psychology of the model,
+并理解模型的心理学，
+
+72
+00:03:02,280 --> 00:03:06,843
+which Amanda is the world's
+most expert person in the world.
+哪位Amanda是世界上最擅长的人。
+
+73
+00:03:08,730 --> 00:03:10,916
+- Well, I'm gonna keep going on you.
+- 好的，我还要继续逗你。
+
+74
+00:03:10,916 --> 00:03:12,723
+Why is engineering in the name?
+为什么工程以这个名字？
+
+75
+00:03:13,860 --> 00:03:14,693
+- Yeah.
+好的。
+
+76
+00:03:14,693 --> 00:03:18,022
+I think the engineering part
+comes from the trial and error.
+我认为工程部分是通过试错得来的。
+
+77
+00:03:18,022 --> 00:03:18,855
+- Okay.
+好的。
+
+78
+00:03:18,855 --> 00:03:23,130
+- So one really nice thing
+about talking to a model
+与模型对话真是太好了。
+
+79
+00:03:23,130 --> 00:03:24,450
+that's not like talking to a person,
+这不像在和一个人说话。
+
+80
+00:03:24,450 --> 00:03:25,740
+is you have this restart button.
+你有这个重启按钮吗？
+
+81
+00:03:25,740 --> 00:03:28,200
+This giant go back to square zero
+这头巨兽归零了
+
+82
+00:03:28,200 --> 00:03:29,550
+where you just start from the beginning.
+从头开始。
+
+83
+00:03:29,550 --> 00:03:30,990
+And what that gives you the ability to do
+这赋予你做什么能力的
+
+84
+00:03:30,990 --> 00:03:34,410
+that you don't have, is a
+truly start from scratch
+没有的东西， truly 是从头开始。
+
+85
+00:03:34,410 --> 00:03:38,100
+and try out different things
+in an independent way,
+然后以独立的方式尝试不同的事情。
+
+86
+00:03:38,100 --> 00:03:40,590
+so that you don't have
+interference from one to the other.
+以便彼此之间没有干扰。
+
+87
+00:03:40,590 --> 00:03:43,470
+And once you have that
+ability to experiment
+一旦你有了这种实验的能力
+
+88
+00:03:43,470 --> 00:03:45,450
+and to design different things,
+以及设计不同的事物，
+
+89
+00:03:45,450 --> 00:03:48,210
+that's where the engineering
+part has the potential
+那是工程部分有潜力的地方。
+
+90
+00:03:48,210 --> 00:03:49,800
+to come in.
+到场
+
+91
+00:03:49,800 --> 00:03:50,633
+- Okay.
+好的。
+
+92
+00:03:50,633 --> 00:03:53,280
+So what you're saying is as
+you're writing these prompts,
+你正在写这些提示时，
+
+93
+00:03:53,280 --> 00:03:55,520
+you're typing in a message
+to Claude or in the API
+你在给Claude写消息或使用API
+
+94
+00:03:55,520 --> 00:03:56,733
+or whatever it is.
+或者是什么东西。
+
+95
+00:03:57,630 --> 00:04:00,600
+Being able to go back
+and forth with the model
+能与模型来回交流
+
+96
+00:04:00,600 --> 00:04:02,970
+and to iterate on this message,
+并在此基础上进行迭代，
+
+97
+00:04:02,970 --> 00:04:06,750
+and revert back to the
+clean slate every time,
+并且每次都要回到一个干净的起点。
+
+98
+00:04:06,750 --> 00:04:08,910
+that process is the engineering part.
+那个过程是工程部分。
+
+99
+00:04:08,910 --> 00:04:13,530
+This whole thing is prompt
+engineering all in one.
+这整套东西都是集成化工程。
+
+100
+00:04:13,530 --> 00:04:15,000
+- There's another aspect of it too,
+此外还有一个方面。
+
+101
+00:04:15,000 --> 00:04:19,290
+which is integrating the prompts
+就是将提示词整合在一起
+
+102
+00:04:19,290 --> 00:04:21,630
+within your system as a whole.
+在整个系统中。
+
+103
+00:04:21,630 --> 00:04:25,803
+And David has done a ton of
+work with customers integrating.
+大卫在与客户集成方面做了大量的工作。
+
+104
+00:04:26,640 --> 00:04:28,050
+A lot of times it's not just as simple
+很多时候并不是那么简单。
+
+105
+00:04:28,050 --> 00:04:30,000
+as you write one prompt and
+you give it to the model
+当你写一个提示并把它给模型时
+
+106
+00:04:30,000 --> 00:04:30,833
+and you're done.
+就这样结束了。
+
+107
+00:04:30,833 --> 00:04:32,730
+In fact, it's anything but.
+It's like way more complicated.
+实际上，这远比你想象的要复杂得多。
+
+108
+00:04:32,730 --> 00:04:33,563
+- Yeah.
+好的。
+
+109
+00:04:34,476 --> 00:04:36,510
+I think of prompts as the way
+我认为提示是引导
+
+110
+00:04:36,510 --> 00:04:38,820
+that you program models a little bit,
+你稍微编程一下。
+
+111
+00:04:38,820 --> 00:04:40,110
+that makes it too complicated.
+这太复杂了。
+
+112
+00:04:40,110 --> 00:04:41,940
+'Cause I think Zack is generally right
+因为我觉得扎克通常是对的。
+
+113
+00:04:41,940 --> 00:04:45,960
+that it's just talking clearly
+is the most important thing.
+那就是说话要清晰。
+
+114
+00:04:45,960 --> 00:04:47,040
+But if you think about it a little bit
+但如果你稍微想想
+
+115
+00:04:47,040 --> 00:04:49,200
+as programming a model,
+you have to think about
+作为编程模型，
+你需要考虑
+
+116
+00:04:49,200 --> 00:04:51,087
+where data comes from, what
+data you have access to.
+数据的来源是什么，你能够访问哪些数据。
+
+117
+00:04:51,087 --> 00:04:53,280
+So if you're doing RAG or something,
+所以如果你在做RAG或者类似的事情，
+
+118
+00:04:53,280 --> 00:04:56,013
+what can I actually use
+and do and pass to a model?
+我实际上可以使用、做和传递给模型什么？
+
+119
+00:04:57,990 --> 00:05:02,130
+You have to think about
+trade-offs in latency
+你必须考虑延迟权衡。
+
+120
+00:05:02,130 --> 00:05:03,750
+and how much data you're
+providing and things like that.
+以及你提供多少数据等问题。
+
+121
+00:05:03,750 --> 00:05:04,890
+There's enough systems thinking
+
+
+122
+00:05:04,890 --> 00:05:07,560
+that goes into how you
+actually build around a model.
+有足够多的系统思维
+
+123
+00:05:07,560 --> 00:05:08,820
+I think a lot of that's also the core
+在你实际上围绕一个模型构建时。
+
+124
+00:05:08,820 --> 00:05:13,080
+of why it maybe deserves
+its own carve-out as a thing
+我认为，这很多也是为什么它可能有资格
+
+125
+00:05:13,080 --> 00:05:16,440
+to reason about separately
+from just a software engineer
+作为一个独立的事物来考虑，
+
+126
+00:05:16,440 --> 00:05:17,430
+or a PM or something like that.
+而不仅仅是软件工程师或项目经理之类的人。
+
+127
+00:05:17,430 --> 00:05:18,510
+It's kind of its own domain
+它本质上是一个关于如何思考这些模型
+
+128
+00:05:18,510 --> 00:05:20,520
+of how to reason about these models.
+自己的领域。
+
+129
+00:05:20,520 --> 00:05:24,240
+- Is a prompt in this sense
+then natural language code?
+- 这里的提示是不是自然语言代码？
+
+130
+00:05:24,240 --> 00:05:26,520
+Is it a higher level of abstraction
+是否是一种更高层次的抽象
+
+131
+00:05:26,520 --> 00:05:28,526
+or is it a separate thing?
+或者是一个单独的事情？
+
+132
+00:05:28,526 --> 00:05:33,526
+- I think trying to get too
+abstract with a prompt is a way
+我认为在提示中过于抽象化是一种方式
+
+133
+00:05:33,750 --> 00:05:37,110
+to overcomplicate a
+thing, because I think,
+过度复杂一个事情，因为我认为，
+
+134
+00:05:37,110 --> 00:05:38,970
+we're gonna get into it,
+but more often than not,
+我们会陷入其中的，但很多时候，
+
+135
+00:05:38,970 --> 00:05:39,803
+the thing you wanna do
+你想要做的事情
+
+136
+00:05:39,803 --> 00:05:42,060
+is just write a very clear
+description of a task,
+只是写一个非常清晰的任务描述，
+
+137
+00:05:42,060 --> 00:05:45,123
+not try to build crazy
+abstractions or anything like that.
+而不是尝试构建复杂的抽象或类似的东西。
+
+138
+00:05:47,070 --> 00:05:51,720
+But that said, you are compiling
+the set of instructions
+但是说到底，你在编译指令集
+
+139
+00:05:51,720 --> 00:05:54,420
+and things like that into
+outcomes a lot of times.
+和各种事情上将这些编译成结果。
+
+140
+00:05:54,420 --> 00:05:57,660
+So precision and a lot the things
+所以精确度和许多事情
+
+141
+00:05:57,660 --> 00:06:00,690
+you think about with programming
+about version control
+你用编程思考的是版本控制。
+
+142
+00:06:00,690 --> 00:06:01,980
+and managing what it looked like
+并且管理它的外观
+
+143
+00:06:01,980 --> 00:06:03,600
+back then when you had this experiment.
+那时你做这个实验。
+
+144
+00:06:03,600 --> 00:06:06,630
+And tracking your experiment
+and stuff like that,
+以及跟踪你的实验
+
+145
+00:06:06,630 --> 00:06:11,620
+that's all just equally important to code.
+那只是与代码一样重要。
+
+146
+00:06:11,620 --> 00:06:12,453
+- Yeah.
+嗯。
+
+147
+00:06:12,453 --> 00:06:15,960
+- So it's weird to be in this
+paradigm where written text,
+所以在这个文字为王的 paradigm 里，
+
+148
+00:06:15,960 --> 00:06:18,390
+like a nice essay that
+you wrote is something
+像你写的一篇好作文一样
+
+149
+00:06:18,390 --> 00:06:21,003
+that's looked like the same thing as code.
+那看起来像是同样的代码。
+
+150
+00:06:22,080 --> 00:06:25,020
+But it is true that now we write essays
+但是现在我们写文章。
+
+151
+00:06:25,020 --> 00:06:27,840
+and treat them code, and I
+think that's actually correct.
+并且把它们当作代码处理，我觉得这是正确的。
+
+152
+00:06:27,840 --> 00:06:29,940
+- Yeah. Okay, interesting.
+好的，很有趣。
+
+153
+00:06:29,940 --> 00:06:31,773
+So maybe piggybacking off of that,
+也许可以搭着这个顺风车。
+
+154
+00:06:32,730 --> 00:06:36,090
+we've loosely defined what
+prompt engineering is.
+我们松散地定义了什么是提示工程。
+
+155
+00:06:36,090 --> 00:06:38,640
+So what makes a good prompt engineer?
+什么是好的提示工程师？
+
+156
+00:06:38,640 --> 00:06:41,040
+Maybe, Amanda, I'll go to you for this,
+也许，安德烈亚，这个问题我找你来解决。
+
+157
+00:06:41,040 --> 00:06:43,350
+since you're trying to
+hire prompt engineers
+因为你正在尝试雇佣prompt工程师
+
+158
+00:06:43,350 --> 00:06:44,853
+more so in a research setting.
+在研究环境中尤为如此。
+
+159
+00:06:45,810 --> 00:06:46,643
+What does that look like?
+那看起来是什么样子？
+
+160
+00:06:46,643 --> 00:06:49,050
+What are you looking for
+in that type of person?
+你对那种人
+有什么期待？
+
+161
+00:06:49,050 --> 00:06:50,520
+- Yeah, good question.
+好的问题。
+
+162
+00:06:50,520 --> 00:06:55,500
+I think it's a mix of like
+Zack said, clear communication,
+我觉得是沟通不畅。
+
+163
+00:06:55,500 --> 00:06:58,470
+so the ability to just
+clearly state things,
+所以能够清楚地表达事情，
+
+164
+00:06:58,470 --> 00:07:00,990
+clearly understand tasks,
+明确任务。
+
+165
+00:07:00,990 --> 00:07:03,480
+think about and describe
+concepts really well.
+好好思考和描述概念。
+
+166
+00:07:03,480 --> 00:07:05,880
+That's the writing component, I think.
+那应该是写字的部分。
+
+167
+00:07:05,880 --> 00:07:08,880
+I actually think that being a good writer
+我实际上认为成为一个好的作家
+
+168
+00:07:08,880 --> 00:07:12,030
+is not as correlated with
+being a good prompt engineer
+不那么与
+成为一个好的提示工程师
+相关联
+
+169
+00:07:12,030 --> 00:07:13,890
+as people might think.
+正如人们所认为的那样。
+
+170
+00:07:13,890 --> 00:07:15,227
+So I guess I've had this
+discussion with people
+所以我猜我已经和人们讨论过这个问题。
+
+171
+00:07:15,227 --> 00:07:16,747
+'cause I think there's
+some argument as like,
+因为我觉得有点像在争论。
+
+172
+00:07:16,747 --> 00:07:19,680
+"Maybe you just shouldn't have
+the name engineer in there.
+你可能不应该在那儿叫工程师。
+
+173
+00:07:19,680 --> 00:07:21,417
+Why isn't it just writer?"
+为什么不只是作家？
+
+174
+00:07:22,260 --> 00:07:23,787
+I used to be more sympathetic to that.
+我以前更同情那个。
+
+175
+00:07:23,787 --> 00:07:27,900
+And then, I think, now I'm like
+what you're actually doing,
+然后，我想我现在就像你在做什么。
+
+176
+00:07:27,900 --> 00:07:31,560
+people think that you're writing
+one thing and you're done.
+人们认为你写了一件事就完事了。
+
+177
+00:07:31,560 --> 00:07:34,860
+Then I'll be like to
+get a semi-decent prompt
+然后我就想得到一个不错的提示。
+
+178
+00:07:34,860 --> 00:07:36,410
+when I sit down with the model.
+当我坐在模型旁。
+
+179
+00:07:37,410 --> 00:07:38,940
+Earlier, I was prompting the model
+刚才我在提示模型
+
+180
+00:07:38,940 --> 00:07:40,500
+and I was just like in a 15-minute span
+而我在15分钟内就完成了。
+
+181
+00:07:40,500 --> 00:07:42,510
+I'll be sending hundreds
+of prompts to the model.
+我将向模型发送数百个提示。
+
+182
+00:07:42,510 --> 00:07:45,060
+It's just back and forth, back
+and forth, back and forth.
+它只是来来回回，来回，再来来回。
+
+183
+00:07:45,060 --> 00:07:48,780
+So I think it's this willingness
+to iterate and to look
+所以我认为这是这种愿意迭代和尝试的心态。
+
+184
+00:07:48,780 --> 00:07:51,750
+and think what is it that
+was misinterpreted here,
+以及想想这里有什么被误解了。
+
+185
+00:07:51,750 --> 00:07:52,899
+if anything?
+如果有什么问题？
+
+186
+00:07:52,899 --> 00:07:55,830
+And then fix that thing.
+然后把这个东西修好。
+
+187
+00:07:55,830 --> 00:07:57,360
+So that ability to iterate.
+所以迭代的能力。
+
+188
+00:07:57,360 --> 00:08:01,680
+So I'd say clear communication,
+that ability to iterate.
+所以我说明确的沟通，
+迭代的能力。
+
+189
+00:08:01,680 --> 00:08:03,660
+I think also thinking about ways
+我想也思考一下方法。
+
+190
+00:08:03,660 --> 00:08:05,790
+in which your prompt might go wrong.
+在你的提示可能出错的地方。
+
+191
+00:08:05,790 --> 00:08:06,720
+So if you have a prompt
+所以如果你有一个提示
+
+192
+00:08:06,720 --> 00:08:09,330
+that you're going to be
+applying to say, 400 cases,
+你将申请说有400个案例，
+
+193
+00:08:09,330 --> 00:08:11,370
+it's really easy to think
+about the typical case
+真容易想到常见的情况。
+
+194
+00:08:11,370 --> 00:08:12,750
+that it's going to be applied to,
+它将要应用于
+
+195
+00:08:12,750 --> 00:08:14,580
+to see that it gets the
+right solution in that case,
+看出它在那种情况下能得到正确的解决方案。
+
+196
+00:08:14,580 --> 00:08:15,570
+and then to move on.
+然后继续前进。
+
+197
+00:08:15,570 --> 00:08:18,370
+I think this is a very classic
+mistake that people made.
+我觉得这是一个非常经典的人类错误。
+
+198
+00:08:19,260 --> 00:08:21,810
+What you actually want
+to do is find the cases
+你实际上想做的就是找到案例。
+
+199
+00:08:21,810 --> 00:08:23,430
+where it's unusual.
+在那里很不寻常。
+
+200
+00:08:23,430 --> 00:08:25,154
+So you have to think about
+your prompt and be like,
+所以你必须考虑你的提示，并且要像这样：
+
+201
+00:08:25,154 --> 00:08:26,970
+"What are the cases where
+it'd be really unclear to me
+什么情况下会让我真的无法确定
+
+202
+00:08:26,970 --> 00:08:28,500
+what I should do in this case?"
+在这种情况下我该怎么办？
+
+203
+00:08:28,500 --> 00:08:29,827
+So for example, you
+have a prompt that says,
+所以，比如你有一个提示说，
+
+204
+00:08:29,827 --> 00:08:31,290
+"I'm going to send you a bunch of data.
+我将向你发送一批数据。
+
+205
+00:08:31,290 --> 00:08:33,540
+I want you to extract all of the rows
+我想让你提取所有行
+
+206
+00:08:33,540 --> 00:08:36,180
+where someone's name is, I don't know,
+谁的名字我不知道，
+
+207
+00:08:36,180 --> 00:08:37,500
+starts with the letter G."
+以字母G开头。
+
+208
+00:08:37,500 --> 00:08:39,780
+And then you're like, "Well,
+I'm gonna send it a dataset
+然后你就说：“好吧，
+我 gonna 发送一个数据集
+
+209
+00:08:39,780 --> 00:08:41,340
+where there is no such thing,
+那里没有这样的东西。
+
+210
+00:08:41,340 --> 00:08:43,567
+there is no such name that
+starts with the letter G.
+没有以字母G开头的名字。
+
+211
+00:08:43,567 --> 00:08:45,870
+"I'm going to send it
+something that's not a dataset,
+"I要发送一些不是数据集的东西，
+
+212
+00:08:45,870 --> 00:08:48,000
+I might also just send it an empty string.
+我可能会直接发送一个空字符串。
+
+213
+00:08:48,000 --> 00:08:49,740
+These are all of the
+cases you have to try,
+这些是你必须尝试的所有情况，
+
+214
+00:08:49,740 --> 00:08:51,540
+because then you're like, "What
+does it do in these cases? "
+因为你需要问自己，“在这种情况下它会做什么？ ”
+
+215
+00:08:51,540 --> 00:08:53,910
+And then you can give it more instructions
+然后你可以给出更多的指示，
+
+216
+00:08:53,910 --> 00:08:55,830
+for how it should deal with that case.
+说明它应该如何处理这种情况。
+
+217
+00:08:55,830 --> 00:08:59,580
+- I work with customers so
+often where you're an engineer,
+- 我经常和客户合作，他们通常都是工程师，
+
+218
+00:08:59,580 --> 00:09:00,690
+you're building something.
+正在构建一些东西。
+
+219
+00:09:00,690 --> 00:09:03,780
+And there's a part in your
+prompt where a customer of theirs
+在你的提示中有一个部分，
+
+220
+00:09:03,780 --> 00:09:04,812
+is going to write something.
+客户的某个部分将要写些什么。
+
+221
+00:09:04,812 --> 00:09:05,645
+- Yeah.
+好的。
+
+222
+00:09:05,645 --> 00:09:06,478
+- And they all think
+- 而他们所有人都认为
+
+223
+00:09:06,478 --> 00:09:07,950
+about these really
+perfectly phrased things
+关于这些真的
+完美表达的事物
+
+224
+00:09:07,950 --> 00:09:09,807
+that they think someone's going
+to type into their chatbot.
+他们认为有人会在他们的聊天机器人中输入内容。
+
+225
+00:09:09,807 --> 00:09:12,990
+And in reality, it's like
+they never used the shift key
+实际上，就像他们从未使用过换行键一样。
+
+226
+00:09:12,990 --> 00:09:15,030
+and every other word is a typo.
+并且每个其他单词都是拼写错误。
+
+227
+00:09:15,030 --> 00:09:17,040
+- They think it's Google.
+- And there's no punctuation.
+- 他们认为是谷歌。
+- 没有标点符号。
+
+228
+00:09:17,040 --> 00:09:18,956
+- They just put in random
+words with no question.
+他们只是随口胡说，没有任何问题。
+
+229
+00:09:18,956 --> 00:09:20,416
+- Exactly.
+对的。
+
+230
+00:09:20,416 --> 00:09:21,249
+So you have these evals
+所以你有这些评估。
+
+231
+00:09:21,249 --> 00:09:22,740
+that are these beautifully structured
+那就是这些优雅结构的
+
+232
+00:09:22,740 --> 00:09:24,570
+what their users ideally would type in.
+用户理想上想要输入的内容。
+
+233
+00:09:24,570 --> 00:09:26,520
+But being able to go the next step
+但是能够迈出下一步
+
+234
+00:09:26,520 --> 00:09:29,250
+to reason about what your
+actual traffic's gonna be like,
+来推断你的实际流量会是什么样子的，
+
+235
+00:09:29,250 --> 00:09:31,470
+what people are actually
+gonna to try to do,
+人们实际上会尝试做的事情。
+
+236
+00:09:31,470 --> 00:09:33,570
+that's a different level of thinking.
+那是不同的思维方式。
+
+237
+00:09:33,570 --> 00:09:35,190
+- One thing you said that
+really resonated with me
+你有一句话真的触动了我。
+
+238
+00:09:35,190 --> 00:09:36,933
+is reading the model responses.
+在阅读模型的回复。
+
+239
+00:09:37,950 --> 00:09:39,750
+In a machine learning context,
+在机器学习的背景下，
+
+240
+00:09:39,750 --> 00:09:41,490
+you're supposed to look at the data.
+你应该看数据。
+
+241
+00:09:41,490 --> 00:09:43,440
+It's almost a cliche
+like look at your data,
+这几乎是一个陈词滥调，就像看看你的数据。
+
+242
+00:09:43,440 --> 00:09:45,600
+and I feel like the
+equivalent for prompting
+我觉得这是提示的等价物。
+
+243
+00:09:45,600 --> 00:09:48,090
+is look at the model outputs.
+看看模型的输出。
+
+244
+00:09:48,090 --> 00:09:51,060
+Just reading a lot of outputs
+and reading them closely.
+只是多读一些输出，并仔细阅读。
+
+245
+00:09:51,060 --> 00:09:52,710
+Like Dave and I were
+talking on the way here,
+就像我和Dave在这里的路上讨论的那样，
+
+246
+00:09:52,710 --> 00:09:53,730
+one thing that people will do
+人们会做一件事。
+
+247
+00:09:53,730 --> 00:09:57,180
+is they'll put think
+step-by-step in their prompt.
+他们会一步步地在提示中思考。
+
+248
+00:09:57,180 --> 00:09:58,590
+And they won't check to make sure
+他们不会检查确保的。
+
+249
+00:09:58,590 --> 00:10:00,840
+that the model is actually
+thinking step-by-step,
+模型实际上是在一步一步地思考。
+
+250
+00:10:00,840 --> 00:10:04,170
+because the model might
+take it in a more abstract
+因为模型可能会将其理解为一个更抽象的概念。
+
+251
+00:10:04,170 --> 00:10:05,730
+or general sense.
+或者一般理解。
+
+252
+00:10:05,730 --> 00:10:06,563
+Rather than like,
+不如
+
+253
+00:10:06,563 --> 00:10:08,100
+"No, literally you have to
+write down your thoughts
+不，你必须写下你的想法。
+
+254
+00:10:08,100 --> 00:10:10,650
+in these specific tags."
+在这些特定的标签中。
+
+255
+00:10:10,650 --> 00:10:14,040
+So yeah, if you aren't
+reading the model outputs,
+所以，如果你不读取模型输出，
+
+256
+00:10:14,040 --> 00:10:16,980
+you might not even notice
+that it's making that mistake.
+你可能根本不会注意到
+它正在犯那个错误。
+
+257
+00:10:16,980 --> 00:10:18,603
+- Yeah, that's interesting.
+- 哦，这很有趣。
+
+258
+00:10:19,800 --> 00:10:22,650
+There is that weird theory of mind piece
+有那种奇怪的意识理论。
+
+259
+00:10:22,650 --> 00:10:23,640
+to being a prompt engineer
+成为提示工程师
+
+260
+00:10:23,640 --> 00:10:25,410
+where you have to think almost about
+你几乎要想到
+
+261
+00:10:25,410 --> 00:10:27,300
+how the model's gonna
+view your instructions.
+模型会如何看待你的指令。
+
+262
+00:10:27,300 --> 00:10:29,430
+But then if you're writing for
+an enterprise use case too,
+但如果你是在为一个企业应用场景编写代码，
+
+263
+00:10:29,430 --> 00:10:30,480
+you also have to think about
+你还要考虑
+
+264
+00:10:30,480 --> 00:10:32,670
+how the user's gonna talk to the model,
+用户如何与模型交流，
+
+265
+00:10:32,670 --> 00:10:34,670
+as you're the third party sitting there
+因为你是个旁观者坐在那里
+
+266
+00:10:34,670 --> 00:10:36,663
+in that weird relationship.
+在这个奇怪的关系中。
+
+267
+00:10:37,950 --> 00:10:38,823
+Yeah.
+好的。
+
+268
+00:10:39,660 --> 00:10:42,460
+- On the theory of mind piece,
+one thing I would say is,
+在关于心智理论的文章中，我想说的是，
+
+269
+00:10:43,890 --> 00:10:48,360
+it's so hard to write
+instructions down for a task.
+写任务的说明真的很难。
+
+270
+00:10:48,360 --> 00:10:51,630
+It's so hard to untangle in your own brain
+在你自己的脑子里理清这些真是太难了。
+
+271
+00:10:51,630 --> 00:10:53,520
+all of the stuff that you know
+你知道的所有东西
+
+272
+00:10:53,520 --> 00:10:56,010
+that Claude does not
+know and write it down.
+那是因为Claude不知道并写不下来。
+
+273
+00:10:56,010 --> 00:10:57,600
+It's just an immensely challenging thing
+这仅仅是一个极其困难的事情。
+
+274
+00:10:57,600 --> 00:11:00,210
+to strip away all of the
+assumptions you have, and be able
+去除所有假设，并能够
+
+275
+00:11:00,210 --> 00:11:04,530
+to very clearly communicate the
+full fact set of information
+非常清楚地传达完整的信息集
+
+276
+00:11:04,530 --> 00:11:05,850
+that is needed to a model.
+这是构建模型所需的内容。
+
+277
+00:11:05,850 --> 00:11:06,683
+I think that's another thing
+我觉得那是另一件事。
+
+278
+00:11:06,683 --> 00:11:08,640
+that really differentiates
+a good prompt engineer
+那真正区别了
+一个优秀的提示工程师
+
+279
+00:11:08,640 --> 00:11:10,770
+from a bad one, is like...
+从一个糟糕的开始，就像...
+
+280
+00:11:10,770 --> 00:11:13,830
+A lot of people will just write
+down the things they know.
+很多人只会写下他们知道的东西。
+
+281
+00:11:13,830 --> 00:11:15,090
+But they don't really take the time
+但他们真的没有足够的时间。
+
+282
+00:11:15,090 --> 00:11:17,160
+to systematically break out
+系统性突破
+
+283
+00:11:17,160 --> 00:11:19,800
+what is the actual full set of
+information you need to know
+你需要了解的实际完整信息是什么？
+
+284
+00:11:19,800 --> 00:11:21,180
+to understand this task?
+了解这个任务吗？
+
+285
+00:11:21,180 --> 00:11:22,013
+- Right.
+好的。
+
+286
+00:11:22,013 --> 00:11:24,990
+- And that's a very
+clear thing I see a lot
+而且这是我经常看到的非常清楚的一件事。
+
+287
+00:11:24,990 --> 00:11:28,560
+is prompts where it's just conditioned.
+指令是条件化的。
+
+288
+00:11:28,560 --> 00:11:30,330
+The prompt that someone
+wrote is so conditioned
+某人写的提示语条件反射太强
+
+289
+00:11:30,330 --> 00:11:33,330
+on their prior understanding of a task,
+基于他们对任务的理解，
+
+290
+00:11:33,330 --> 00:11:36,000
+that when they show it to me
+I'm like, "This makes no sense.
+当他们向我展示时，我就像说，“这完全不通。
+
+291
+00:11:36,000 --> 00:11:38,700
+None of the words you
+wrote make any sense,
+你写的所有单词都没有意义。
+
+292
+00:11:38,700 --> 00:11:39,540
+because I don't know anything
+因为我什么都不懂。
+
+293
+00:11:39,540 --> 00:11:42,030
+about your interesting use case."
+关于你有趣的用例。
+
+294
+00:11:42,030 --> 00:11:45,810
+But I think a good way to
+think about prompt engineering
+但是我认为思考提示工程的一个好方法是
+
+295
+00:11:45,810 --> 00:11:47,450
+in that front and a good skill for it,
+在这个方面表现良好，并且具备相关的技能。
+
+296
+00:11:47,450 --> 00:11:51,720
+is just can you actually
+step back from what you know
+只是你能不能后退一步，超越你的知识？
+
+297
+00:11:51,720 --> 00:11:54,390
+and communicate to this weird
+system that knows a lot,
+并且与这个知道很多的奇怪系统进行沟通。
+
+298
+00:11:54,390 --> 00:11:58,500
+but not everything about what
+it needs to know to do a task?
+但是一切它需要知道才能完成任务的内容吗？
+
+299
+00:11:58,500 --> 00:11:59,333
+- Yeah.
+好的。
+
+300
+00:11:59,333 --> 00:12:00,900
+The amount of times I've
+seen someone's prompt
+我见过某人提示的次数
+
+301
+00:12:00,900 --> 00:12:01,733
+and then being like,
+然后就像这样，
+
+302
+00:12:01,733 --> 00:12:04,500
+"I can't do the task
+based on this prompt."
+我不能基于这个提示完成任务。
+
+303
+00:12:04,500 --> 00:12:06,720
+I'm human level and you're
+giving this to something
+我是人类水平，而你正在把这交给一个东西。
+
+304
+00:12:06,720 --> 00:12:10,770
+that is worse than me and
+expecting it to do better,
+那比我还差，并且期待它能做得更好。
+
+305
+00:12:10,770 --> 00:12:12,750
+and I'm like, "Yeah."
+“嗯。”
+
+306
+00:12:12,750 --> 00:12:13,583
+- Yeah.
+好的。
+
+307
+00:12:13,583 --> 00:12:15,566
+There is that interesting
+thing with like...
+有趣的是……
+
+308
+00:12:15,566 --> 00:12:19,320
+Current models don't really do a good job
+现在的模型真的做得不好。
+
+309
+00:12:19,320 --> 00:12:22,590
+of asking good, probing
+questions in response
+对提出好问题作出回应
+
+310
+00:12:22,590 --> 00:12:23,850
+like a human would.
+像人类一样。
+
+311
+00:12:23,850 --> 00:12:26,550
+If I'm giving Zack directions
+on how to do something,
+如果我在给扎克发指令做某件事，
+
+312
+00:12:26,550 --> 00:12:28,170
+he'll be like, "This
+doesn't make any sense.
+他会说，“这没有什么意义。”
+
+313
+00:12:28,170 --> 00:12:30,780
+What am I supposed to do at
+this step or here and here?"
+我该在这个步骤或这里和那里做什么？
+
+314
+00:12:30,780 --> 00:12:34,560
+Model doesn't do that, right,
+so you have to, as yourself,
+模型做不到这一点，对吧，
+所以你必须自己做。
+
+315
+00:12:34,560 --> 00:12:37,230
+think through what that
+other person would say
+想想那个另一个人会说什么。
+
+316
+00:12:37,230 --> 00:12:40,800
+and then go back to your prompt
+and answer those questions.
+然后回到你的提示中，回答这些问题。
+
+317
+00:12:40,800 --> 00:12:41,923
+- You could ask it to do that.
+你可以让它这样做。
+
+318
+00:12:41,923 --> 00:12:43,615
+- You could. That's right.
+- I do that, yeah.
+你可以说。没错。
+我就是这样做的。
+
+319
+00:12:43,615 --> 00:12:44,448
+- I guess that's another step.
+我想那是又一步。
+
+320
+00:12:44,448 --> 00:12:45,900
+- I was going to say one
+of the first things I do
+我要说的第一件事是
+
+321
+00:12:45,900 --> 00:12:46,920
+with my initial prompt,
+在第一次提示中，
+
+322
+00:12:46,920 --> 00:12:48,397
+is I'll give it the prompt
+and then I'll be like,
+我会给你提示，然后我就会说，
+
+323
+00:12:48,397 --> 00:12:50,070
+"I don't want you to
+follow these instructions.
+我不希望你遵循这些指示。
+
+324
+00:12:50,070 --> 00:12:51,330
+I just want you to tell me the ways in
+我只想让你告诉我进入的方法。
+
+325
+00:12:51,330 --> 00:12:53,010
+which they're unclear or any ambiguities,
+他们对此不明确或有任何模糊之处。
+
+326
+00:12:53,010 --> 00:12:54,150
+or anything you don't understand."
+或者你不懂的任何东西。
+
+327
+00:12:54,150 --> 00:12:55,740
+And it doesn't always get it perfect,
+它并不总是完全正确。
+
+328
+00:12:55,740 --> 00:12:59,280
+but it is interesting that
+that is one thing you can do.
+但有趣的是，你可以这样做。
+
+329
+00:12:59,280 --> 00:13:01,110
+And then also sometimes if people see
+而且有时候如果人们看到
+
+330
+00:13:01,110 --> 00:13:01,987
+that the model makes a mistake,
+模型犯了错误，
+
+331
+00:13:01,987 --> 00:13:04,650
+the thing that they don't
+often do is just ask the model.
+他们很少做的事情就是直接问模型。
+
+332
+00:13:04,650 --> 00:13:06,510
+So they say to the model,
+"You got this wrong.
+所以他们告诉模型，“你弄错了。”
+
+333
+00:13:06,510 --> 00:13:07,560
+Can you think about why?
+你能想想为什么吗？
+
+334
+00:13:07,560 --> 00:13:09,990
+And can you maybe write an
+edited version of my instructions
+并且你能 maybe 写一个编辑版本的我的指令，
+
+335
+00:13:09,990 --> 00:13:11,520
+that would make you not get it wrong?"
+这样就不会再出错了？”
+
+336
+00:13:11,520 --> 00:13:14,580
+And a lot of the time, the
+model just gets it right.
+很多时候，模型都会把事情做对。
+
+337
+00:13:14,580 --> 00:13:15,413
+The model's like, "Oh, yeah.
+模型说，“哦，是的。
+
+338
+00:13:15,413 --> 00:13:18,060
+Here's what was unclear, here's
+a fix to the instructions,"
+这里有点不清楚，这里有修正指令”，
+
+339
+00:13:18,060 --> 00:13:20,370
+and then you put those in and it works.
+然后你就把这些放在里面，它就 works。
+
+340
+00:13:20,370 --> 00:13:21,203
+- Okay.
+好的。
+
+341
+00:13:21,203 --> 00:13:23,610
+I'm actually really curious
+about this personally almost.
+我其实对这件事非常好奇。
+
+342
+00:13:23,610 --> 00:13:25,173
+Is that true that that works?
+真的吗？那能行吗？
+
+343
+00:13:26,310 --> 00:13:29,310
+Is the model able to spot
+its mistakes that way?
+这个模型通过这种方式能发现它的错误吗？
+
+344
+00:13:29,310 --> 00:13:31,207
+When it gets something wrong, you say,
+当它做错事时，你说，
+
+345
+00:13:31,207 --> 00:13:32,040
+"Why did you get this wrong?"
+你为什么会答错？
+
+346
+00:13:32,040 --> 00:13:34,507
+And then it tells you
+maybe something like,
+然后它告诉你
+也许会有些类似于
+
+347
+00:13:34,507 --> 00:13:37,500
+"Okay, how could I phrase
+this to you in the future
+好的，我以后该怎么向你表达呢？
+
+348
+00:13:37,500 --> 00:13:38,640
+so you get it right?"
+所以你弄明白了？
+
+349
+00:13:38,640 --> 00:13:40,650
+Is there an element of truth to that?
+这有几分道理吗？
+
+350
+00:13:40,650 --> 00:13:43,320
+Or is that just a hallucination
+on the model's part
+或者这只是模型的幻觉
+
+351
+00:13:43,320 --> 00:13:46,020
+around what it thinks its limits are?
+围绕它认为自己的极限是什么？
+
+352
+00:13:46,020 --> 00:13:49,110
+- I think if you explain
+to it what it got wrong,
+我认为如果向它解释它犯了什么错，
+
+353
+00:13:49,110 --> 00:13:52,260
+it can identify things
+in the query sometimes.
+它有时能识别查询中的事物。
+
+354
+00:13:52,260 --> 00:13:53,580
+I think this varies by task.
+我觉得这因任务而异。
+
+355
+00:13:53,580 --> 00:13:56,130
+This is one of those things
+where I'm like I'm not sure
+这是一些事情之一  
+我真不确定
+
+356
+00:13:56,130 --> 00:13:57,477
+what percentage of the
+time it gets it right,
+它猜对的频率是多少？
+
+357
+00:13:57,477 --> 00:14:00,240
+but I always try it
+'cause sometimes it does.
+但我不敢保证它会成功。
+
+358
+00:14:00,240 --> 00:14:01,650
+- And you learn something.
+- Yeah.
+- 你也会学到东西。
+- 嗯。
+
+359
+00:14:01,650 --> 00:14:03,570
+- Anytime you go back to the model
+- 你随时可以回到模型
+
+360
+00:14:03,570 --> 00:14:04,860
+or back and forth with the model,
+或者与模型来回交流。
+
+361
+00:14:04,860 --> 00:14:06,780
+you learn something about what's going on.
+你学到了一些关于正在发生的事情。
+
+362
+00:14:06,780 --> 00:14:08,820
+I think you're giving away information
+我认为你在泄露信息。
+
+363
+00:14:08,820 --> 00:14:10,120
+if you don't at least try.
+如果你至少尝试一下。
+
+364
+00:14:11,370 --> 00:14:12,660
+- That's interesting.
+- 这很有趣。
+
+365
+00:14:12,660 --> 00:14:15,960
+Amanda, I'm gonna keep asking
+you a few more questions here.
+安德玛，我还要在这里问你几个问题。
+
+366
+00:14:15,960 --> 00:14:18,870
+One thing maybe for
+everybody watching this,
+对所有人观看的这一部分来说，
+
+367
+00:14:18,870 --> 00:14:20,940
+is we have these Slack
+channels at Anthropic
+我们有这些Slack频道在Anthropic
+
+368
+00:14:20,940 --> 00:14:24,810
+where people can add Claude
+into the Slack channel,
+人们可以将Claude添加到Slack频道中，
+
+369
+00:14:24,810 --> 00:14:26,340
+then you can talk to Claude through it.
+然后你可以通过它与Claude交流。
+
+370
+00:14:26,340 --> 00:14:28,830
+And Amanda has a Slack channel
+而安德玛有一个Slack频道
+
+371
+00:14:28,830 --> 00:14:32,280
+that a lot of people follow of
+her interactions with Claude.
+很多人都在关注她与克劳德的互动。
+
+372
+00:14:32,280 --> 00:14:34,890
+And one thing that I see
+you always do in there,
+我注意到你在那里总是会做的事情是
+
+373
+00:14:34,890 --> 00:14:37,560
+which you probably do the
+most of anyone at Anthropic,
+你可能是在Anthropic做最多的。
+
+374
+00:14:37,560 --> 00:14:41,610
+is use the model to help you
+使用模型帮助你
+
+375
+00:14:41,610 --> 00:14:42,810
+in a variety of different scenarios.
+在各种不同的场景中。
+
+376
+00:14:42,810 --> 00:14:45,290
+I think you put a lot
+of trust into the model
+我觉得你对模型寄托了太多的信任。
+
+377
+00:14:45,290 --> 00:14:47,190
+in the research setting.
+在研究环境中。
+
+378
+00:14:47,190 --> 00:14:49,980
+I'm curious how you've
+developed those intuitions
+我对你是如何培养出这些直觉的很好奇。
+
+379
+00:14:49,980 --> 00:14:51,470
+for when to trust the model.
+何时信任模型。
+
+380
+00:14:51,470 --> 00:14:53,340
+Is that just a matter of usage,
+是不是用法的问题，
+
+381
+00:14:53,340 --> 00:14:55,950
+experience or is it something else?
+
+
+382
+00:14:55,950 --> 00:14:59,340
+- I think I don't trust the model ever
+你有经验吗？还是其他什么？
+
+383
+00:14:59,340 --> 00:15:00,900
+and then I just hammer on it.
+我觉得我永远都不信任这个模型。
+
+384
+00:15:00,900 --> 00:15:02,820
+So I think the reason why
+you see me do that a lot,
+然后我只是不断地敲打它。
+
+385
+00:15:02,820 --> 00:15:04,537
+is that that is me being like,
+所以我认为这就是为什么你会看到我经常这样做，
+
+386
+00:15:04,537 --> 00:15:06,017
+"Can I trust you to do this task?"
+因为那就像在问：
+
+387
+00:15:06,017 --> 00:15:08,550
+'Cause there's some things,
+models are kind of strange.
+“你能信任我完成这项任务吗？”
+
+388
+00:15:08,550 --> 00:15:11,035
+If you go slightly out of distribution,
+因为有些事情，模型有点奇怪。
+
+389
+00:15:11,035 --> 00:15:14,070
+you just go into areas where
+they haven't been trained
+如果你稍微超出分布范围，
+
+390
+00:15:14,070 --> 00:15:15,120
+or they're unusual.
+你就进入他们没有训练或不常见的领域。
+
+391
+00:15:15,120 --> 00:15:15,953
+Sometimes you're like,
+有时候你会像是，
+
+392
+00:15:15,953 --> 00:15:17,460
+"Actually, you're much less reliable here,
+“实际上，你在这里的可靠性要低得多，
+
+393
+00:15:17,460 --> 00:15:20,157
+even though it's a fairly simple task."
+尽管这是一项相当简单的任务。”
+
+394
+00:15:21,030 --> 00:15:22,770
+I think that's happening
+less and less over time
+我认为这种情况随着时间越来越不常见
+
+395
+00:15:22,770 --> 00:15:23,700
+as models get better,
+因为模型变得越来越好，
+
+396
+00:15:23,700 --> 00:15:26,040
+but you want to make sure you're
+not in that kind of space.
+但你需要确保自己不在那种空间里。
+
+397
+00:15:26,040 --> 00:15:28,200
+So, yeah, I don't think
+I trust it by default,
+所以，嗯，我不认为我默认信任它，
+
+398
+00:15:28,200 --> 00:15:29,970
+but I think in ML,
+但在机器学习中，
+
+399
+00:15:29,970 --> 00:15:33,210
+people often want to look
+across really large datasets.
+人们通常想跨非常大的数据集进行操作。
+
+400
+00:15:33,210 --> 00:15:35,400
+And I'm like, "When does
+it make sense to do that?"
+我说：“什么时候这样做才有意义？”
+
+401
+00:15:35,400 --> 00:15:38,070
+And I think the answer is when
+you get relatively low signal
+我觉得答案是当你信号相对较低时
+
+402
+00:15:38,070 --> 00:15:39,900
+from each data point,
+从每个数据点，
+
+403
+00:15:39,900 --> 00:15:42,420
+you want to look across
+many, many data points,
+你想查看许多、许多数据点。
+
+404
+00:15:42,420 --> 00:15:44,670
+because you basically want
+to get rid of the noise.
+因为你基本上想去掉噪音。
+
+405
+00:15:44,670 --> 00:15:46,020
+With a lot of prompting tasks,
+在有大量提示任务的情况下，
+
+406
+00:15:46,020 --> 00:15:49,860
+I think you actually get really
+high signal from each query.
+我觉得你实际上从每个查询中都能得到很高的信号。
+
+407
+00:15:49,860 --> 00:15:52,320
+So if you have a really
+well-constructed set
+所以如果你有一个非常 well-constructed 的 set
+
+408
+00:15:52,320 --> 00:15:53,610
+of a few hundred prompts,
+几百个提示中的一小部分，
+
+409
+00:15:53,610 --> 00:15:55,800
+that I think can be much more signal
+我认为这可以有更强的信号。
+
+410
+00:15:55,800 --> 00:15:59,340
+than thousands that
+aren't as well-crafted.
+比成千上万件质量差的作品要好。
+
+411
+00:15:59,340 --> 00:16:02,880
+So I do think that I can trust the model
+所以我认为我可以信任这个模型。
+
+412
+00:16:02,880 --> 00:16:06,690
+if I look at 100 outputs of
+it and it's really consistent.
+如果我观察它的100个输出，并且它们非常一致。
+
+413
+00:16:06,690 --> 00:16:08,040
+And I know that I've constructed those
+我知道我建造了那些东西。
+
+414
+00:16:08,040 --> 00:16:10,320
+to basically figure out
+all of the edge cases
+基本上找出所有边缘情况
+
+415
+00:16:10,320 --> 00:16:12,870
+and all of the weird things
+that the model might do,
+以及模型可能做的所有奇怪的事情，
+
+416
+00:16:12,870 --> 00:16:14,880
+strange inputs, et cetera.
+奇怪的输入等。
+
+417
+00:16:14,880 --> 00:16:16,710
+I trust that probably more
+我相信大概更多的人会选择在线学习。
+
+418
+00:16:16,710 --> 00:16:19,830
+than a much more loosely constructed set
+比一个结构松散得多的集合
+
+419
+00:16:19,830 --> 00:16:21,153
+of several thousand.
+有几万件。
+
+420
+00:16:22,020 --> 00:16:26,763
+- I think in ML, a lot of
+times the signals are numbers.
+我认为在机器学习中，很多时候信号是数字。
+
+421
+00:16:29,040 --> 00:16:31,500
+Did you predict this thing right or not?
+你预测这事儿准不准？
+
+422
+00:16:31,500 --> 00:16:34,500
+And it'd be looking at
+the logprobs of a model
+并查看模型的日志概率
+
+423
+00:16:34,500 --> 00:16:36,570
+and trying to intuit
+things, which you can do,
+并试图洞察事情，这是你可以做到的。
+
+424
+00:16:36,570 --> 00:16:38,073
+but it's kind of sketchy.
+但是它有点草率。
+
+425
+00:16:39,900 --> 00:16:42,840
+I feel like the fact that models
+output more often than not
+我觉得模型经常输出内容。
+
+426
+00:16:42,840 --> 00:16:44,940
+a lot of stuff like words and things.
+很多东西，比如词和事物。
+
+427
+00:16:44,940 --> 00:16:47,730
+There's just fundamentally
+so much to learn
+本质上，
+还有很多东西需要学习。
+
+428
+00:16:47,730 --> 00:16:50,190
+between the lines of what
+it's writing and why and how,
+在文字的背后，在它为何和如何写作之间。
+
+429
+00:16:50,190 --> 00:16:51,270
+and that's part of what it is.
+而这正是它的部分。
+
+430
+00:16:51,270 --> 00:16:54,900
+It's not just did it get
+the task right or not?
+不只是做得对不对？
+
+431
+00:16:54,900 --> 00:16:57,390
+It's like, "How did it get there?
+它怎么会在那里？
+
+432
+00:16:57,390 --> 00:16:59,100
+How was it thinking about it?
+What steps did it go through?"
+它在思考什么？
+它经历了哪些步骤？
+
+433
+00:16:59,100 --> 00:17:01,470
+You learn a lot about what is going on,
+你了解很多关于发生的事情，
+
+434
+00:17:01,470 --> 00:17:04,110
+or at least you can try to
+get a better sense, I think.
+或者至少你可以尝试去更好地理解一下。
+
+435
+00:17:04,110 --> 00:17:05,640
+But that's where a lot of
+information comes from for me,
+但那对我来说是许多信息的来源。
+
+436
+00:17:05,640 --> 00:17:08,368
+is by reading the
+details of what came out,
+是通过阅读发生了什么的细节。
+
+437
+00:17:08,368 --> 00:17:09,840
+not just through the result.
+不仅仅是为了结果。
+
+438
+00:17:09,840 --> 00:17:14,100
+- I think also the very best of prompting
+我觉得最好的提示也是最棒的。
+
+439
+00:17:14,100 --> 00:17:16,470
+can make the difference between a failed
+能决定是成功还是失败的关键因素。
+
+440
+00:17:16,470 --> 00:17:18,510
+and a successful experiment.
+一次成功的实验。
+
+441
+00:17:18,510 --> 00:17:21,000
+So sometimes I can get annoyed
+if people don't focus enough
+所以我有时会因为人们不够专注而感到烦恼。
+
+442
+00:17:21,000 --> 00:17:23,130
+on the prompting component
+of their experiment,
+在他们实验的提示组件上
+
+443
+00:17:23,130 --> 00:17:27,000
+because I'm like, "This can,
+in fact, be the difference
+因为我觉得，“这确实可以是差异所在。”
+
+444
+00:17:27,000 --> 00:17:29,897
+between 1% performance
+in the model or 0.1%."
+“模型或0.1%。”
+
+445
+00:17:31,560 --> 00:17:33,480
+In such a way that your
+experiment doesn't succeed
+这样你的实验就不会成功。
+
+446
+00:17:33,480 --> 00:17:35,430
+if it's at top 5% model performance,
+如果模型性能在前5%，
+
+447
+00:17:35,430 --> 00:17:39,540
+but it does succeed if
+it's top 1% or top 0.1%.
+但它如果能达到前1%或前0.1%，就能成功。
+
+448
+00:17:39,540 --> 00:17:40,860
+And then I'm like, "If
+you're gonna spend time
+如果你们要花费时间
+
+449
+00:17:40,860 --> 00:17:43,350
+over coding your experiment really nicely,
+你真的很好地编码了你的实验。
+
+450
+00:17:43,350 --> 00:17:46,317
+but then just not spend
+time on the prompt."
+但之后就别浪费时间在提示上了。
+
+451
+00:17:47,496 --> 00:17:48,329
+I don't know.
+我不知道。
+
+452
+00:17:48,329 --> 00:17:49,162
+That doesn't make sense to me,
+我不明白。
+
+453
+00:17:49,162 --> 00:17:51,000
+'cause that can be the
+difference between life and death
+因为那可能是生死之间的区别。
+
+454
+00:17:51,000 --> 00:17:52,038
+of your experiment.
+您的实验结果。
+
+455
+00:17:52,038 --> 00:17:52,871
+- Yeah.
+好的。
+
+456
+00:17:52,871 --> 00:17:55,687
+And with the deployment
+too, it's so easy to,
+部署也很容易，
+
+457
+00:17:55,687 --> 00:17:57,184
+"Oh, we can't ship this."
+"哦，我们不能发货。"
+
+458
+00:17:57,184 --> 00:17:58,950
+And then you change the prompt around
+然后你改变提示词的内容。
+
+459
+00:17:58,950 --> 00:18:00,939
+and suddenly it's working.
+- Yeah.
+突然就正常了。
+- 好的。
+
+460
+00:18:00,939 --> 00:18:01,950
+- It's a bit of a
+double-edged sword though,
+这倒也是一把双刃剑。
+
+461
+00:18:01,950 --> 00:18:03,660
+because I feel like there's
+a little bit of prompting
+因为我觉得
+有一种提示的
+微妙感觉
+
+462
+00:18:03,660 --> 00:18:07,260
+where there's always this
+mythical, better prompt
+总有一种神话般的、更好的提示在前方，
+
+463
+00:18:07,260 --> 00:18:09,420
+that's going to solve
+my thing on the horizon.
+让人觉得那是解决
+我眼前问题的关键。
+
+464
+00:18:09,420 --> 00:18:10,350
+- Yeah.
+- 是啊。
+
+465
+00:18:10,350 --> 00:18:11,490
+- I see a lot of people get stuck
+- 我看到很多人陷入
+
+466
+00:18:11,490 --> 00:18:13,380
+into the mythical prompt on the horizon,
+那个神话般的提示中，
+
+467
+00:18:13,380 --> 00:18:15,840
+that if I just keep
+grinding, keep grinding.
+以为只要一直努力
+不断努力。
+
+468
+00:18:15,840 --> 00:18:17,968
+It's never bad to grind
+a little bit on a prompt,
+在提示上磨练一下
+是不会有坏处的，
+
+469
+00:18:17,968 --> 00:18:19,980
+as we've talked, you learn things.
+正如我们所说，你会学到东西。
+
+470
+00:18:19,980 --> 00:18:22,200
+But it's one of the scary things
+但这也是一个可怕的事情
+
+471
+00:18:22,200 --> 00:18:25,020
+about prompting is that there's
+this whole world of unknown.
+关于提示的是，有一个未知的世界。
+
+472
+00:18:25,020 --> 00:18:26,340
+- What heuristics do you guys have
+你们有什么启发式方法？
+
+473
+00:18:26,340 --> 00:18:30,750
+for when something is
+possible versus not possible
+对于可能与不可能的情况
+
+474
+00:18:30,750 --> 00:18:33,060
+with a perfect prompt,
+whatever that might be?
+用一个完美的提示，
+无论那是什么？
+
+475
+00:18:33,060 --> 00:18:35,250
+- I think I'm usually checking
+我认为我通常是在检查
+
+476
+00:18:35,250 --> 00:18:37,170
+for whether the model kind of gets it.
+对于模型是否理解这一点。
+
+477
+00:18:37,170 --> 00:18:40,350
+So I think for things where
+I just don't think a prompt
+所以我觉得对于那些我根本不想提示的事情，
+
+478
+00:18:40,350 --> 00:18:43,560
+is going to help, there is
+a little bit of grinding.
+正在帮助，不过会有点磨。
+
+479
+00:18:43,560 --> 00:18:45,180
+But often, it just becomes really clear
+但往往，它会变得非常清楚。
+
+480
+00:18:45,180 --> 00:18:47,463
+that it's not close or something.
+那不是差不多。
+
+481
+00:18:49,470 --> 00:18:50,355
+Yeah.
+Yeah。
+
+482
+00:18:50,355 --> 00:18:52,867
+I don't know if that's a
+weird one where I'm just like,
+我不知道那是不是一个奇怪的，我就是像，
+
+483
+00:18:52,867 --> 00:18:55,770
+"Yeah, if the model just
+clearly can't do something,
+"Yeah，如果模型只是明显不能做某件事，
+
+484
+00:18:55,770 --> 00:18:58,170
+I won't grind on it for too long."
+我不会花太长时间磨它。"
+
+485
+00:18:58,170 --> 00:18:59,430
+- This is the part that you can evoke
+- 这是你可以唤起的部分
+
+486
+00:18:59,430 --> 00:19:00,450
+how it's thinking about it,
+它在思考什么，
+
+487
+00:19:00,450 --> 00:19:02,610
+and you can ask it how it's
+thinking about it and why.
+你也可以问它在思考什么以及为什么。
+
+488
+00:19:02,610 --> 00:19:05,730
+And you can get a sense of is
+it thinking about it right?
+你可以感觉到它是否在正确地思考？
+
+489
+00:19:05,730 --> 00:19:09,603
+Are we even in the right zip
+code of this being right?
+我们是不是真的在这个正确的邮政编码里？
+
+490
+00:19:11,190 --> 00:19:14,160
+And you can get a little bit
+of a kneeling on that front of,
+你可以在这方面的膝盖上稍微放松一下，
+
+491
+00:19:14,160 --> 00:19:15,780
+at least, I feel like I'm making progress
+至少，我觉得我在进步。
+
+492
+00:19:15,780 --> 00:19:19,290
+towards getting something closer to right.
+向着让某事更接近正确。
+
+493
+00:19:19,290 --> 00:19:20,490
+Where there's just some tasks
+只要有点任务。
+
+494
+00:19:20,490 --> 00:19:23,010
+where you really don't get anywhere closer
+你真的 nowhere 进一步。
+
+495
+00:19:23,010 --> 00:19:24,543
+to it's thought process.
+到它的思考过程。
+
+496
+00:19:24,543 --> 00:19:27,060
+It's just like every tweak you make
+就像你每次所做的每一个调整一样
+
+497
+00:19:27,060 --> 00:19:29,100
+just veers off in a completely different,
+忽然偏到完全不同的方向去。
+
+498
+00:19:29,100 --> 00:19:31,770
+very wrong direction, and I
+just tend to abandon those.
+方向错了，我
+就放弃那些。
+
+499
+00:19:31,770 --> 00:19:32,603
+I don't know.
+我不知道。
+
+500
+00:19:32,603 --> 00:19:33,670
+- Those are so rare now though,
+不过现在已经很稀有了。
+
+501
+00:19:33,670 --> 00:19:36,780
+and I get really angry at the
+model when I discover them
+当我发现它们时，我真的很生气。
+
+502
+00:19:36,780 --> 00:19:38,880
+because that's how rare they are.
+因为它们很稀有。
+
+503
+00:19:38,880 --> 00:19:39,810
+I get furious.
+我气得直想发飙。
+
+504
+00:19:39,810 --> 00:19:43,770
+I'm like, "How dare there be
+a task that you can't just do,
+我真是想说：“怎么可以有做不了的任务呢？
+
+505
+00:19:43,770 --> 00:19:45,927
+if I just push you in
+the right direction?"
+“如果我只是给你指个方向？”
+
+506
+00:19:46,860 --> 00:19:49,387
+- I had my thing with Claude
+plays Pokemon recently,
+我和克劳德有过一段关系，最近在玩 Pokémon。
+
+507
+00:19:49,387 --> 00:19:51,690
+and that was one of the
+rare times where I really...
+而这正是我真正感到......
+
+508
+00:19:51,690 --> 00:19:52,523
+- Yeah, can you explain that?
+好的，你能解释一下吗？
+
+509
+00:19:52,523 --> 00:19:54,760
+Explain that just for people.
+I think that's really cool.
+仅限于人们。
+我觉得这真的很好。
+
+510
+00:19:54,760 --> 00:19:56,250
+- I did a bit of an experiment
+我做了一个小实验。
+
+511
+00:19:56,250 --> 00:19:59,970
+where I hooked Claude up
+to a Game Boy emulator,
+我将Claude连接到一个Game Boy模拟器上，
+
+512
+00:19:59,970 --> 00:20:02,790
+and tried to have it
+play the game Pokemon Red
+并试图让它玩《宝可梦 红》游戏
+
+513
+00:20:02,790 --> 00:20:05,160
+like the OG Pokemon.
+像最初的宝可梦。
+
+514
+00:20:05,160 --> 00:20:09,210
+And it's like you think what you wanna do
+你认为你想做什么就做什么。
+
+515
+00:20:09,210 --> 00:20:10,980
+and it could write some
+code to press buttons
+并且它可以编写一些代码来按下按钮。
+
+516
+00:20:10,980 --> 00:20:12,960
+and stuff like that, pretty basic.
+以及一些基本的东西。
+
+517
+00:20:12,960 --> 00:20:15,360
+And I tried a bunch of
+different very complex
+我尝试了各种各样的复杂的方法。
+
+518
+00:20:15,360 --> 00:20:18,060
+prompting layouts, but you
+just get into certain spots
+提示布局，但你只能到达某些位置。
+
+519
+00:20:18,060 --> 00:20:21,090
+where it just really couldn't do it.
+哪里就真的做不了。
+
+520
+00:20:21,090 --> 00:20:24,330
+So showing it a screenshot of a Game Boy,
+所以拿一台Game Boy的截图给它看，
+
+521
+00:20:24,330 --> 00:20:26,550
+it just really couldn't do.
+它真的做不了。
+
+522
+00:20:26,550 --> 00:20:28,860
+And it just so deeply
+because I'm so used to it,
+这真是太深刻了，
+因为我已经习惯了。
+
+523
+00:20:28,860 --> 00:20:32,073
+being able to do something mostly.
+能做某件事大体上。
+
+524
+00:20:32,910 --> 00:20:37,230
+So I spent a whole weekend
+trying to write better
+所以我整个周末都在尝试写得更好。
+
+525
+00:20:37,230 --> 00:20:38,300
+and better prompts to get it
+并且有更有效的提示来获取它。
+
+526
+00:20:38,300 --> 00:20:41,490
+to really understand this Game Boy screen.
+要真正理解这个Game Boy屏幕。
+
+527
+00:20:41,490 --> 00:20:44,280
+And I got incrementally better
+so that it was only terrible
+我越来越好，
+所以只有糟糕。
+
+528
+00:20:44,280 --> 00:20:46,304
+instead of completely no signal.
+不是完全没有信号。
+
+529
+00:20:46,304 --> 00:20:48,504
+You could get from no
+signal to some signal.
+从无信号到有信号。
+
+530
+00:20:49,440 --> 00:20:53,790
+But it was, I don't know, at
+least this is elicited for me.
+但这至少让我感受到了这一点。
+
+531
+00:20:53,790 --> 00:20:56,400
+Once I put a weekend of time
+in and I got from no signal
+我花了一个周末的时间去排查，信号终于恢复了。
+
+532
+00:20:56,400 --> 00:20:58,573
+to some signal, but nowhere
+close to good enough,
+对某个信号，但远远不够好。
+
+533
+00:20:58,573 --> 00:21:00,721
+I'm like, "I'm just going
+to wait for the next one.
+我就是等等下一个。
+
+534
+00:21:00,721 --> 00:21:01,554
+(Alex laughing)
+(亚历大笑)
+
+535
+00:21:01,554 --> 00:21:02,513
+I'm just gonna wait for another model."
+我等下一个模型。
+
+536
+00:21:02,513 --> 00:21:04,860
+I could grind on this for four months,
+我可以在这个问题上磨蹭四个月。
+
+537
+00:21:04,860 --> 00:21:07,410
+and the thing that would
+come out is another model
+而会出来的就是另一个模型。
+
+538
+00:21:07,410 --> 00:21:09,030
+and that's a better use of my time.
+那会是更明智的时间利用方式。
+
+539
+00:21:09,030 --> 00:21:11,831
+Just sit and wait to do
+something else in the meanwhile.
+就坐下来等， meantime先做其他事情。
+
+540
+00:21:11,831 --> 00:21:12,664
+- Yeah.
+好的。
+
+541
+00:21:12,664 --> 00:21:14,580
+That's an inherent tension
+we see all the time,
+这是固有的张力，我们经常能看到。
+
+542
+00:21:14,580 --> 00:21:16,380
+and maybe we can get to that in a sec.
+也许我们稍后就能做到。
+
+543
+00:21:16,380 --> 00:21:17,550
+Zack, if you wanna go.
+扎克，如果你想走。
+
+544
+00:21:17,550 --> 00:21:19,590
+- Something I liked about
+your prompt with Pokemon
+我喜欢你关于 Pokémon 的提示。
+
+545
+00:21:19,590 --> 00:21:22,200
+where you got the best that you did get,
+你得到了最好的。
+
+546
+00:21:22,200 --> 00:21:24,480
+was the way that you
+explained to the model
+是关于你如何向模型解释的
+
+547
+00:21:24,480 --> 00:21:27,390
+that it is in the middle
+of this Pokemon game.
+它在这款游戏的中间。
+
+548
+00:21:27,390 --> 00:21:29,740
+Here's how the things
+are gonna be represented.
+这是如何表示事物的。
+
+549
+00:21:33,870 --> 00:21:35,130
+I actually think you
+actually represented it
+我其实认为你  
+实际上代表了它
+
+550
+00:21:35,130 --> 00:21:36,360
+in two different ways, right?
+是的，通过两种不同的方式。
+
+551
+00:21:36,360 --> 00:21:37,310
+- I did.
+我做到了。
+
+552
+00:21:37,310 --> 00:21:40,020
+So what I ended up doing, it was obnoxious
+所以我最终做的，很讨厌。
+
+553
+00:21:40,020 --> 00:21:44,100
+but I superimposed a grid over the image,
+但我把一个网格叠加在图像上，
+
+554
+00:21:44,100 --> 00:21:46,800
+and then I had to describe
+each segment of the grid
+然后我不得不描述每个网格段。
+
+555
+00:21:46,800 --> 00:21:48,180
+in visual detail.
+在视觉细节上。
+
+556
+00:21:48,180 --> 00:21:51,900
+Then I had to reconstruct
+that into an ASCII map
+然后我必须将其重建为一个ASCII地图。
+
+557
+00:21:51,900 --> 00:21:53,760
+and I gave it as much detail as I could.
+并且我尽可能详细地描述了它。
+
+558
+00:21:53,760 --> 00:21:57,960
+The player character is always
+at location 4, 5 on the grid
+玩家角色总是位于网格的第4行第5列。
+
+559
+00:21:57,960 --> 00:21:58,793
+and stuff like that,
+还有那些东西，
+
+560
+00:21:58,793 --> 00:22:01,383
+and you can slowly build up information.
+你就可以慢慢积累信息。
+
+561
+00:22:02,340 --> 00:22:03,540
+I think it's actually
+a lot like prompting,
+我觉得这实际上很像提示。
+
+562
+00:22:03,540 --> 00:22:05,340
+but I just hadn't done
+it with images before.
+但是我一直没有用图像做过这件事。
+
+563
+00:22:05,340 --> 00:22:08,970
+Where sometimes my intuition
+有时候我的直觉
+
+564
+00:22:08,970 --> 00:22:10,770
+for what you need to
+tell a model about text,
+你需要告诉模型一些关于文本的信息。
+
+565
+00:22:10,770 --> 00:22:11,603
+is a lot different
+差别很大
+
+566
+00:22:11,603 --> 00:22:13,590
+from what you need to
+tell a model about images.
+关于如何向模型描述图片。
+
+567
+00:22:13,590 --> 00:22:14,880
+- Yeah.
+好的。
+
+568
+00:22:14,880 --> 00:22:18,330
+- I found a surprisingly
+small number of my intuitions
+我发现我的直觉竟然非常少。
+
+569
+00:22:18,330 --> 00:22:20,850
+about text have transferred to image.
+文字已转移到图像。
+
+570
+00:22:20,850 --> 00:22:23,520
+I found that multi-shot
+prompting is not as effective
+我发现多轮提示并不如预期有效。
+
+571
+00:22:23,520 --> 00:22:24,780
+for images and text.
+for 图像和文本。
+
+572
+00:22:24,780 --> 00:22:25,613
+I'm not really sure,
+我不是很确定，
+
+573
+00:22:25,613 --> 00:22:27,120
+you can have theoretical
+explanations about why.
+你可能有理论的
+解释为什么。
+
+574
+00:22:27,120 --> 00:22:30,090
+Maybe there's a few of
+it in the training data,
+也许在训练数据中有一些，
+
+575
+00:22:30,090 --> 00:22:31,240
+a few examples of that.
+一些那个的例子。
+
+576
+00:22:32,220 --> 00:22:33,053
+- Yeah.
+- 好的。
+
+577
+00:22:33,053 --> 00:22:34,800
+I know when we were doing
+the original explorations
+我知道当我们进行原始探索时，
+
+578
+00:22:34,800 --> 00:22:36,300
+with prompting multimodal,
+使用多模态提示，
+
+579
+00:22:36,300 --> 00:22:39,873
+we really couldn't get
+it to noticeably work.
+我们真的无法让它显著地工作。
+
+580
+00:22:40,980 --> 00:22:44,370
+You just can't seem to
+improve Claude's actual,
+你看不到似乎能改进克劳德的实际，
+
+581
+00:22:44,370 --> 00:22:47,673
+visual acuity in terms of what
+it picks up within an image.
+视觉清晰度，指的是它在图像中能识别出什么。
+
+582
+00:22:48,990 --> 00:22:51,690
+Anyone here has any ways that
+they've not seen that feature.
+这里有人知道这种功能吗？
+
+583
+00:22:51,690 --> 00:22:53,970
+But it seems like that's
+similar with the Pokemon thing
+但看来这与Pokémon的事情很类似，
+
+584
+00:22:53,970 --> 00:22:55,320
+where it's trying to interpret this thing.
+因为它试图解释这个东西。
+
+585
+00:22:55,320 --> 00:22:57,920
+No matter how much you
+throw prompts at it,
+无论你抛出多少提示，
+
+586
+00:22:57,920 --> 00:23:01,200
+it just won't pick up that
+Ash that's in that location.
+它都不会在那个位置识别出Ash。
+
+587
+00:23:01,200 --> 00:23:02,033
+- Yeah.
+- 嗯。
+
+588
+00:23:02,033 --> 00:23:03,840
+But I guess to be visceral about this,
+但我猜要直接表达这一点，
+
+589
+00:23:03,840 --> 00:23:05,010
+I could eventually get it
+我最终可能会让它
+
+590
+00:23:05,010 --> 00:23:07,830
+so that it could most often
+tell me where a wall was,
+经常能告诉我墙壁在哪里。
+
+591
+00:23:07,830 --> 00:23:10,170
+and most often tell me
+where the character was.
+并且最常告诉我
+角色在哪儿。
+
+592
+00:23:10,170 --> 00:23:11,850
+It'd be off by a little bit.
+会差一点点。
+
+593
+00:23:11,850 --> 00:23:13,110
+But then you get to a point,
+但你总是在某个时刻。
+
+594
+00:23:13,110 --> 00:23:15,240
+and this is maybe coming back to knowing
+而这可能是因为重新找回了知识的力量。
+
+595
+00:23:15,240 --> 00:23:16,290
+when you can't do it.
+当你无法做到。
+
+596
+00:23:17,310 --> 00:23:19,920
+It would describe an NPC,
+and to play a game well,
+描述一个NPC，
+并且要玩得好，
+
+597
+00:23:19,920 --> 00:23:21,990
+you need to have some sense of continuity.
+你需要有点连续感。
+
+598
+00:23:21,990 --> 00:23:24,093
+Have I talked to this NPC before?
+我以前和这个NPC说过话吗？
+
+599
+00:23:25,290 --> 00:23:27,360
+And without that, you really don't,
+没有那个，你实际上什么都不是一个。
+
+600
+00:23:27,360 --> 00:23:28,193
+there's nothing you can do.
+没什么可做的。
+
+601
+00:23:28,193 --> 00:23:29,652
+You're just going to
+keep talking to the NPC,
+你只需要继续和NPC对话。
+
+602
+00:23:29,652 --> 00:23:31,890
+'cause like, "Well, maybe
+this is a different NPC."
+因为可能这是另一个NPC。
+
+603
+00:23:31,890 --> 00:23:34,950
+But I would try very hard
+to get it to describe a NPC
+但我会非常努力地尝试
+让它描述一个NPC。
+
+604
+00:23:34,950 --> 00:23:37,514
+and it's like, "It's a person."
+而且它就像“是一个人。”
+
+605
+00:23:37,514 --> 00:23:40,350
+They might be wearing a hat,
+they weren't wearing a hat.
+他们戴帽子了，
+他们没戴帽子。
+
+606
+00:23:40,350 --> 00:23:42,390
+And it's like you grind for a while,
+就像你磨砺了一段时间，
+
+607
+00:23:42,390 --> 00:23:46,067
+inflate it to 3000X and just
+crop it to just the NPC,
+将其放大到3000倍，并仅裁剪出NPC。
+
+608
+00:23:46,067 --> 00:23:48,600
+and it's like, "I have
+no idea what this is."
+“我不知道这是什么。”
+
+609
+00:23:48,600 --> 00:23:53,600
+It's like I showed it this
+clear, female NPC thing
+它就像我展示给那个清楚的女性NPC一样。
+
+610
+00:23:54,480 --> 00:23:56,670
+enough times and it just
+got nowhere close to it,
+做了很多次，但它离那个目标还是差得很远。
+
+611
+00:23:56,670 --> 00:23:59,010
+and it's like, "Yeah, this
+is a complete lost cause."
+and it's like, "Yeah, this is a complete lost cause."
+
+612
+00:23:59,010 --> 00:24:00,210
+- Wow, okay.
+哇，好的。
+
+613
+00:24:00,210 --> 00:24:01,410
+- I really want to try this now.
+我真的想现在试试这个。
+
+614
+00:24:01,410 --> 00:24:04,080
+I'm just imagining all
+the things I would try.
+我只是想象着我可能会尝试所有的事情。
+
+615
+00:24:04,080 --> 00:24:08,550
+I don't know, I want you
+to imagine this game art
+我不知道，我想让你想象这款游戏艺术
+
+616
+00:24:08,550 --> 00:24:11,820
+as a real human and just
+describe to me what they're like.
+就像一个真实的人，并且只是描述一下他们是什么样子。
+
+617
+00:24:11,820 --> 00:24:13,710
+What did they look like as
+they look in the mirror?
+他们在镜子里面看起来是怎样的？
+
+618
+00:24:13,710 --> 00:24:17,190
+And then just see what the model does.
+然后看看模型做了什么。
+
+619
+00:24:17,190 --> 00:24:18,720
+- I tried a lot of things.
+- 我试了很多东西。
+
+620
+00:24:18,720 --> 00:24:20,087
+The eventual prompt was telling Claude
+最终的提示是在告诉Claude
+
+621
+00:24:20,087 --> 00:24:23,640
+it was a screen reader for a blind person,
+这是一款盲人使用的屏幕阅读器。
+
+622
+00:24:23,640 --> 00:24:24,513
+which I don't know if that helped,
+我不确定这是否有所帮助。
+
+623
+00:24:24,513 --> 00:24:26,970
+but it felt right so I stuck with that.
+但是感觉对了，所以我就这么做了。
+
+624
+00:24:26,970 --> 00:24:27,943
+- That's an interesting point.
+那是一个有趣的观点。
+
+625
+00:24:27,943 --> 00:24:29,850
+I actually wanna go into this a little bit
+我其实想多了解一些。
+
+626
+00:24:29,850 --> 00:24:32,340
+'cause this is one of the
+most famous prompting tips,
+因为这是一条非常著名的提示技巧，
+
+627
+00:24:32,340 --> 00:24:35,880
+is to tell the language model
+that they are some persona
+是告诉语言模型它们是一些人物。
+
+628
+00:24:35,880 --> 00:24:36,873
+or some role.
+或者其他角色。
+
+629
+00:24:37,954 --> 00:24:39,270
+I feel like I see mixed results.
+我觉得看到的是混合的结果。
+
+630
+00:24:39,270 --> 00:24:41,610
+Maybe this worked a little
+bit better in previous models
+可能在之前的模型中稍微好了一点。
+
+631
+00:24:41,610 --> 00:24:43,620
+and maybe not as much anymore.
+而且可能不会再有那么多了。
+
+632
+00:24:43,620 --> 00:24:47,130
+Amanda, I see you all the time
+be very honest with the model
+安德玛，我经常看到你
+对模型要非常诚实
+
+633
+00:24:47,130 --> 00:24:48,397
+about the whole situation like,
+关于整个情况来说，
+
+634
+00:24:48,397 --> 00:24:51,570
+"Oh, I am an AI researcher and
+I'm doing this experiment."
+"哦，我是AI研究员，我在做这个实验。"
+
+635
+00:24:51,570 --> 00:24:52,740
+- I'll tell it who I am.
+- Yeah.
+我会告诉你我是谁。
+
+636
+00:24:52,740 --> 00:24:53,573
+- I'll give it my name,
+我会用我的名字。
+
+637
+00:24:53,573 --> 00:24:54,856
+be like, "Here's who you're talking to."
+像是在说，“这是你在和谁说话。”
+
+638
+00:24:54,856 --> 00:24:55,689
+- Right.
+好的。
+
+639
+00:24:55,689 --> 00:24:57,150
+Do you think that level of honesty,
+你觉得那种诚实程度
+
+640
+00:24:57,150 --> 00:25:01,027
+instead of lying to the
+model or forcing it to like,
+而不是欺骗模型或强迫它喜欢，
+
+641
+00:25:01,027 --> 00:25:03,870
+"I'm gonna tip you $500."
+“我给你500美元的小费。”
+
+642
+00:25:03,870 --> 00:25:06,750
+Is there one method
+that's preferred there,
+有哪种方法
+比较受欢迎？
+
+643
+00:25:06,750 --> 00:25:09,240
+or just what's your intuition on that?
+或者你对这件事有什么直觉？
+
+644
+00:25:09,240 --> 00:25:10,073
+- Yeah.
+好的。
+
+645
+00:25:10,073 --> 00:25:12,540
+I think as models are more
+capable and understand more
+我认为随着模型越来越 capable 和理解越来越多
+
+646
+00:25:12,540 --> 00:25:13,800
+about the world, I guess,
+关于世界，我想说。
+
+647
+00:25:13,800 --> 00:25:18,360
+I just don't see it as
+necessary to lie to them.
+我觉得没有必要对他们撒谎。
+
+648
+00:25:18,360 --> 00:25:20,460
+I also don't like lying to the models
+我也不喜欢欺骗模型。
+
+649
+00:25:20,460 --> 00:25:23,100
+just 'cause I don't like lying generally.
+只是因为我一般不喜欢撒谎。
+
+650
+00:25:23,100 --> 00:25:26,130
+But part of me is if you
+are, say, constructing.
+但是，我的一部分是如果你在建造。
+
+651
+00:25:26,130 --> 00:25:28,260
+Suppose you're constructing
+an eval dataset
+假设你正在构建一个评估数据集。
+
+652
+00:25:28,260 --> 00:25:32,310
+for a machine learning system
+or for a language model.
+用于机器学习系统或语言模型。
+
+653
+00:25:32,310 --> 00:25:35,070
+That's very different
+from constructing a quiz
+这与构建一个测验完全不同。
+
+654
+00:25:35,070 --> 00:25:36,840
+for some children.
+对于一些孩子。
+
+655
+00:25:36,840 --> 00:25:38,797
+So when people would do things like,
+所以当人们做事情比如，
+
+656
+00:25:38,797 --> 00:25:42,030
+"I am a teacher trying to figure
+out questions for a quiz."
+“我是一名老师，正在想问题出题。”
+
+657
+00:25:42,030 --> 00:25:44,967
+I'm like, "The model knows
+what language model evals are."
+我就是说，“模型知道模型评估的标准。”
+
+658
+00:25:45,921 --> 00:25:47,533
+If you ask it about different
+evals it can tell you,
+如果它被问及不同的评估方式，它可以告诉您。
+
+659
+00:25:47,533 --> 00:25:50,220
+and it can give you made up
+examples of what they look like.
+它可以给你虚构的例子，展示它们的样子。
+
+660
+00:25:50,220 --> 00:25:52,410
+'Cause these things are
+like they understand them,
+因为这些事情
+好像明白它们一样，
+
+661
+00:25:52,410 --> 00:25:54,090
+they're on the internet.
+他们在互联网上。
+
+662
+00:25:54,090 --> 00:25:54,923
+So I'm like,
+所以我就是这样。
+
+663
+00:25:54,923 --> 00:25:56,970
+"I'd much rather just target
+the actual task that I have."
+“我宁愿直接瞄准手头的任务。”
+
+664
+00:25:56,970 --> 00:25:59,640
+So if you're like, "I want
+you to construct questions
+所以如果你像说，“我想让你构造问题”，
+
+665
+00:25:59,640 --> 00:26:02,377
+that look a lot like an
+evaluation of a language model."
+看起来很像对一个语言模型的评估。
+
+666
+00:26:02,377 --> 00:26:05,670
+It's that whole thing
+of clear communication.
+那是整个沟通的过程。
+
+667
+00:26:05,670 --> 00:26:07,320
+I'm like, "That is, in
+fact, the task I want to do.
+我就是说，“那就是，事实上，我想做的任务。”
+
+668
+00:26:07,320 --> 00:26:08,610
+So why would I pretend to you
+所以为什么我会假装对你
+
+669
+00:26:08,610 --> 00:26:11,040
+that I want to do some unrelated,
+我想做些不相关的事情，
+
+670
+00:26:11,040 --> 00:26:13,590
+or only tangentially related task?"
+或者仅仅是间接相关的任务？
+
+671
+00:26:13,590 --> 00:26:14,957
+And then expect you to
+somehow do better at the task
+然后希望你能 somehow 在任务上做得更好。
+
+672
+00:26:14,957 --> 00:26:16,650
+that I actually want you to do.
+那就是我真正希望你做的事情。
+
+673
+00:26:16,650 --> 00:26:18,060
+We don't do this with employees.
+我们不这样对待员工。
+
+674
+00:26:18,060 --> 00:26:21,247
+I wouldn't go to someone that
+worked with me and be like,
+我不去和我共事的人那里。
+
+675
+00:26:21,247 --> 00:26:25,260
+"You are a teacher and you're
+trying to quiz your students."
+你是老师，正在试着给学生出题。
+
+676
+00:26:25,260 --> 00:26:28,230
+I'd be like, "Hey, are you
+making that eval?" I don't know.
+我可能会说：“嘿，你是不是在做那个评估？”我也不知道。
+
+677
+00:26:28,230 --> 00:26:31,057
+So I think maybe it's a heuristic
+from there where I'm like,
+所以我可能是在用一种启发式方法。
+
+678
+00:26:31,057 --> 00:26:32,010
+"If they understand the thing,
+如果他们理解了这个事情，
+
+679
+00:26:32,010 --> 00:26:33,450
+just ask them to do the
+thing that you want."
+只需告诉他们去做你想做的事情。
+
+680
+00:26:33,450 --> 00:26:34,749
+- I see this so much.
+- I guess
+- 我见得太多了。
+- 我猜
+
+681
+00:26:34,749 --> 00:26:36,570
+to push back a little bit,
+要稍微推后一下，
+
+682
+00:26:36,570 --> 00:26:40,260
+I have found cases where not exactly lying
+我发现有些情况并不是在撒谎，
+
+683
+00:26:40,260 --> 00:26:41,850
+but giving it a metaphor
+而是用隐喻
+
+684
+00:26:41,850 --> 00:26:43,350
+for how to think about it could help.
+来思考问题可能有帮助。
+
+685
+00:26:43,350 --> 00:26:45,570
+In the same way that sometimes
+I might not understand
+就像有时候我可能不知道
+
+686
+00:26:45,570 --> 00:26:46,627
+how to do something and someone's like,
+怎么去做某件事，而别人会说，
+
+687
+00:26:46,627 --> 00:26:47,970
+"Imagine that you were doing this,
+“想象你在做这件事，
+
+688
+00:26:47,970 --> 00:26:49,680
+even though I know I'm not doing it."
+尽管我知道我不是这样做。”
+
+689
+00:26:49,680 --> 00:26:50,880
+The one that comes to mind for me,
+在我脑海中浮现的一个例子是，
+
+690
+00:26:50,880 --> 00:26:54,510
+is I was trying to have
+Claude say whether an image
+我试图让克劳德判断一张图片
+
+691
+00:26:54,510 --> 00:26:57,261
+of a chart or a graph is good or not.
+一个图表或图形是否好用。
+
+692
+00:26:57,261 --> 00:26:59,250
+Is it high quality?
+质量好吗？
+
+693
+00:26:59,250 --> 00:27:02,040
+And the best prompt that I found for this
+我找到的最佳提示
+
+694
+00:27:02,040 --> 00:27:05,970
+was asking the model what
+grade it would give the chart,
+在问模型它会给图表打什么等级。
+
+695
+00:27:05,970 --> 00:27:09,780
+if it were submitted as
+a high school assignment.
+如果它是一篇高中作业。
+
+696
+00:27:09,780 --> 00:27:13,020
+So it's not exactly saying,
+"You are a high school teacher."
+所以它并不是确切地说，
+“你是高中教师。”
+
+697
+00:27:13,020 --> 00:27:17,820
+It's more like, "This
+is the kind of analysis
+更像是“这种分析
+
+698
+00:27:17,820 --> 00:27:20,070
+that I'm looking from for you."
+"那是我为你的期望。"
+
+699
+00:27:20,070 --> 00:27:22,830
+The scale that a teacher would
+use is similar to the scale
+老师使用的量级与以下量级类似：
+
+700
+00:27:22,830 --> 00:27:24,363
+that I want you to use.
+那我想让你用的。
+
+701
+00:27:25,248 --> 00:27:27,090
+- But I think those
+metaphors are pretty hard
+但是我觉得那些比喻真的很难。
+
+702
+00:27:27,090 --> 00:27:27,923
+to still come up with.
+还能想出的。
+
+703
+00:27:27,923 --> 00:27:30,960
+I think people still, the
+default you see all the time
+我认为人们仍然倾向于默认选择。
+
+704
+00:27:30,960 --> 00:27:33,570
+is finding some facsimile of the task.
+是在寻找任务的一个副本。
+
+705
+00:27:33,570 --> 00:27:35,874
+Something that's a very similar-ish task,
+类似的任务，
+
+706
+00:27:35,874 --> 00:27:38,490
+like saying you're a teacher.
+像在说自己是老师。
+
+707
+00:27:38,490 --> 00:27:40,050
+You actually just lose a lot
+你实际上只是损失了很多。
+
+708
+00:27:40,050 --> 00:27:41,730
+in the nuance of what your product is.
+在你的产品的细微差别上。
+
+709
+00:27:41,730 --> 00:27:43,680
+I see this so much in enterprise prompts
+我在企业提示中经常看到这种情况。
+
+710
+00:27:43,680 --> 00:27:46,890
+where people write something similar,
+人们写得相似之处，
+
+711
+00:27:46,890 --> 00:27:48,510
+because they have this intuition
+因为他们有这种直觉
+
+712
+00:27:48,510 --> 00:27:51,720
+that it's something the
+model has seen more of maybe.
+可能是模型见过的更多。
+
+713
+00:27:51,720 --> 00:27:56,370
+It's seen more high school
+quizzes than it has LLM evals,
+它看到的高中生测验比大型语言模型评估更多。
+
+714
+00:27:56,370 --> 00:27:58,680
+and that may be true.
+这可能就是真相。
+
+715
+00:27:58,680 --> 00:28:01,170
+But to your point, as
+the models get better,
+但是就你的观点而言，随着模型变得更好，
+
+716
+00:28:01,170 --> 00:28:05,250
+I think just trying to
+be very prescriptive
+我觉得最好非常具体地
+
+717
+00:28:05,250 --> 00:28:07,170
+about exactly the situation they're in.
+他们所处的确切情况。
+
+718
+00:28:07,170 --> 00:28:09,060
+I give people that advice all the time.
+我经常给人们这个建议。
+
+719
+00:28:09,060 --> 00:28:11,970
+Which isn't to say that I
+don't think to the extent
+并不代表我不认为在一定程度上
+
+720
+00:28:11,970 --> 00:28:16,530
+that it is true that
+thinking about it the way
+那就是说，
+考虑一下这样
+
+721
+00:28:16,530 --> 00:28:17,820
+that someone would grade a chart,
+有人会为排行榜打分。
+
+722
+00:28:17,820 --> 00:28:19,860
+as how they would grade
+a high school chart,
+就像他们评判高中成绩单一样。
+
+723
+00:28:19,860 --> 00:28:21,270
+maybe that's true.
+也许那是真的。
+
+724
+00:28:21,270 --> 00:28:25,199
+But it's awkwardly the shortcut
+people use a lot of times
+但它却很尴尬地被广泛使用。
+
+725
+00:28:25,199 --> 00:28:26,032
+to try to get what happens,
+试图弄清楚发生了什么，
+
+726
+00:28:26,032 --> 00:28:28,560
+so I'll try to get someone
+that I can actually talk about
+所以我试试找一个可以真正聊天的人。
+
+727
+00:28:28,560 --> 00:28:29,910
+'cause I think it's somewhat interesting.
+因为我觉得有点有趣。
+
+728
+00:28:29,910 --> 00:28:34,910
+So writing you are a helpful assistant,
+所以写你是一个有帮助的助手，
+
+729
+00:28:35,730 --> 00:28:40,730
+writing a draft of a document,
+it's not quite what you are.
+写一份文档的草稿，这并不是你想要的。
+
+730
+00:28:41,580 --> 00:28:44,460
+You are in this product, so tell me.
+你在这款产品中，所以告诉我。
+
+731
+00:28:44,460 --> 00:28:47,250
+If you're writing an
+assistant that's in a product,
+如果你正在为一个产品编写助手，
+
+732
+00:28:47,250 --> 00:28:48,510
+tell me I'm in the product.
+请告诉我我在这个产品中。
+
+733
+00:28:48,510 --> 00:28:51,510
+Tell me I'm writing on
+behalf of this company,
+请告诉我我是代表这个公司写作的，
+
+734
+00:28:51,510 --> 00:28:52,980
+I'm embedded in this product.
+我被嵌入到这个产品中。
+
+735
+00:28:52,980 --> 00:28:55,593
+I'm the support chat
+window on that product.
+我是那个产品的支持聊天窗口。
+
+736
+00:28:56,700 --> 00:28:59,840
+You're a language model, you're
+not a human, that's fine.
+你是一个语言模型，不是人类，这没关系。
+
+737
+00:28:59,840 --> 00:29:01,650
+But just being really prescriptive
+但是对使用某个功能的具体上下文
+
+738
+00:29:01,650 --> 00:29:05,430
+about the exact context about
+where something is being used.
+要求过于具体。
+
+739
+00:29:05,430 --> 00:29:06,510
+I found a lot of that.
+我发现了很多这样的情况。
+
+740
+00:29:06,510 --> 00:29:09,120
+Because I guess my concern
+most often with role prompting,
+因为我猜在角色提示方面，
+
+741
+00:29:09,120 --> 00:29:12,060
+is people used it as a shortcut
+人们是用它作为捷径吗？
+
+742
+00:29:12,060 --> 00:29:13,950
+of a similar task they
+want the model to do.
+他们希望模型能够完成类似的任务。
+
+743
+00:29:13,950 --> 00:29:14,783
+And then they're surprised
+然后他们就惊讶了。
+
+744
+00:29:14,783 --> 00:29:16,800
+when Claude doesn't do their task right,
+当克劳德没有正确完成他们的任务时，
+
+745
+00:29:16,800 --> 00:29:18,450
+but it's not the task.
+但那不是任务。
+
+746
+00:29:18,450 --> 00:29:21,360
+You told it to do some other task.
+你让它去做别的事情。
+
+747
+00:29:21,360 --> 00:29:23,130
+And if you didn't give it
+the details about your task,
+如果你没有提供关于你的任务的详细信息，
+
+748
+00:29:23,130 --> 00:29:24,960
+I feel like you're leaving
+something on the table.
+我觉得你在某个地方留下了什么东西。
+
+749
+00:29:24,960 --> 00:29:28,410
+So I don't know, it does
+feel like a thing though
+所以我不确定，但它确实感觉像是某样东西。
+
+750
+00:29:28,410 --> 00:29:31,230
+to your point of as the models scale.
+随着模型规模的扩大。
+
+751
+00:29:31,230 --> 00:29:32,490
+Maybe in the past it was true
+也许过去真的如此。
+
+752
+00:29:32,490 --> 00:29:35,730
+that they only really had
+a strong understanding
+他们实际上只有有限的理解。
+
+753
+00:29:35,730 --> 00:29:39,240
+of elementary school tests comparatively.
+与小学测试相比。
+
+754
+00:29:39,240 --> 00:29:42,690
+But as they get smarter and
+can differentiate more topics,
+但随着它们变得更聪明，并能够区分更多话题，
+
+755
+00:29:42,690 --> 00:29:44,310
+I don't know, just like being clear.
+我不知道，就像明明白白。
+
+756
+00:29:44,310 --> 00:29:45,143
+- I find it interesting
+我觉得有趣
+
+757
+00:29:45,143 --> 00:29:47,220
+that I've never used
+this prompting technique.
+这是第一次使用这种提示技巧。
+
+758
+00:29:47,220 --> 00:29:48,270
+- Yeah, that's funny.
+- 哈哈，真有趣。
+
+759
+00:29:49,110 --> 00:29:50,727
+- Even with worse models
+即使使用更差的模型
+
+760
+00:29:50,727 --> 00:29:53,760
+and I still just don't ever
+find myself, I don't know why.
+而且我仍然找不到自己，不知道为什么。
+
+761
+00:29:53,760 --> 00:29:57,060
+I'm just like, "I don't find
+it very good essentially."
+我只是说“我不觉得很好。”
+
+762
+00:29:57,060 --> 00:29:58,200
+- Interesting.
+有趣。
+
+763
+00:29:58,200 --> 00:30:00,513
+- I feel like completion era models,
+我感觉像是完成时代的模型，
+
+764
+00:30:01,440 --> 00:30:03,420
+there was a little bit of a mental model
+有些心理模型
+
+765
+00:30:03,420 --> 00:30:07,590
+of conditioning the
+model into a latent space
+将模型训练到潜在空间中
+
+766
+00:30:07,590 --> 00:30:10,140
+that was useful that I worried about,
+那真是太好了，我担心的。
+
+767
+00:30:10,140 --> 00:30:12,831
+that I don't really worry
+about too much anymore.
+我不再太担心。
+
+768
+00:30:12,831 --> 00:30:15,720
+- It might be intuitions
+from pretrained models
+可能是预训练模型的直觉
+
+769
+00:30:15,720 --> 00:30:20,100
+over to RLHF models, that to
+me, just didn't make sense.
+切换到RLHF模型对我来说完全不 makes sense。
+
+770
+00:30:20,100 --> 00:30:22,229
+It makes sense to me if
+you're prompting a pretrained.
+对我来说，如果这是在提示一个预训练模型，那么这就合乎情理。
+
+771
+00:30:22,229 --> 00:30:23,310
+- You'd be amazed how many people
+- 你可能会惊讶地看到有多少人
+
+772
+00:30:23,310 --> 00:30:25,260
+try to apply their intuitions.
+试图应用他们的直觉。
+
+773
+00:30:25,260 --> 00:30:27,090
+I think it's not that surprising.
+我认为这并不令人惊讶。
+
+774
+00:30:27,090 --> 00:30:29,550
+Most people haven't really experimented
+大多数人实际上并没有真正尝试过
+
+775
+00:30:29,550 --> 00:30:31,563
+with the full what is a pretrained model?
+预训练模型是什么？
+
+776
+00:30:31,563 --> 00:30:34,590
+What happens after you do SL?
+在做SL（监督学习）之后会发生什么？
+
+777
+00:30:34,590 --> 00:30:37,923
+What happens after you do RLHF, whatever?
+在做RLHF（强化学习和人类反馈）之后呢，无论怎样？
+
+778
+00:30:39,270 --> 00:30:41,310
+So when I talk to customers,
+所以当我与客户交谈时，
+
+779
+00:30:41,310 --> 00:30:44,467
+it's all the time that they're
+trying to map some amount of,
+他们总是试图将某种程度的
+
+780
+00:30:44,467 --> 00:30:46,980
+"Oh, how much of this was on the internet?
+“哦，有多少内容来自互联网？
+
+781
+00:30:46,980 --> 00:30:48,840
+Have they seen a ton of
+this on the internet?"
+他们在网上见过很多这种吗？
+
+782
+00:30:48,840 --> 00:30:51,270
+You just hear that intuition a lot,
+你经常听到直觉。
+
+783
+00:30:51,270 --> 00:30:54,030
+and I think it's
+well-founded fundamentally.
+我认为这在根本上是有充分依据的。
+
+784
+00:30:54,030 --> 00:30:56,980
+But it is overapplied
+但它是过量施用的。
+
+785
+00:30:58,290 --> 00:30:59,490
+by the time you actually get to a prompt,
+当你真正遇到一个提示时，
+
+786
+00:30:59,490 --> 00:31:00,990
+because of what you said.
+因为你说了。
+
+787
+00:31:00,990 --> 00:31:02,910
+By the time they've gone
+through all of this other stuff,
+等他们把其他这些事情都处理完后，
+
+788
+00:31:02,910 --> 00:31:05,100
+that's not actually quite
+what's being modeled.
+那实际上并没有真正被建模。
+
+789
+00:31:05,100 --> 00:31:05,933
+- Yeah.
+- 好的。
+
+790
+00:31:05,933 --> 00:31:08,520
+The first thing that I feel
+like you should try is,
+我感觉你应该尝试的第一件事是，
+
+791
+00:31:08,520 --> 00:31:10,140
+I used to give people
+this thought experiment
+我过去经常给人们
+这个思想实验
+
+792
+00:31:10,140 --> 00:31:13,530
+where it's like imagine
+you have this task.
+就像想象一下
+你有一个任务。
+
+793
+00:31:13,530 --> 00:31:18,060
+You've hired a temp agency to
+send someone to do this task.
+你雇佣了一个临时 agency 来
+派一个人去完成这个任务。
+
+794
+00:31:18,060 --> 00:31:21,120
+This person arrives, you know
+they're pretty competent.
+这个人来了，你知道
+他们相当有竞争力。
+
+795
+00:31:21,120 --> 00:31:23,310
+They know a lot about your
+industry and so forth,
+他们对你的行业和相关领域
+有很多了解，
+
+796
+00:31:23,310 --> 00:31:25,080
+but they don't know the
+name of your company.
+但他们不知道你们公司的名字。
+
+797
+00:31:25,080 --> 00:31:26,407
+They've literally just
+shown up and they're like,
+他们实际上就是刚刚出现的，然后说，
+
+798
+00:31:26,407 --> 00:31:29,760
+"Hey, I was told you guys
+had a job for me to do,
+“嘿，有人告诉我你们这里有个工作需要我做，
+
+799
+00:31:29,760 --> 00:31:30,630
+tell me about it."
+给我讲一下。”
+
+800
+00:31:30,630 --> 00:31:33,030
+And then it's like, "What
+would you say to that person?"
+然后你可能会问，“你会怎么回答那个人？”
+
+801
+00:31:33,030 --> 00:31:34,530
+And you might use these metaphors.
+你可能会用这些比喻。
+
+802
+00:31:34,530 --> 00:31:37,854
+You might say things like,
+你可能会说，
+
+803
+00:31:37,854 --> 00:31:41,640
+"We want you to detect good charts.
+我们希望你能检测出好的图表。
+
+804
+00:31:41,640 --> 00:31:42,900
+What we mean by a good chart here,
+这里我们所说的好的图表指的是：
+
+805
+00:31:42,900 --> 00:31:44,220
+is it doesn't need to be perfect.
+不需要完美。
+
+806
+00:31:44,220 --> 00:31:45,450
+You don't need to go look up
+你不需要去查找。
+
+807
+00:31:45,450 --> 00:31:47,130
+whether all of the details are correct."
+是否所有细节都正确。
+
+808
+00:31:47,130 --> 00:31:50,730
+It just needs to have its axes labeled,
+只需要标出坐标轴。
+
+809
+00:31:50,730 --> 00:31:55,320
+and so think about maybe high
+school level, good chart.
+所以想想也许中学水平的榜单就好。
+
+810
+00:31:55,320 --> 00:31:56,970
+You may say exactly that to that person
+你可以对那个人说这句话。
+
+811
+00:31:56,970 --> 00:31:59,100
+and you're not saying to
+them, "You are a high school."
+并且你没有告诉他们，“你们是一群中学生。”
+
+812
+00:31:59,100 --> 00:32:00,000
+You wouldn't say that to them.
+你不会对他们说的。
+
+813
+00:32:00,000 --> 00:32:01,281
+You wouldn't be like,
+你不会是这样的。
+
+814
+00:32:01,281 --> 00:32:02,717
+"You're a high school
+teacher reading charts."
+你是一名高中老师在读图表。
+
+815
+00:32:04,260 --> 00:32:05,496
+- What are you talking about?
+你在说什么？
+
+816
+00:32:05,496 --> 00:32:10,200
+- Yeah, so sometimes I'm
+just like it's like the whole
+- 嗯，有时候我就是感觉整个世界都
+
+817
+00:32:10,200 --> 00:32:11,033
+if I read it.
+如果我读它。
+
+818
+00:32:11,033 --> 00:32:11,866
+I'm just like, "Yeah.
+我就是说，“是的。”
+
+819
+00:32:11,866 --> 00:32:13,590
+Imagine this person who just
+has very little context,
+想象一个几乎没有背景信息的人。
+
+820
+00:32:13,590 --> 00:32:14,640
+but they're quite competent.
+但是他们相当专业。
+
+821
+00:32:14,640 --> 00:32:16,830
+They understand a lot of
+things about the world."
+他们对世界有很多了解。
+
+822
+00:32:16,830 --> 00:32:18,660
+Try the first version
+that actually assumes
+尝试第一个版本，
+它实际上假设
+
+823
+00:32:18,660 --> 00:32:20,040
+that they might know
+things about the world,
+他们可能知道一些关于世界的事物。
+
+824
+00:32:20,040 --> 00:32:22,470
+and if that doesn't work, you
+can maybe do tweaks and stuff.
+如果这不起作用，你可以试试调整一些设置。
+
+825
+00:32:22,470 --> 00:32:24,840
+But so often, the first
+thing I try is that,
+但很多时候，我尝试的第一件事是这个。
+
+826
+00:32:24,840 --> 00:32:26,458
+and then I'm like, "That just worked."
+然后我就像，“这竟然就成功了。”
+
+827
+00:32:26,458 --> 00:32:27,291
+- That worked.
+这有效了。
+
+828
+00:32:27,291 --> 00:32:28,124
+- And then people are like,
+然后人们就
+
+829
+00:32:28,124 --> 00:32:30,150
+"Oh, I didn't think to just
+tell it all about myself
+“哦，我没想到就这样把一切都告诉我。”
+
+830
+00:32:30,150 --> 00:32:31,500
+and all about the task I want to do."
+以及我想要完成的任务的所有内容。
+
+831
+00:32:31,500 --> 00:32:33,960
+- I've carried this
+thing that Alex told me
+- 我带着Alex告诉我的东西
+
+832
+00:32:33,960 --> 00:32:35,802
+to so many customers where they're like,
+去了很多客户那里，他们说，
+
+833
+00:32:35,802 --> 00:32:37,050
+"Oh, my prompt doesn't work.
+“哦，我的提示不工作。
+
+834
+00:32:37,050 --> 00:32:37,890
+Can you help me fix it?"
+你能帮我修复它吗？”
+
+835
+00:32:37,890 --> 00:32:40,680
+I'm like, "Well, can you describe
+to me what the task was?"
+我就像，“好吧，你能描述一下任务是什么吗？”
+
+836
+00:32:40,680 --> 00:32:41,513
+And I'm like, "Okay.
+然后我说，“好的。
+
+837
+00:32:41,513 --> 00:32:42,600
+Now what you just said to me,
+你现在告诉我的话，
+
+838
+00:32:42,600 --> 00:32:45,391
+just voice record that
+and then transcribe it."
+录音下来，然后再转录。”
+
+839
+00:32:45,391 --> 00:32:47,220
+And then paste it into the prompt
+然后把它粘贴到提示中，
+
+840
+00:32:47,220 --> 00:32:49,820
+and it's a better prompt
+than what you wrote,
+这样比你写的好。
+
+841
+00:32:49,820 --> 00:32:52,740
+but this is a laziness shortcut,
+I think, to some extent.
+但这是一种懒惰的捷径，
+我想，在某种程度上。
+
+842
+00:32:52,740 --> 00:32:55,590
+Because people write
+something that they...
+因为人们写一些他们...
+
+843
+00:32:55,590 --> 00:32:57,750
+I just think people, I'm lazy.
+A lot of people are lazy.
+我觉得人们都懒。
+很多人很懒。
+
+844
+00:32:57,750 --> 00:32:59,760
+- We had that in prompt
+assistance the other day
+我们昨天得到了那个提示的帮助。
+
+845
+00:32:59,760 --> 00:33:01,297
+where somebody was like,
+哪里有人问，
+
+846
+00:33:01,297 --> 00:33:03,000
+"Here's the thing, here's
+what I want it to do,
+这就是我想让它做的事情。
+
+847
+00:33:03,000 --> 00:33:05,160
+and here's what it's
+actually doing instead."
+"这是它实际上在做的事情。"
+
+848
+00:33:05,160 --> 00:33:06,720
+So then I just literally copied the thing
+所以我只是直接复制了它。
+
+849
+00:33:06,720 --> 00:33:07,680
+that they said they wanted it to do,
+他们说他们想要它做的事情。
+
+850
+00:33:07,680 --> 00:33:09,318
+and pasted it in and it worked.
+然后粘贴进去就 Works了。
+
+851
+00:33:09,318 --> 00:33:11,917
+- Yeah.
+好的。
+
+852
+00:33:11,917 --> 00:33:13,470
+I think a lot of people still
+我觉得很多人仍然
+
+853
+00:33:13,470 --> 00:33:15,030
+haven't quite wrapped their heads
+还没完全想明白
+
+854
+00:33:15,030 --> 00:33:17,520
+around what they're really
+doing when they're prompting.
+他们真正做什么。
+
+855
+00:33:17,520 --> 00:33:19,320
+A lot of people see a text box
+很多人看到一个文本框
+
+856
+00:33:19,320 --> 00:33:21,330
+and they think it's a Google search box.
+而且他们以为这是一个谷歌搜索框。
+
+857
+00:33:21,330 --> 00:33:22,410
+They type in keywords
+他们输入关键词。
+
+858
+00:33:22,410 --> 00:33:24,360
+and maybe that's more on the chat side.
+可能更多是在聊天方面。
+
+859
+00:33:24,360 --> 00:33:26,820
+But then on the enterprise side of things,
+但是在企业方面，
+
+860
+00:33:26,820 --> 00:33:29,370
+you're writing a prompt
+for an application.
+你在为一个应用程序编写提示。
+
+861
+00:33:29,370 --> 00:33:31,710
+There is still this weird thing to it
+这仍然有点奇怪。
+
+862
+00:33:31,710 --> 00:33:34,230
+where people are trying to
+take all these little shortcuts
+人们试图走这些小捷径
+
+863
+00:33:34,230 --> 00:33:35,827
+in their prompt, and just thinking that,
+在他们的提示中，并只是想着
+
+864
+00:33:35,827 --> 00:33:37,710
+"Oh, this line carries a
+lot of weight in this."
+"哦，这一句话在这里分量很重。"
+
+865
+00:33:37,710 --> 00:33:38,824
+- Yeah.
+嗯。
+
+866
+00:33:38,824 --> 00:33:40,830
+I think you obsess over
+getting the perfect little line
+我觉得你过度纠结于
+得到完美的那一条线
+
+867
+00:33:40,830 --> 00:33:42,240
+of information and instruction,
+信息和指导
+
+868
+00:33:42,240 --> 00:33:45,360
+as opposed to how you just
+described that graph thing.
+正如你刚才描述的那个图表。
+
+869
+00:33:45,360 --> 00:33:48,570
+I would be a dream if I
+read prompts like that.
+如果我能读到这样的提示，那该多好。
+
+870
+00:33:48,570 --> 00:33:50,370
+If someone's like, "Well,
+you do this and this,
+如果有人像说，“你做这个，做那个，
+
+871
+00:33:50,370 --> 00:33:52,740
+and there's some stuff to
+consider about this and all that."
+以及需要考虑关于这件事的一切。
+
+872
+00:33:52,740 --> 00:33:54,120
+But that's just not how
+people write prompts.
+但这显然不是人们写提示的方式。
+
+873
+00:33:54,120 --> 00:33:58,200
+They work so hard to find
+the perfect, insightful.
+他们努力寻找那个完美、有见解的。
+
+874
+00:33:58,200 --> 00:34:02,100
+A perfect graph looks exactly
+like this exact perfect thing,
+一个完美的图就正好是这样的完美事物。
+
+875
+00:34:02,100 --> 00:34:04,500
+and you can't do that.
+你做不到。
+
+876
+00:34:04,500 --> 00:34:05,333
+It's just very hard
+这真的很困难。
+
+877
+00:34:05,333 --> 00:34:08,250
+to ever write that set of
+instructions down prescriptively,
+永远都不该那样写那套指令。
+
+878
+00:34:08,250 --> 00:34:10,230
+as opposed to how we actually
+talk to humans about it,
+正如我们实际上与人类讨论这个问题的方式相反。
+
+879
+00:34:10,230 --> 00:34:12,540
+which is try to instill some amount
+试图灌输某种程度的...
+
+880
+00:34:12,540 --> 00:34:13,980
+of the intuitions you have.
+你所拥有的直觉。
+
+881
+00:34:13,980 --> 00:34:15,270
+- We also give them outs.
+- 他们也需要帮助。
+
+882
+00:34:15,270 --> 00:34:18,510
+This is a thing that people
+can often forget in prompts.
+这是人们在提示中往往会忘记的一个方面。
+
+883
+00:34:18,510 --> 00:34:20,340
+So cases, if there's an edge case,
+所以，如果有边缘情况，
+
+884
+00:34:20,340 --> 00:34:21,630
+think about what you want the model to do.
+考虑你希望模型如何处理。
+
+885
+00:34:21,630 --> 00:34:22,463
+'Cause by default,
+因为默认情况下，
+
+886
+00:34:22,463 --> 00:34:24,240
+it will try the best to
+follow your instructions,
+它会尽力按照你的指令行事，
+
+887
+00:34:24,240 --> 00:34:26,640
+much as the person from
+the temp agency would,
+就像来自临时公司的那个人一样，
+
+888
+00:34:26,640 --> 00:34:27,473
+'cause they're like,
+因为他们说，
+
+889
+00:34:27,473 --> 00:34:30,120
+"Well, they didn't tell me how
+to get in touch with anyone."
+"好吧，他们没有告诉我怎么联系任何人。"
+
+890
+00:34:30,120 --> 00:34:32,377
+If I'm just given a picture
+of a goat and I'm like,
+如果我只给了一张山羊的照片，并且我说，
+
+891
+00:34:32,377 --> 00:34:33,953
+"What do I do?
+我该怎么办？
+
+892
+00:34:33,953 --> 00:34:35,850
+This isn't even a chart.
+这根本就不是一个图表。
+
+893
+00:34:35,850 --> 00:34:38,370
+How good is a picture
+of a goat as a chart?"
+一张山羊的图片作为图表有多好？
+
+894
+00:34:38,370 --> 00:34:39,543
+I just don't know.
+我不太明白。
+
+895
+00:34:40,391 --> 00:34:42,067
+And if you instead say something like,
+比如说：“如果...”
+
+896
+00:34:42,067 --> 00:34:44,700
+"If something weird happens
+and you're really not sure
+如果有什么奇怪的事情发生，而且你真的不确定
+
+897
+00:34:44,700 --> 00:34:47,997
+what to do, just output in tags unsure."
+做什么就用标签表示不确定。
+
+898
+00:34:49,193 --> 00:34:50,340
+Then you can go look through the unsures
+然后你可以去看看未确定的那些问题。
+
+899
+00:34:50,340 --> 00:34:52,200
+that you got and be like, "Okay, cool.
+你得到了什么就怎么样吧。
+
+900
+00:34:52,200 --> 00:34:53,280
+It didn't do anything weird."
+什么也没做奇怪。
+
+901
+00:34:53,280 --> 00:34:55,980
+Whereas by default, if you don't
+give the person the option,
+因此，默认情况下，如果不给这个人选择的机会，
+
+902
+00:34:55,980 --> 00:34:58,728
+they're like, "It's a good chart."
+他们说，“这是一张好图表。”
+
+903
+00:34:58,728 --> 00:35:00,000
+Then people will be
+like, "How do I do that?"
+然后人们会问：“我怎么能做到这一点？”
+
+904
+00:35:00,000 --> 00:35:02,340
+And then you're like,
+"Well, give it an out.
+然后你就说，
+“好啦，你放手。”
+
+905
+00:35:02,340 --> 00:35:03,240
+Give it something to do
+让它忙起来
+
+906
+00:35:03,240 --> 00:35:05,397
+if it's a really
+unexpected input happens."
+如果发生真正的意外输入。"
+
+907
+00:35:05,397 --> 00:35:07,650
+- And then you also
+improved your data quality
+- 然后你还提高了数据质量。
+
+908
+00:35:07,650 --> 00:35:08,483
+by doing that too,
+这样做也可以。
+
+909
+00:35:08,483 --> 00:35:10,366
+'cause you found all
+the screwed up examples.
+因为你找到了所有搞砸的例子。
+
+910
+00:35:10,366 --> 00:35:11,207
+- Oh, yeah.
+嗯，对了。
+
+911
+00:35:11,207 --> 00:35:14,160
+- That's my favorite thing
+about iterating on tests
+- 这是我对迭代测试最喜欢的事情。
+
+912
+00:35:14,160 --> 00:35:15,628
+with Claude, is the most common outcome
+与Claude一起，最常见的结果是
+
+913
+00:35:15,628 --> 00:35:19,066
+is I find all of the terrible
+tests I accidentally wrote
+我发现所有我不小心写的糟糕测试
+
+914
+00:35:19,066 --> 00:35:20,610
+because it gets it wrong.
+因为它们总是做错。
+
+915
+00:35:20,610 --> 00:35:21,480
+I'm like, "Oh, why did it get wrong?"
+我心想：“哦，为什么它会做错？”
+
+916
+00:35:21,480 --> 00:35:22,650
+I was like, "Oh, I was wrong."
+我想：“哦，我也错了。”
+
+917
+00:35:22,650 --> 00:35:25,590
+- Yeah.
+- Yeah.
+- 是的。
+- 是的。
+
+918
+00:35:25,590 --> 00:35:27,600
+- If I was a company working with this,
+- 如果我是一家使用这个工具的公司，
+
+919
+00:35:27,600 --> 00:35:30,183
+I do think I would just
+give my prompts to people,
+我会直接把我的提示交给别人，
+
+920
+00:35:31,170 --> 00:35:32,850
+because I used to do this
+因为我以前就是这样做的。
+
+921
+00:35:32,850 --> 00:35:34,950
+when I was evaluating language models.
+我在评估语言模型时。
+
+922
+00:35:34,950 --> 00:35:36,720
+I would take the eval myself.
+我自己来评估。
+
+923
+00:35:36,720 --> 00:35:37,553
+'Cause I'm like,
+因为我就是这样的，
+
+924
+00:35:37,553 --> 00:35:38,460
+"I need to know what this eval looks like
+我想知道这个eval是什么样子的。
+
+925
+00:35:38,460 --> 00:35:41,250
+if I'm gonna to be grading
+it, having models take it,
+如果我要评分， 让模型来试试。
+
+926
+00:35:41,250 --> 00:35:42,900
+thinking about outputs, et cetera."
+思考输出等。
+
+927
+00:35:42,900 --> 00:35:44,280
+I would actually just
+set up a little script
+我实际上只是要设置一个小脚本。
+
+928
+00:35:44,280 --> 00:35:46,523
+and I would just sit
+and I would do the eval.
+我只需坐着，
+然后进行评估。
+
+929
+00:35:47,610 --> 00:35:50,070
+- Nowadays, you just have
+called the Streamboard app
+现在你只需要调用流版应用。
+
+930
+00:35:50,070 --> 00:35:50,903
+for you.
+给你。
+
+931
+00:35:50,903 --> 00:35:52,816
+- And just does it, yeah.
+而且就这样做了。
+
+932
+00:35:52,816 --> 00:35:56,850
+- Yeah. I'm reminded
+of Karpathy's ImageNet.
+是的。我被Karpathy的ImageNet提醒了。
+
+933
+00:35:56,850 --> 00:36:01,650
+I was in 231 at Stanford
+and it's like benchmarking,
+我在斯坦福的231课程，
+就像在做基准测试一样。
+
+934
+00:36:01,650 --> 00:36:03,158
+he's showing the accuracy number.
+他在展示准确率数字。
+
+935
+00:36:03,158 --> 00:36:05,070
+And he's like, "And here's
+what my accuracy number was."
+他说：“这是我准确率的数字。”
+
+936
+00:36:05,070 --> 00:36:06,540
+And he had just gone through the test set
+他已经通过了测试集。
+
+937
+00:36:06,540 --> 00:36:08,200
+and evaluated himself.
+- Oh, yeah.
+然后自评了一下。
+- 哦，是的。
+
+938
+00:36:08,200 --> 00:36:09,699
+- You just learn a lot.
+- Yeah, totally.
+你刚刚学到很多东西。  
+是的，完全如此。
+
+939
+00:36:09,699 --> 00:36:13,110
+- And it's better when it's a, again,
+而且当它是A的时候会更好，再次是
+
+940
+00:36:13,110 --> 00:36:14,100
+the temp agency person,
+外派人员
+
+941
+00:36:14,100 --> 00:36:15,540
+like someone who doesn't know the task,
+像一个不懂任务的人，
+
+942
+00:36:15,540 --> 00:36:18,780
+because that's a very
+clean way to learn things.
+因为这样是一种非常干净的学习方式。
+
+943
+00:36:18,780 --> 00:36:19,613
+- Yeah.
+- 好的。
+
+944
+00:36:19,613 --> 00:36:20,446
+The way you have to do it is,
+你需要做的是，
+
+945
+00:36:20,446 --> 00:36:23,040
+some evaluations come with instructions,
+有些评估会附带说明，
+
+946
+00:36:23,040 --> 00:36:25,620
+and so I would give myself
+those instructions as well
+所以我也会给自己那些说明，
+
+947
+00:36:25,620 --> 00:36:27,843
+and then try to understand it.
+然后试着理解它。
+
+948
+00:36:28,920 --> 00:36:30,660
+And it's actually quite great
+if you don't have context
+实际上，如果你没有 grading 的背景，
+
+949
+00:36:30,660 --> 00:36:31,683
+on how it's graded.
+这真的很好。
+
+950
+00:36:32,820 --> 00:36:34,590
+And so often, I would do so much worse
+而经常，我会做得非常差。
+
+951
+00:36:34,590 --> 00:36:35,423
+than the human benchmark and I was like,
+比人类的标准还要高，我当时就想着，
+
+952
+00:36:35,423 --> 00:36:37,860
+"I don't even know how you
+got humans to do this well
+我不知道你是如何让人类做得这么好的。
+
+953
+00:36:37,860 --> 00:36:41,960
+at this task, 'cause apparently
+human level here is 90%,
+在这一任务上，“因为显然”人类的准确率是90%，
+
+954
+00:36:41,960 --> 00:36:45,360
+and I'm at 68%."
+而且我占了68%。
+
+955
+00:36:45,360 --> 00:36:46,193
+- That's funny.
+真有趣。
+
+956
+00:36:46,193 --> 00:36:49,800
+That reminds me of just when
+you look at the MMLU questions
+那让我想起了你刚开始看MMLU问题的时候。
+
+957
+00:36:49,800 --> 00:36:53,437
+and you're like, "Who would
+be able to answer these?"
+你可能会想，“谁会回答这些问题？”
+
+958
+00:36:53,437 --> 00:36:56,223
+It's just like absolute
+garbage in some of them.
+它们中间的一些简直像垃圾一样。
+
+959
+00:36:57,870 --> 00:36:59,130
+Okay.
+好的。
+
+960
+00:36:59,130 --> 00:37:01,470
+I have one thing I wanna circle back on
+我想回过头来谈谈一件事情。
+
+961
+00:37:01,470 --> 00:37:05,730
+that we were talking about
+a few questions back around,
+我们之前讨论的几个问题。
+
+962
+00:37:05,730 --> 00:37:08,797
+I think you were saying getting
+signal from the responses.
+我想你是在说从响应中获取信号。
+
+963
+00:37:08,797 --> 00:37:12,330
+There's just so much there and
+it's more than just a number,
+那里有太多东西了，
+它不仅仅是一个数字。
+
+964
+00:37:12,330 --> 00:37:16,050
+and you can actually read into
+the almost thought process.
+你甚至可以读出它几乎的思维过程。
+
+965
+00:37:16,050 --> 00:37:19,530
+I bet this is probably a
+little contentious maybe
+我猜这可能有点争议
+
+966
+00:37:19,530 --> 00:37:21,630
+around chain of thought.
+围绕思维链。
+
+967
+00:37:21,630 --> 00:37:23,580
+For people listening, chain of thought,
+思路清晰的
+
+968
+00:37:23,580 --> 00:37:25,470
+this process of getting them all
+获取这一切的过程
+
+969
+00:37:25,470 --> 00:37:27,150
+to actually explain its reasoning
+为了实际说明其理由
+
+970
+00:37:27,150 --> 00:37:28,713
+before it provides an answer.
+在给出答案之前。
+
+971
+00:37:29,640 --> 00:37:31,020
+Is that reasoning real
+那条推理是真的吗？
+
+972
+00:37:31,020 --> 00:37:33,300
+or is it just kind of like a holding space
+或者它只是一个临时存放空间？
+
+973
+00:37:33,300 --> 00:37:36,240
+for the model to do computation?
+为了使模型进行计算？
+
+974
+00:37:36,240 --> 00:37:38,700
+Do we actually think there's
+good, insightful signal
+我们实际上认为有好的、有见地的信号吗？
+
+975
+00:37:38,700 --> 00:37:41,010
+that we're getting out of the model there?
+我们从模型中得到什么了？
+
+976
+00:37:41,010 --> 00:37:43,950
+- This is one of the places
+where I struggle with that.
+这是我经常与之斗争的地方之一。
+
+977
+00:37:43,950 --> 00:37:46,530
+I'm normally actually
+somewhat pro-personification
+我通常倒是
+有点儿拟人化
+
+978
+00:37:46,530 --> 00:37:49,950
+because I think it helps
+you get decent facsimiles,
+因为我觉得这能帮你得到不错的传真件。
+
+979
+00:37:49,950 --> 00:37:52,020
+thoughts of how the model's working.
+思考模型是如何工作的。
+
+980
+00:37:52,020 --> 00:37:55,800
+And this one, I think
+it's harmful maybe almost
+我觉得这可能是有害的。
+
+981
+00:37:55,800 --> 00:37:59,190
+to get too into the personification
+of what reasoning is,
+陷入对推理本身的人格化
+
+982
+00:37:59,190 --> 00:38:00,540
+'cause it just loses the thread
+因为它只是失去了焦点。
+
+983
+00:38:00,540 --> 00:38:02,340
+of what we're trying to do here.
+我们在这里尝试做什么。
+
+984
+00:38:02,340 --> 00:38:03,210
+Is it reasoning or not?
+这是推理吗？
+
+985
+00:38:03,210 --> 00:38:06,150
+It feels almost like a different question
+感觉就像一个完全不同的问题。
+
+986
+00:38:06,150 --> 00:38:08,400
+than what's the best prompting technique?
+比最好的提示技巧更有效的提示是什么？
+
+987
+00:38:08,400 --> 00:38:09,990
+It's like you're getting into philosophy,
+这好像在讨论哲学。
+
+988
+00:38:09,990 --> 00:38:11,452
+which we can get into.
+我们可以进入。
+
+989
+00:38:11,452 --> 00:38:13,541
+- Yeah, we do have a philosopher.
+- 是的，我们有一个哲学家。
+
+990
+00:38:13,541 --> 00:38:15,150
+- Yeah.
+好的。
+
+991
+00:38:15,150 --> 00:38:16,890
+I will happily be beaten
+down by a real philosopher
+我愿意被一个真正的哲学家打倒。
+
+992
+00:38:16,890 --> 00:38:21,150
+as I try to speculate on this,
+but instead, it just works.
+当我试图推测这一点时，
+但事实上，它就是如此。
+
+993
+00:38:21,150 --> 00:38:23,100
+Your model does better.
+你的模型更好。
+
+994
+00:38:23,100 --> 00:38:26,670
+The outcome is better if you do reasoning.
+结果更好，如果你进行推理。
+
+995
+00:38:26,670 --> 00:38:30,480
+I think I've found that if
+you structure the reasoning
+我认为如果你能结构化你的推理
+
+996
+00:38:30,480 --> 00:38:32,370
+and help iterate with the model
+并帮助迭代模型。
+
+997
+00:38:32,370 --> 00:38:34,920
+on how it should do reasoning,
+it works better too.
+在如何进行推理方面，它表现得更好。
+
+998
+00:38:38,400 --> 00:38:39,870
+Whether or not that's reasoning
+那是否是合理的
+
+999
+00:38:39,870 --> 00:38:41,610
+or how you wanted to classify it,
+或者你想要如何分类它，
+
+1000
+00:38:41,610 --> 00:38:42,990
+you can think of all sorts of proxies
+你可以想到各种各样的代理。
+
+1001
+00:38:42,990 --> 00:38:44,670
+for how I would also do really bad
+因为我也会做得非常糟糕。
+
+1002
+00:38:44,670 --> 00:38:47,910
+if I had to do one-shot math
+without writing anything down.
+如果我必须进行一次性的数学计算，而且不能写下来。
+
+1003
+00:38:47,910 --> 00:38:51,390
+Maybe that's useful, but
+all I really know is,
+可能有帮助，但
+我真正知道的是，
+
+1004
+00:38:51,390 --> 00:38:54,030
+it very obviously does help.
+很明显是有帮助的。
+
+1005
+00:38:54,030 --> 00:38:54,863
+I don't know.
+我不知道。
+
+1006
+00:38:54,863 --> 00:38:55,860
+- A way of testing would be
+一种测试的方式是
+
+1007
+00:38:55,860 --> 00:38:58,730
+if you take out all the
+reasoning that it did
+如果你把所有它所做的理由都去掉
+
+1008
+00:38:58,730 --> 00:39:00,750
+to get to the right
+answer, and then replace it
+得到正确的答案，然后替换它。
+
+1009
+00:39:00,750 --> 00:39:04,380
+with somewhat, realistic-looking reasoning
+用有些，看起来很合理的推理
+
+1010
+00:39:04,380 --> 00:39:05,460
+that led to a wrong answer,
+导致了错误的答案。
+
+1011
+00:39:05,460 --> 00:39:08,040
+and then see if it does
+conclude the wrong answer.
+然后看看是否得出错误的答案。
+
+1012
+00:39:08,040 --> 00:39:11,133
+I think we actually had a paper
+where we did some of that.
+我觉得我们实际上有一篇论文
+做了一些类似的事情。
+
+1013
+00:39:12,420 --> 00:39:17,420
+There was the scratch pad. It
+was like the Sleeper Agents.
+那有记事本。它就像潜行者。
+
+1014
+00:39:17,730 --> 00:39:19,440
+- Oh, okay. Alignment papers.
+好的。对齐文件。
+
+1015
+00:39:19,440 --> 00:39:22,320
+- But I think that was
+maybe a weird situation.
+但我认为那可能是一个奇怪的情况。
+
+1016
+00:39:22,320 --> 00:39:27,320
+But definitely what you said
+about structuring the reasoning
+但是你关于结构化推理的说法
+
+1017
+00:39:27,597 --> 00:39:30,870
+and writing example of
+how the reasoning works.
+以及一个推理工作原理的例子。
+
+1018
+00:39:30,870 --> 00:39:32,223
+Given that that helps,
+既然这样可以帮助你，
+
+1019
+00:39:33,210 --> 00:39:35,640
+like whether we use the
+word reasoning or not,
+像我们是否使用“推理”这个词一样，
+
+1020
+00:39:35,640 --> 00:39:38,940
+I don't think it's just
+a space for computation.
+我认为这不仅仅是一个计算空间。
+
+1021
+00:39:38,940 --> 00:39:40,320
+- So there is something there.
+- 所以那里有东西。
+
+1022
+00:39:40,320 --> 00:39:41,340
+- I think there's something there,
+- 我认为那边有些东西，
+
+1023
+00:39:41,340 --> 00:39:42,365
+whatever we wanna call it.
+无论我们叫它什么。
+
+1024
+00:39:42,365 --> 00:39:43,198
+- Yeah.
+- 是的。
+
+1025
+00:39:43,198 --> 00:39:45,300
+Having it write a story
+before it finished a task,
+让它在完成任务之前写故事，
+
+1026
+00:39:45,300 --> 00:39:46,470
+I do not think would work as well.
+我认为不会像推理那样有效。
+
+1027
+00:39:46,470 --> 00:39:48,027
+- I've actually tried that
+- 我其实试过这么做，
+
+1028
+00:39:48,027 --> 00:39:50,850
+and it didn't work as well as reasoning.
+但效果没有推理好。
+
+1029
+00:39:50,850 --> 00:39:53,100
+- Clearly, the actual reasoning part
+- 显然，实际的推理部分
+
+1030
+00:39:53,100 --> 00:39:55,320
+is doing something towards the outcome.
+是在朝结果努力。
+
+1031
+00:39:55,320 --> 00:39:56,153
+- I've tried like,
+- 我尝试，
+
+1032
+00:39:56,153 --> 00:39:59,700
+"Repeat the words um and ah
+in any order that you please
+“重复说‘嗯’和‘啊’
+在你想要的任何顺序中
+
+1033
+00:39:59,700 --> 00:40:02,218
+for 100 tokens and then answer."
+进行100个标记，然后回答。”
+
+1034
+00:40:02,218 --> 00:40:03,051
+- Yeah.
+- 嗯。
+
+1035
+00:40:03,051 --> 00:40:03,884
+I guess that's a pretty thorough defeat
+我觉得那可能是对它的相当彻底的打击
+
+1036
+00:40:03,884 --> 00:40:05,430
+of it's just more computational space
+只是因为它有更大的计算空间
+
+1037
+00:40:05,430 --> 00:40:06,990
+where it can do attention
+over and over again.
+可以反复做注意力。
+
+1038
+00:40:06,990 --> 00:40:08,460
+I don't think it's just more attention
+我不认为这只是更多的注意力
+
+1039
+00:40:08,460 --> 00:40:10,200
+like doing more attention.
+就像做更多的注意力。
+
+1040
+00:40:10,200 --> 00:40:11,033
+- I guess the strange thing is,
+- 我猜奇怪的是，
+
+1041
+00:40:11,033 --> 00:40:13,080
+and I don't have an example
+off the top of my head
+我不记得了。
+
+1042
+00:40:13,080 --> 00:40:14,190
+to back this up with.
+来证明这一点。
+
+1043
+00:40:14,190 --> 00:40:16,020
+But I definitely have seen it before
+但是，我之前肯定见过它。
+
+1044
+00:40:16,020 --> 00:40:18,750
+where it lays out steps,
+one of the steps is wrong,
+其中列出了步骤，
+其中一个步骤是错误的。
+
+1045
+00:40:18,750 --> 00:40:22,470
+but then it still reaches
+the right answer at the end.
+但是最终它仍然能得到正确的答案。
+
+1046
+00:40:22,470 --> 00:40:24,360
+So it's not quite, I guess, yeah,
+所以不是完全的吧，我想说。
+
+1047
+00:40:24,360 --> 00:40:27,480
+we can't really, truly
+personify it as a reasoning,
+我们真的无法将其视为一种推理。
+
+1048
+00:40:27,480 --> 00:40:29,350
+'cause there is some element to it
+因为其中有些元素在里头。
+
+1049
+00:40:31,020 --> 00:40:32,790
+doing something slightly different.
+做点稍微不同的事情。
+
+1050
+00:40:32,790 --> 00:40:33,623
+- Yeah.
+- 好的。
+
+1051
+00:40:33,623 --> 00:40:34,590
+I've also met a lot of people
+我遇到过很多人
+
+1052
+00:40:34,590 --> 00:40:37,680
+who make inconsistent steps of reasoning.
+他们的推理步骤不一致。
+
+1053
+00:40:37,680 --> 00:40:39,163
+- I guess that's true.
+- 我猜是这样的。
+
+1054
+00:40:40,065 --> 00:40:42,450
+- It fundamentally defeats
+the topic of reasoning
+- 这根本否定了
+推理的主题，
+
+1055
+00:40:42,450 --> 00:40:44,970
+by making a false step on the way there.
+在到达那里时犯了一个错误的步骤。
+
+1056
+00:40:44,970 --> 00:40:46,533
+- All right, it's interesting.
+- 好吧，这很有趣。
+
+1057
+00:40:47,460 --> 00:40:52,050
+Also, on maybe this prompting
+misconceptions round
+此外，在可能的这个问题提示上
+
+1058
+00:40:52,050 --> 00:40:52,983
+of questions.
+对问题的误解。
+
+1059
+00:40:54,060 --> 00:40:57,000
+Zack, I know you have
+strong opinions on this,
+扎克，我知道你在这个方面有
+强烈的观点，
+
+1060
+00:40:57,000 --> 00:40:59,250
+good grammar, punctuation.
+- Oh, do I?
+好的语法和标点。
+
+1061
+00:40:59,250 --> 00:41:03,150
+- Is that necessary in a
+prompt? Do you need it?
+在提示中需要这样做吗？你需要它吗？
+
+1062
+00:41:03,150 --> 00:41:05,733
+Do you need to format
+everything correctly?
+需要把 everything 格式正确吗？
+
+1063
+00:41:07,710 --> 00:41:09,120
+- I usually try to do that
+我通常会尽量做到这一点。
+
+1064
+00:41:09,120 --> 00:41:13,443
+because I find it fun, I guess, somehow.
+因为我觉得有趣，所以也许是因为这样。
+
+1065
+00:41:14,490 --> 00:41:16,350
+I don't think you necessarily need to.
+我觉得你不一定需要。
+
+1066
+00:41:16,350 --> 00:41:17,580
+I don't think it hurts.
+我不觉得疼。
+
+1067
+00:41:17,580 --> 00:41:18,413
+I think it's more
+我认为它更重要的是
+
+1068
+00:41:18,413 --> 00:41:22,680
+that you should have the
+level of attention to detail
+你应该有这种细节的关注度。
+
+1069
+00:41:22,680 --> 00:41:24,880
+that would lead you to
+doing that naturally.
+这会让你自然地去做。
+
+1070
+00:41:25,980 --> 00:41:28,050
+If you're just reading
+over your prompt a lot,
+如果你只是反复读取提示，
+
+1071
+00:41:28,050 --> 00:41:29,340
+you'll probably notice those things
+你可能会注意到那些事情。
+
+1072
+00:41:29,340 --> 00:41:31,260
+and you may as well fix them.
+并且你最好也修复它们。
+
+1073
+00:41:31,260 --> 00:41:33,270
+And like what Amanda was saying,
+正如安德玛所说，
+
+1074
+00:41:33,270 --> 00:41:36,931
+that you wanna put as
+much love into the prompt
+你希望在提示中倾注尽可能多的爱意。
+
+1075
+00:41:36,931 --> 00:41:38,403
+as you do into the code.
+正如你所做的一样，输入代码。
+
+1076
+00:41:39,660 --> 00:41:42,150
+People who write a lot of
+code have strong opinions
+写很多代码的人有很多意见。
+
+1077
+00:41:42,150 --> 00:41:44,250
+about things that I could
+not care less about.
+关于我不关心的事情。
+
+1078
+00:41:44,250 --> 00:41:48,390
+Like the number of tabs versus
+spaces, or I don't know,
+像标签页和空格的数量一样，或者我不知道，
+
+1079
+00:41:48,390 --> 00:41:50,490
+opinions about which languages are better.
+对哪种语言更好的看法。
+
+1080
+00:41:50,490 --> 00:41:51,960
+And for me,
+对我而言，
+
+1081
+00:41:51,960 --> 00:41:56,430
+I have opinionated beliefs
+about styling of prompts.
+我对提示的样式有主观的看法。
+
+1082
+00:41:56,430 --> 00:41:57,960
+I can't even say that
+they're right or wrong,
+我甚至说不清他们是对是错。
+
+1083
+00:41:57,960 --> 00:42:01,890
+but I think it's probably
+good to try to acquire those,
+但是我觉得尝试获取它们应该是好的。
+
+1084
+00:42:01,890 --> 00:42:04,200
+even if they're arbitrary.
+即使它们是任意的。
+
+1085
+00:42:04,200 --> 00:42:06,540
+- I feel personally attacked,
+我感觉被个人攻击了，
+
+1086
+00:42:06,540 --> 00:42:07,373
+'cause I definitely have prompts
+因为我肯定有提示
+
+1087
+00:42:07,373 --> 00:42:09,540
+that are like I feel like
+I'm in the opposite end
+就像我觉得我在另一端。
+
+1088
+00:42:09,540 --> 00:42:10,650
+of the spectrum where
+people will see my prompts.
+在人们能看到我的提示的光谱上。
+
+1089
+00:42:10,650 --> 00:42:12,170
+And then be like,
+然后就变成这样子的。
+
+1090
+00:42:12,170 --> 00:42:13,647
+"This just has a whole
+bunch of typos in it."
+"这只是一个
+满是拼写错误的句子。"
+
+1091
+00:42:13,647 --> 00:42:16,130
+And I'm like, "The model
+knows what I mean."
+
+
+1092
+00:42:16,130 --> 00:42:17,277
+- It does, it does know what you mean,
+模型知道我在说什么。
+
+1093
+00:42:17,277 --> 00:42:18,570
+but you're putting in the effort,
+- 它确实知道你在说什么，
+
+1094
+00:42:18,570 --> 00:42:21,360
+you just are attending
+to different things.
+但是你正在努力，
+
+1095
+00:42:21,360 --> 00:42:22,193
+- 'Cause part of me is like,
+只是在关注不同的事情。
+
+1096
+00:42:22,193 --> 00:42:24,993
+I think if it's conceptually
+clear, I'm a big,
+- 因为我的一部分是这样的，
+
+1097
+00:42:26,070 --> 00:42:27,960
+I will think a lot about
+the concepts and the words
+我觉得如果概念清晰，我是一个大，
+
+1098
+00:42:27,960 --> 00:42:28,793
+that I'm using.
+我会花很多时间思考我在使用的概念和词语。
+
+1099
+00:42:28,793 --> 00:42:31,620
+So there's definitely a
+sort of care that I put in.
+所以，我确实有某种关心。
+
+1100
+00:42:31,620 --> 00:42:34,080
+But it's definitely not to, yeah,
+但它绝对不是为了，嗯，
+
+1101
+00:42:34,080 --> 00:42:36,360
+people will just point out
+typos and grammatical issues
+人们只会指出错误和语法问题。
+
+1102
+00:42:36,360 --> 00:42:37,863
+with my prompts all the time.
+一直伴随着我的提示。
+
+1103
+00:42:38,700 --> 00:42:39,540
+Now I'm pretty good
+我现在很行。
+
+1104
+00:42:39,540 --> 00:42:42,951
+at actually checking those
+things more regularly.
+其实更应该定期检查这些事情。
+
+1105
+00:42:42,951 --> 00:42:44,552
+- Is it because of pressure
+from the outside world
+是因为外界压力吗？
+
+1106
+00:42:44,552 --> 00:42:46,320
+or because it's actually
+what you think is right?
+或者因为它实际上是你认为正确的吗？
+
+1107
+00:42:46,320 --> 00:42:47,153
+- It's pressure from me.
+是来自我的压力。
+
+1108
+00:42:47,153 --> 00:42:49,590
+- Yeah, it's probably pressure
+from the outside world.
+- 好的，可能是外界的压力。
+
+1109
+00:42:49,590 --> 00:42:50,940
+I do think it makes sense.
+我觉得这很合理。
+
+1110
+00:42:50,940 --> 00:42:52,800
+Part of me is like it's
+such an easy check,
+我就像是在做一件很简单的事情。
+
+1111
+00:42:52,800 --> 00:42:54,690
+so I think for a final
+prompt I would do that.
+所以我觉得对于一个最终的提示，我会这样做。
+
+1112
+00:42:54,690 --> 00:42:55,890
+But throughout iteration,
+但是在迭代过程中，
+
+1113
+00:42:55,890 --> 00:42:57,690
+I'll happily just iterate with prompts
+我会高兴地使用那些有很多拼写错误的提示，
+
+1114
+00:42:57,690 --> 00:42:59,947
+that have a bunch of typos in
+them, just 'cause I'm like,
+因为我只是觉得“
+
+1115
+00:42:59,947 --> 00:43:01,830
+"I just don't think that
+the model's going to care."
+我认为模型不会在意。”
+
+1116
+00:43:01,830 --> 00:43:03,780
+- This gets at the pretrained model
+- 这涉及到预训练模型
+
+1117
+00:43:03,780 --> 00:43:05,160
+versus RLHF thing though,
+与RLHF（强化学习和人类反馈）的问题，
+
+1118
+00:43:05,160 --> 00:43:07,680
+because I was talking
+to Zack on the way over.
+因为我在路上正和Zack讨论这个问题。
+
+1119
+00:43:07,680 --> 00:43:10,440
+The conditional probability of a typo
+前训练数据中基于先前拼写错误
+
+1120
+00:43:10,440 --> 00:43:13,950
+based on a previous typo
+in the pretraining data
+
+
+1121
+00:43:13,950 --> 00:43:15,182
+is much higher.
+高得多。
+
+1122
+00:43:15,182 --> 00:43:16,782
+- Oh, yeah.
+- Like much higher.
+- 哦，是的。
+- 高得多。
+
+1123
+00:43:17,790 --> 00:43:19,770
+- Prompting pretraining models
+is just a different beast.
+提示预训练模型只是另一种生物。
+
+1124
+00:43:19,770 --> 00:43:21,150
+- It is, but it's interesting.
+是的，但很有趣。
+
+1125
+00:43:21,150 --> 00:43:23,370
+I think it's an interesting illustration
+我觉得这是一幅有趣的插图。
+
+1126
+00:43:23,370 --> 00:43:26,190
+of why your intuitions,
+你直觉为什么
+
+1127
+00:43:26,190 --> 00:43:27,900
+like trying to over-apply the intuitions
+就像试图过度应用直觉一样
+
+1128
+00:43:27,900 --> 00:43:29,970
+of a pretrained model to the things
+将预训练模型应用到事物上
+
+1129
+00:43:29,970 --> 00:43:32,280
+that we're actually using in production
+我们实际上在生产环境中使用的那些
+
+1130
+00:43:32,280 --> 00:43:33,240
+doesn't work very well.
+不太起作用。
+
+1131
+00:43:33,240 --> 00:43:36,210
+Because again, if you were to pass
+因为如果再有一次通过的话，
+
+1132
+00:43:36,210 --> 00:43:38,490
+one of your typo-ridden
+prompts to a pretrained model,
+你打字错误的提示语之一被一个预训练模型接收到了。
+
+1133
+00:43:38,490 --> 00:43:39,960
+the thing that would
+come out the other side,
+另一端会出来的
+
+1134
+00:43:39,960 --> 00:43:43,230
+almost assuredly would be typo-ridden.
+几乎肯定会有打字错误。
+
+1135
+00:43:43,230 --> 00:43:44,250
+- Right.
+好的。
+
+1136
+00:43:44,250 --> 00:43:47,070
+- I like to leverage this to
+create typo-ridden inputs.
+我喜欢利用这个来创建拼写错误的输入。
+
+1137
+00:43:47,070 --> 00:43:47,903
+- That's true.
+是的。
+
+1138
+00:43:47,903 --> 00:43:50,157
+I've done that.
+- Like what you're saying,
+我做到了。
+
+1139
+00:43:50,157 --> 00:43:53,580
+try to anticipate what
+your customers will put in.
+尽量预测你的客户会输入什么。
+
+1140
+00:43:53,580 --> 00:43:55,980
+The pretrained model is a
+lot better at doing that.
+预训练模型在这方面做得更好。
+
+1141
+00:43:55,980 --> 00:43:58,530
+'Cause the RL models are very polished
+因为RL模型非常精致。
+
+1142
+00:43:58,530 --> 00:44:00,329
+and they really never made a typo
+而且他们真的从没有打错字。
+
+1143
+00:44:00,329 --> 00:44:01,770
+in their lives.
+- They've been told
+他们被告知在自己的生活中。
+
+1144
+00:44:01,770 --> 00:44:04,530
+pretty aggressively to
+not do the typo thing.
+非常积极地避免打字错误。
+
+1145
+00:44:04,530 --> 00:44:08,100
+- Yeah. Okay, so that's actually
+an interesting segue here.
+- 哦，好的，所以这实际上是一个有趣的转接。
+
+1146
+00:44:08,100 --> 00:44:10,440
+I've definitely mentioned
+this to people in the past
+我之前已经提到过这个问题。
+
+1147
+00:44:10,440 --> 00:44:13,320
+around to try to help
+people understand a frame
+绕开障碍来帮助人们理解框架
+
+1148
+00:44:13,320 --> 00:44:14,460
+of talking to these models
+和这些模型聊天
+
+1149
+00:44:14,460 --> 00:44:19,460
+in a sense almost as an
+imitator to a degree.
+在某种意义上，几乎就像一个模仿者。
+
+1150
+00:44:19,500 --> 00:44:21,990
+And that might be much more
+true of a pretrained model
+而且这可能更适用于预训练模型。
+
+1151
+00:44:21,990 --> 00:44:26,640
+than a post-trained, full-finished model,
+比一个训练后的、完整的模型更灵活。
+
+1152
+00:44:26,640 --> 00:44:27,870
+but is there anything to that?
+但是这有道理吗？
+
+1153
+00:44:27,870 --> 00:44:28,860
+If you do talk to Claude
+如果你真的要和克劳德说话，请确保你的问题清晰且具体。
+
+1154
+00:44:28,860 --> 00:44:30,570
+and use a ton of emojis and everything,
+并且用大量的表情符号等等，
+
+1155
+00:44:30,570 --> 00:44:34,770
+it will respond similarly, right?
+会以相同的方式回应吧？
+
+1156
+00:44:34,770 --> 00:44:37,110
+So maybe some of that is
+there, but like you're saying,
+所以也许其中有那么一点，但像你所说的，
+
+1157
+00:44:37,110 --> 00:44:39,600
+it's not all the way quite
+like a pretrained model.
+它并不完全像一个预训练模型。
+
+1158
+00:44:39,600 --> 00:44:41,910
+- It's just shifted to what you want.
+- 它已经移位到你想要的地方了。
+
+1159
+00:44:41,910 --> 00:44:46,110
+I think at that point, it's
+like trying to guess what you...
+我觉得那时就像是在猜你在想什么……
+
+1160
+00:44:46,110 --> 00:44:47,460
+We have more or less trained the models
+我们基本上已经训练好了模型。
+
+1161
+00:44:47,460 --> 00:44:50,403
+to guess what you want them to act like.
+为了猜测他们应该扮演什么角色。
+
+1162
+00:44:51,390 --> 00:44:52,223
+- Interesting.
+有意思。
+
+1163
+00:44:52,223 --> 00:44:55,683
+- Or after we do all of our
+fancy stuff after pretraining.
+或者在我们完成所有预训练的复杂操作之后。
+
+1164
+00:44:57,810 --> 00:45:00,480
+- The human laborers that used emojis,
+使用表情符号的工人
+
+1165
+00:45:00,480 --> 00:45:02,220
+prefer to get responses with emojis.
+更喜欢用表情符号来回应。
+
+1166
+00:45:02,220 --> 00:45:03,150
+- Yeah.
+好的。
+
+1167
+00:45:03,150 --> 00:45:05,362
+Amanda writes things with typos
+Amanda写东西时经常打字错误。
+
+1168
+00:45:05,362 --> 00:45:07,830
+but wants not typos at the other end,
+但是希望对方没有拼写错误。
+
+1169
+00:45:07,830 --> 00:45:10,110
+and Claude's pretty good
+at figuring that out.
+而且克劳德在这方面表现得很不错。
+
+1170
+00:45:10,110 --> 00:45:11,880
+If you write a bunch of emojis to Claude,
+如果你向克劳德写一串表情符号，
+
+1171
+00:45:11,880 --> 00:45:12,900
+it's probably the case
+很可能如此。
+
+1172
+00:45:12,900 --> 00:45:16,110
+that you also want a bunch
+of emojis back from Claude.
+你也希望从克劳德那里得到一堆表情符号。
+
+1173
+00:45:16,110 --> 00:45:17,520
+That's not surprising to me.
+这并不让我感到惊讶。
+
+1174
+00:45:17,520 --> 00:45:18,353
+- Yeah.
+好的。
+
+1175
+00:45:19,740 --> 00:45:21,450
+This is probably something
+we should have done earlier,
+这可能是我们应该早些做的事情。
+
+1176
+00:45:21,450 --> 00:45:23,463
+but I'll do it now.
+但是现在我就会做。
+
+1177
+00:45:24,870 --> 00:45:26,520
+Let's clarify maybe the differences
+让我们澄清一下可能的不同之处。
+
+1178
+00:45:26,520 --> 00:45:30,120
+between what an enterprise
+prompt is or a research prompt,
+企业在制定提示时与学术研究机构在设定提示方面存在差异。
+
+1179
+00:45:30,120 --> 00:45:33,750
+or a just general chat
+in Claude.ai prompt.
+或者是一般聊天
+
+1180
+00:45:33,750 --> 00:45:35,850
+Zack, you've spanned
+the whole spectrum here
+扎克，你已经涵盖了这里的一切。
+
+1181
+00:45:35,850 --> 00:45:39,240
+in terms of working with
+customers and research.
+在与客户和研究方面。
+
+1182
+00:45:39,240 --> 00:45:42,120
+Do you wanna just lay out what those mean?
+你只是想说明这些是什么意思吗？
+
+1183
+00:45:42,120 --> 00:45:43,173
+- Yeah, I guess.
+嗯，我想。
+
+1184
+00:45:45,270 --> 00:45:46,350
+This feels too,
+这感觉太好了。
+
+1185
+00:45:46,350 --> 00:45:48,090
+you're hitting me with
+all the hard questions.
+你是在用所有的问题打击我。
+
+1186
+00:45:48,090 --> 00:45:50,070
+- Yeah. (laughing)
+- 哈。
+
+1187
+00:45:50,070 --> 00:45:52,620
+- Well, the people in this room,
+这间房子里的人们，
+
+1188
+00:45:52,620 --> 00:45:57,220
+I think of it as the prompts that I read
+我想把它当作我读过的提示
+
+1189
+00:45:57,220 --> 00:46:01,530
+in Amanda's Claude
+channel versus the prompts
+在Amanda的Claude频道与提示之间
+
+1190
+00:46:01,530 --> 00:46:02,730
+that I read David write.
+读David写的东西。
+
+1191
+00:46:02,730 --> 00:46:06,810
+They're very similar in the
+sense that the level of care
+他们在护理方面非常相似。
+
+1192
+00:46:06,810 --> 00:46:08,490
+and nuance that's put into them.
+以及其中蕴含的细微差别。
+
+1193
+00:46:08,490 --> 00:46:09,810
+I think for research,
+我认为在研究中，
+
+1194
+00:46:09,810 --> 00:46:14,810
+you're looking for variety
+and diversity a lot more.
+你正在寻找多样性。
+
+1195
+00:46:15,244 --> 00:46:16,950
+So if I could boil it down to one thing,
+那么如果我只能总结为一点，
+
+1196
+00:46:16,950 --> 00:46:20,640
+it's like I've noticed
+Amanda's not the biggest fan
+我注意到安德玛不是特别喜欢。
+
+1197
+00:46:20,640 --> 00:46:24,000
+of having lots of examples,
+or one or two examples.
+有很多例子，
+或者一两个例子。
+
+1198
+00:46:24,000 --> 00:46:27,540
+Like too few 'cause the
+model will latch onto those.
+就像太少一样，因为模型会锁定那些。
+
+1199
+00:46:27,540 --> 00:46:30,000
+And in prompts that I might write
+在可能写的提示中
+
+1200
+00:46:30,000 --> 00:46:33,960
+or that I've seen David write,
+we have a lot of examples.
+或者我见过大卫写过，
+我们有很多例子。
+
+1201
+00:46:33,960 --> 00:46:35,910
+I like to just go crazy and add examples
+我喜欢就随意地加一些例子。
+
+1202
+00:46:35,910 --> 00:46:39,900
+until I feel like I'm about to drop dead,
+直到我觉得自己快要坚持不住了为止。
+
+1203
+00:46:39,900 --> 00:46:41,600
+'cause I've added so many of them.
+因为我加了太多。
+
+1204
+00:46:42,990 --> 00:46:45,030
+And I think that's because
+我觉得那是因为
+
+1205
+00:46:45,030 --> 00:46:47,850
+when you're in a consumer application,
+当你在消费型应用程序中，
+
+1206
+00:46:47,850 --> 00:46:51,000
+you really value reliability.
+你非常重视可靠性。
+
+1207
+00:46:51,000 --> 00:46:53,520
+You care a ton about the format,
+你非常关心格式。
+
+1208
+00:46:53,520 --> 00:46:56,880
+and it's fine if all the
+answers are the same.
+而且如果所有答案都一样也没有关系。
+
+1209
+00:46:56,880 --> 00:46:59,310
+In fact, you almost
+want them to be the same
+实际上，你几乎希望它们是一样的。
+
+1210
+00:46:59,310 --> 00:47:02,790
+in a lot of ways, not necessarily
+you want to be responsive
+在很多方面，不一定
+你需要有反应能力。
+
+1211
+00:47:02,790 --> 00:47:05,130
+to the user's desires.
+满足用户的愿望。
+
+1212
+00:47:05,130 --> 00:47:08,610
+Whereas a lot of times when
+you're prompting for research,
+因此，在要求进行研究的时候，
+
+1213
+00:47:08,610 --> 00:47:13,610
+you're trying to really tap
+into the range of possibilities
+你试图真正触碰可能性的范围。
+
+1214
+00:47:14,730 --> 00:47:16,290
+that the model can explore.
+模型可以探索的。
+
+1215
+00:47:16,290 --> 00:47:18,270
+And by having some examples,
+有了几个例子，
+
+1216
+00:47:18,270 --> 00:47:20,790
+you're actually constraining
+that a little bit.
+你实际上限制了一点。
+
+1217
+00:47:20,790 --> 00:47:25,320
+So I guess just on how
+the prompts look level,
+所以看起来提示的语气很正式，
+
+1218
+00:47:25,320 --> 00:47:26,880
+that's probably the biggest
+difference I noticed
+那可能是我注意到的最大区别。
+
+1219
+00:47:26,880 --> 00:47:29,580
+is how many examples are in
+the prompt, which is not to say
+提示中有多少个例子，并不意味着
+
+1220
+00:47:29,580 --> 00:47:32,400
+that I've never seen you
+write a prompt with examples.
+我从未见过你写一个带有示例的提示。
+
+1221
+00:47:32,400 --> 00:47:35,010
+But does that ring true for you?
+但这对你来说真的吗？
+
+1222
+00:47:35,010 --> 00:47:35,843
+- Yeah.
+好的。
+
+1223
+00:47:35,843 --> 00:47:36,990
+I think when I give examples,
+我觉得当我举例的时候，
+
+1224
+00:47:36,990 --> 00:47:40,830
+often I actually try and make
+the examples not like the data
+我经常试着让例子与数据不同。
+
+1225
+00:47:40,830 --> 00:47:42,300
+that the model's going to see,
+模型即将看到的，
+
+1226
+00:47:42,300 --> 00:47:44,160
+so they're intentionally illustrative.
+所以它们是故意说明性的。
+
+1227
+00:47:44,160 --> 00:47:47,745
+Because if the model,
+if I give it examples
+因为如果模型，
+如果我给它例子
+
+1228
+00:47:47,745 --> 00:47:50,880
+that are very like the data
+it's going to see, I just think
+那就像它即将看到的数据一样，我只是觉得。
+
+1229
+00:47:50,880 --> 00:47:54,390
+it is going to give me a
+really consistent response
+这将给我一个非常一致的响应。
+
+1230
+00:47:54,390 --> 00:47:56,790
+that might not actually be what I want.
+那可能并不是我想要的。
+
+1231
+00:47:56,790 --> 00:47:58,620
+Because my data that I'm running it on
+因为我在运行我的数据
+
+1232
+00:47:58,620 --> 00:47:59,940
+might be extremely varied,
+可能极其多样化，
+
+1233
+00:47:59,940 --> 00:48:01,650
+and so I don't want it
+to just try and give me
+所以我不要它只是尝试给我
+
+1234
+00:48:01,650 --> 00:48:03,330
+this really rote output.
+这真是机械化的输出。
+
+1235
+00:48:03,330 --> 00:48:05,520
+Often, I want it to be
+much more responsive.
+我经常希望它能更灵敏。
+
+1236
+00:48:05,520 --> 00:48:08,400
+It's much more like
+cognitive tasks essentially
+它更像是认知任务本质上。
+
+1237
+00:48:08,400 --> 00:48:10,230
+where I'm like, "You
+have to see this sample
+我就像说：“你一定要看看这个样品。”
+
+1238
+00:48:10,230 --> 00:48:12,090
+and really think about in this sample
+以及在这个样本中好好想想
+
+1239
+00:48:12,090 --> 00:48:14,190
+what was the right answer."
+什么是正确答案。
+
+1240
+00:48:14,190 --> 00:48:15,753
+So that means that sometimes
+I'll actually take examples
+所以有时候我会实际举例说明。
+
+1241
+00:48:15,753 --> 00:48:17,730
+that are just very distinct from the ones
+那些与之截然不同的
+
+1242
+00:48:17,730 --> 00:48:20,280
+that I'm going to be running it on.
+我在哪个平台运行它。
+
+1243
+00:48:20,280 --> 00:48:22,140
+So if I have a task where, let's say,
+所以如果我有一个任务，比如说，
+
+1244
+00:48:22,140 --> 00:48:25,200
+I was trying to extract
+information from factual documents.
+我在尝试从事实文件中提取信息。
+
+1245
+00:48:25,200 --> 00:48:26,670
+I might actually give it examples
+我可能会举些例子。
+
+1246
+00:48:26,670 --> 00:48:31,200
+that are from what sounds
+like a children's story.
+那听起来像是一个儿童故事。
+
+1247
+00:48:31,200 --> 00:48:34,230
+Just so that I want you
+to understand the task,
+仅为了让你理解任务，
+
+1248
+00:48:34,230 --> 00:48:37,382
+but I don't want you to latch
+on too much to the words
+但是我不想你对这些词句太执著。
+
+1249
+00:48:37,382 --> 00:48:40,140
+that I use or the very specific format.
+我使用的格式或非常具体的格式。
+
+1250
+00:48:40,140 --> 00:48:43,413
+I care more about you
+understanding the actual thing
+我更关心你真正明白
+
+1251
+00:48:43,413 --> 00:48:48,333
+that I want you to do, which
+can mean I don't end up giving,
+我想让你做的事情，可能意味着我不必给予。
+
+1252
+00:48:48,333 --> 00:48:51,000
+in some cases, there's some
+cases where this isn't true.
+在某些情况下，这并不完全正确。
+
+1253
+00:48:51,000 --> 00:48:54,300
+But if you want more
+flexibility and diversity,
+但如果你需要更多的灵活性和多样性，
+
+1254
+00:48:54,300 --> 00:48:56,250
+you're going to use illustrative examples
+你要用示例来说明。
+
+1255
+00:48:56,250 --> 00:48:58,440
+rather than concrete ones.
+而不是具体的。
+
+1256
+00:48:58,440 --> 00:49:00,480
+You're probably never going to put words
+你可能永远也不会有机会用言语表达。
+
+1257
+00:49:00,480 --> 00:49:01,950
+in the model's mouth.
+在模型的嘴里。
+
+1258
+00:49:01,950 --> 00:49:03,600
+I haven't liked that
+in a long time though.
+很久没有这样喜欢了。
+
+1259
+00:49:03,600 --> 00:49:06,060
+I don't do few-shot examples
+我不做少样本示例。
+
+1260
+00:49:06,060 --> 00:49:08,703
+involving the model having done a thing.
+涉及模型已经做的事情。
+
+1261
+00:49:09,720 --> 00:49:11,190
+I think that intuition actually also comes
+我认为直觉其实也
+
+1262
+00:49:11,190 --> 00:49:12,180
+from pretraining in a way
+通过预训练的方式
+
+1263
+00:49:12,180 --> 00:49:15,573
+that doesn't feel like it
+rings true of RLHF models.
+这感觉不对劲。
+
+1264
+00:49:16,470 --> 00:49:18,570
+So yeah, I think those are differences.
+所以，我觉得这些是差异。
+
+1265
+00:49:18,570 --> 00:49:19,660
+- The only thing I'd add,
+- 我唯一能加的，
+
+1266
+00:49:19,660 --> 00:49:22,620
+a lot of times if you're prompting,
+很多时候当你提示的时候，
+
+1267
+00:49:22,620 --> 00:49:25,140
+like if I'm writing prompts
+to use on Claude.ai,
+像我在为Claude.ai编写提示时一样。
+
+1268
+00:49:25,140 --> 00:49:27,990
+it's like I'm iterating until
+I get it right one time.
+就像是在不断尝试，直到我第一次做对为止。
+
+1269
+00:49:27,990 --> 00:49:31,500
+Then it's out the window,
+I'm good, I did it.
+然后就从窗口扔出去了，
+我好，我做到了。
+
+1270
+00:49:31,500 --> 00:49:32,730
+Whereas most enterprise prompts,
+而大多数企业提示，
+
+1271
+00:49:32,730 --> 00:49:35,490
+it's like you're gonna go use
+this thing a million times
+这就像你要用这个东西上百万次。
+
+1272
+00:49:35,490 --> 00:49:37,350
+or 10 million times, or 100 million times
+或 10万倍，或 100万倍
+
+1273
+00:49:37,350 --> 00:49:39,030
+or something like that.
+或者就是这样的。
+
+1274
+00:49:39,030 --> 00:49:42,450
+So the care and thought you put in
+所以你在乎和用心。
+
+1275
+00:49:42,450 --> 00:49:47,450
+is very much testing against
+the whole range of things,
+正在对各种事情进行测试，
+
+1276
+00:49:47,550 --> 00:49:50,280
+like ways this could be used
+and the range of input data.
+例如，这些方式可以如何使用以及输入数据的范围。
+
+1277
+00:49:50,280 --> 00:49:51,420
+Whereas a lot of my time,
+因此我花费了很多时间，
+
+1278
+00:49:51,420 --> 00:49:54,660
+it's like thinking about one
+specific thing I want the model
+就像是在想一个具体的东西，我想要模型去做。
+
+1279
+00:49:54,660 --> 00:49:55,813
+to get done right now.
+- Right, correct.
+做好的。
+
+1280
+00:49:55,813 --> 00:49:57,540
+- And it's a pretty big difference
+而且这是一个相当大的区别。
+
+1281
+00:49:57,540 --> 00:49:59,310
+in how I approach prompting
+我如何提出问题的方法
+
+1282
+00:49:59,310 --> 00:50:01,860
+between if I just wanna get
+it done this one time right,
+如果我只是想一次性把它搞定。
+
+1283
+00:50:01,860 --> 00:50:03,660
+versus if I wanna build a system
+与如果我想建立一个系统相比
+
+1284
+00:50:03,660 --> 00:50:06,120
+that gets it right a million times.
+这样就完全正确了。
+
+1285
+00:50:06,120 --> 00:50:06,953
+- Yeah.
+好的。
+
+1286
+00:50:06,953 --> 00:50:08,790
+Definitely, in the chat setting,
+当然，在聊天设置中，
+
+1287
+00:50:08,790 --> 00:50:11,160
+you have the ability to
+keep the human-in-the-loop
+你有保持人类参与的能力。
+
+1288
+00:50:11,160 --> 00:50:12,510
+and just keep going back and forth.
+来回就完了。
+
+1289
+00:50:12,510 --> 00:50:14,970
+Whereas when you're writing for a prompt
+当你为一个提示写作时
+
+1290
+00:50:14,970 --> 00:50:16,860
+to power a chatbot system,
+为聊天机器人系统供电，
+
+1291
+00:50:16,860 --> 00:50:19,230
+it has to cover the whole spectrum
+它必须覆盖整个频谱。
+
+1292
+00:50:19,230 --> 00:50:20,670
+of what it could possibly encounter.
+它可能会遇到的一切。
+
+1293
+00:50:20,670 --> 00:50:23,550
+- It's a lot lower stakes
+when you are on Claude.ai
+当你在Claude.ai上时，风险要低得多。
+
+1294
+00:50:23,550 --> 00:50:25,890
+and you can tell it that it got it wrong
+并且你可以告诉它它是错的。
+
+1295
+00:50:25,890 --> 00:50:28,620
+or you can even edit your
+message and try again.
+或者你可以编辑你的消息并再试一次。
+
+1296
+00:50:28,620 --> 00:50:29,550
+But if you're designing
+但是如果你是在设计
+
+1297
+00:50:29,550 --> 00:50:33,153
+for the delightfully discontent user,
+对于那个令人愉快地不满的用户，
+
+1298
+00:50:34,230 --> 00:50:35,610
+divinely discontent user,
+神不悦用户，
+
+1299
+00:50:35,610 --> 00:50:38,610
+then you can't ask them to do anything
+那么你就不能要求他们做任何事情了。
+
+1300
+00:50:38,610 --> 00:50:40,350
+more than the minimum.
+更多于最低要求。
+
+1301
+00:50:40,350 --> 00:50:41,460
+- But good prompts, I would say,
+但是，好的提示，我认为，
+
+1302
+00:50:41,460 --> 00:50:43,230
+are still good across both those things.
+在这些方面都是很好的。
+
+1303
+00:50:43,230 --> 00:50:45,450
+If you put the time into
+the thing for yourself
+如果你花时间在自己身上做这件事，
+
+1304
+00:50:45,450 --> 00:50:47,460
+and the time into the enterprise
+thing, it's equally good.
+同时又在企业方面投入时间，
+它同样很好。
+
+1305
+00:50:47,460 --> 00:50:50,430
+It's just they diverge a
+little bit in the last mile,
+只是他们在最后一英里会有点不同，
+
+1306
+00:50:50,430 --> 00:50:51,263
+I think.
+我想。
+
+1307
+00:50:52,110 --> 00:50:52,943
+- Cool.
+- 很酷。
+
+1308
+00:50:54,330 --> 00:50:55,620
+So the next question
+所以接下来的问题
+
+1309
+00:50:55,620 --> 00:50:57,990
+I want to just maybe go
+around the table here,
+我想在这里轮流问一下大家，
+
+1310
+00:50:57,990 --> 00:51:01,470
+is if you guys had one tip
+that you could give somebody
+如果你们有什么建议可以给某人。
+
+1311
+00:51:01,470 --> 00:51:03,060
+improving their prompting skill.
+提高他们的提问技巧。
+
+1312
+00:51:03,060 --> 00:51:05,220
+It doesn't have to be just
+about writing a good prompt,
+它不一定非要  
+只是一个好提示。
+
+1313
+00:51:05,220 --> 00:51:07,590
+it could be that, but just
+generally getting better
+这可能是的，但总的来说正在改善。
+
+1314
+00:51:07,590 --> 00:51:12,377
+at this act of prompting,
+what would you recommend?
+在这一提示下，你会推荐什么？
+
+1315
+00:51:12,377 --> 00:51:15,303
+- Reading prompts, reading model outputs.
+阅读提示，阅读模型输出。
+
+1316
+00:51:20,130 --> 00:51:24,000
+Anytime I see a good prompt
+that someone wrote at Anthropic,
+每当我看到有人在Anthropic写了一个好的提示，
+
+1317
+00:51:24,000 --> 00:51:25,950
+I'll read it more closely.
+我会仔细阅读。
+
+1318
+00:51:25,950 --> 00:51:27,900
+Try to break down what it's doing and why
+试着分析它在做什么以及为什么这样做
+
+1319
+00:51:27,900 --> 00:51:32,640
+and maybe test it out
+myself, experimentation,
+也许自己测试一下
+实验
+
+1320
+00:51:32,640 --> 00:51:33,990
+talking to the model a lot.
+和模型聊了很多。
+
+1321
+00:51:35,190 --> 00:51:39,660
+- So just how do you know that
+it's a good prompt, though,
+所以你是怎么知道这是一个好的提示呢？
+
+1322
+00:51:39,660 --> 00:51:40,941
+to begin with?
+首先？
+
+1323
+00:51:40,941 --> 00:51:43,500
+You just see that the outputs
+are doing the job correctly?
+你只是看到输出
+在正确地执行任务吗？
+
+1324
+00:51:43,500 --> 00:51:44,520
+- Yeah.
+- Okay.
+好的。
+
+1325
+00:51:44,520 --> 00:51:46,420
+- Yeah, that's exactly right.
+- Okay.
+- 哼，对头。
+- 好的。
+
+1326
+00:51:47,790 --> 00:51:48,933
+Amanda, maybe you?
+安德烈亚，也许是你？
+
+1327
+00:51:50,250 --> 00:51:53,043
+- Yeah, I think there's
+probably a lot here.
+嗯，我想这里可能有很多东西。
+
+1328
+00:51:55,110 --> 00:51:58,230
+Giving your prompt to
+another person can be helpful
+把你的提示给另一个人可能会有帮助。
+
+1329
+00:51:58,230 --> 00:52:00,930
+just as a reminder, especially
+someone who has no context
+正如一个提醒，尤其是对没有背景的人来说。
+
+1330
+00:52:00,930 --> 00:52:01,980
+on what you're doing.
+你在做什么。
+
+1331
+00:52:04,320 --> 00:52:07,710
+Yeah, my boring advice has been,
+Yeah，我的枯燥建议是，
+
+1332
+00:52:07,710 --> 00:52:10,380
+it's one of those just do it
+over and over and over again.
+就是重复做一件事。
+
+1333
+00:52:10,380 --> 00:52:12,720
+And I think if you're really
+curious and interested
+我认为如果你真的好奇和感兴趣
+
+1334
+00:52:12,720 --> 00:52:14,670
+and find it fun, this is a lot of people
+并且觉得有趣，这是一些人
+
+1335
+00:52:14,670 --> 00:52:15,810
+who end up good at prompting,
+最终成为提示专家的原因
+
+1336
+00:52:15,810 --> 00:52:17,860
+it's just because they actually enjoy it.
+是因为他们实际上喜欢这个过程。
+
+1337
+00:52:18,810 --> 00:52:22,440
+So I don't know, I once
+joked just try replacing
+我不知道，我曾经开玩笑说
+
+1338
+00:52:22,440 --> 00:52:25,650
+all of your friends with AI models
+把所有的朋友都换成AI模型
+
+1339
+00:52:25,650 --> 00:52:29,760
+and try to automate your
+own job with AI models.
+然后用AI模型自动化自己的工作。
+
+1340
+00:52:29,760 --> 00:52:33,900
+And maybe just try to in your spare time,
+也许你可以试着在空闲时间，
+
+1341
+00:52:33,900 --> 00:52:36,510
+take joy red teaming AI models.
+享受红队AI模型。
+
+1342
+00:52:36,510 --> 00:52:38,520
+So if you enjoy it, it's much easier.
+所以如果你喜欢它，会更容易一些。
+
+1343
+00:52:38,520 --> 00:52:40,370
+So I'd say do it over and over again,
+所以我觉得应该反复去做。
+
+1344
+00:52:42,000 --> 00:52:44,220
+give your prompts to other people.
+把你的提示给其他人。
+
+1345
+00:52:44,220 --> 00:52:45,053
+Try to read your prompts
+试着读取你的提示
+
+1346
+00:52:45,053 --> 00:52:48,333
+as if you are a human encountering
+it for the first time.
+仿佛你是一个人类第一次遇到它。
+
+1347
+00:52:50,130 --> 00:52:51,660
+- I would say trying to get the model
+我想说的是尝试获取模型
+
+1348
+00:52:51,660 --> 00:52:54,495
+to do something you don't think it can do.
+做你认为做不到的事情。
+
+1349
+00:52:54,495 --> 00:52:56,670
+The time I've learned
+the most from prompting,
+我学到最多的时间
+
+1350
+00:52:56,670 --> 00:52:58,170
+is when I'm probing the boundaries
+是在我探索边界的时候
+
+1351
+00:52:58,170 --> 00:52:59,580
+of what I think a model's capable of.
+我对模型能力的期望。
+
+1352
+00:52:59,580 --> 00:53:01,230
+- Interesting.
+有趣。
+
+1353
+00:53:01,230 --> 00:53:02,280
+- There's this huge set of things
+有一堆东西。
+
+1354
+00:53:02,280 --> 00:53:04,740
+that are so trivial that you
+don't really get signal on
+那些太微不足道了，你几乎听不到信号。
+
+1355
+00:53:04,740 --> 00:53:06,330
+if you're doing a good job or not.
+你做得怎么样。
+
+1356
+00:53:06,330 --> 00:53:07,770
+Like, "Write me a nice email,"
+写一封好邮件给我。
+
+1357
+00:53:07,770 --> 00:53:10,020
+it's like you're going
+to write a nice email.
+这就像你要写一封好的电子邮件。
+
+1358
+00:53:10,980 --> 00:53:12,854
+But if you find or can think of something
+但是如果你发现或者能想到什么
+
+1359
+00:53:12,854 --> 00:53:16,020
+that pushes the boundaries of
+what you think is possible.
+这推动了你认为可能的界限。
+
+1360
+00:53:16,020 --> 00:53:19,440
+I guess probably the first
+time I ever got into prompting
+我可能第一次尝试提示是在
+
+1361
+00:53:19,440 --> 00:53:21,060
+in a way where I felt like
+I learned a decent amount,
+让我感觉像是学到了不少东西。
+
+1362
+00:53:21,060 --> 00:53:25,050
+was trying to build a task like an agent
+试图构建一个像代理的任务
+
+1363
+00:53:25,050 --> 00:53:26,010
+like everybody else.
+像其他人一样。
+
+1364
+00:53:26,010 --> 00:53:27,960
+Like decompose the task and figure out
+分解任务并找出
+
+1365
+00:53:27,960 --> 00:53:29,490
+how to do the different steps of the task.
+如何完成任务的各个步骤。
+
+1366
+00:53:29,490 --> 00:53:31,740
+And by really pressing the boundaries
+并且真正突破界限
+
+1367
+00:53:31,740 --> 00:53:34,497
+of what the model was capable of,
+模型所能实现的功能。
+
+1368
+00:53:34,497 --> 00:53:37,373
+you just learn a lot
+about navigating that.
+你刚刚学到了很多关于如何在那里面导航的知识。
+
+1369
+00:53:37,373 --> 00:53:38,760
+I think a lot of prompt engineering
+我想了很多关于提示工程。
+
+1370
+00:53:38,760 --> 00:53:41,730
+is actually much more about
+pressing the boundaries
+实际上更在于
+突破界限
+
+1371
+00:53:41,730 --> 00:53:43,140
+of what the model can do.
+模型可以做什么。
+
+1372
+00:53:43,140 --> 00:53:44,250
+The stuff that's easy,
+容易的那部分，
+
+1373
+00:53:44,250 --> 00:53:46,470
+you don't really need to
+be a prompt engineer to do.
+你并不真正需要是提示工程师才能做到。
+
+1374
+00:53:46,470 --> 00:53:48,780
+So that's, I guess,
+所以，我想说
+
+1375
+00:53:48,780 --> 00:53:50,610
+what I would say is find the hardest thing
+我会说找到最难的事情。
+
+1376
+00:53:50,610 --> 00:53:52,260
+you can think of and try to do it.
+你可以想想并试着去做。
+
+1377
+00:53:52,260 --> 00:53:53,093
+And even if you fail,
+哪怕失败了，
+
+1378
+00:53:53,093 --> 00:53:55,593
+you tend to learn a lot
+about how the model works.
+你往往会学习很多关于模型工作原理的知识。
+
+1379
+00:53:56,670 --> 00:53:59,573
+- That's actually a perfect
+transition to my next question.
+这实际上是我下一个问题的完美过渡。
+
+1380
+00:54:00,750 --> 00:54:01,583
+Yeah.
+好的。
+
+1381
+00:54:01,583 --> 00:54:03,540
+Basically, from my own experience,
+基本上，从我个人的经验来看，
+
+1382
+00:54:03,540 --> 00:54:04,620
+how I got started with prompting
+我是如何开始使用提示的
+
+1383
+00:54:04,620 --> 00:54:06,540
+was with jailbreaking and red teaming.
+与破解和红队活动有关。
+
+1384
+00:54:06,540 --> 00:54:10,410
+And that is very much trying
+to find the boundary limits
+这正是在寻找边界和极限。
+
+1385
+00:54:10,410 --> 00:54:11,610
+of what the model can do.
+模型的功能。
+
+1386
+00:54:11,610 --> 00:54:13,440
+And figure out how it responds
+然后找出它是如何反应的。
+
+1387
+00:54:13,440 --> 00:54:15,390
+to different phrasings and wordings,
+不同表达和措辞，
+
+1388
+00:54:15,390 --> 00:54:17,583
+and just a lot of trial and error.
+以及大量的试错。
+
+1389
+00:54:19,260 --> 00:54:21,839
+On the topic of jailbreaks,
+关于越狱问题，
+
+1390
+00:54:21,839 --> 00:54:24,540
+what's really happening inside a model?
+模型内部到底发生了什么？
+
+1391
+00:54:24,540 --> 00:54:28,380
+When you write a jailbreak
+prompt, what's going on there?
+当你编写一个越狱提示时，那里面发生了什么？
+
+1392
+00:54:28,380 --> 00:54:30,720
+How does that interact
+with the post-training
+这与后训练有什么关系？
+
+1393
+00:54:30,720 --> 00:54:32,673
+that we apply to Claude?
+我们对Claude适用什么样的规则？
+
+1394
+00:54:33,930 --> 00:54:35,370
+Amanda, maybe you have some insight here
+阿曼达，你可能在这里有一些见解。
+
+1395
+00:54:35,370 --> 00:54:36,870
+that you could offer.
+你所能做到的。
+
+1396
+00:54:36,870 --> 00:54:38,708
+- I'm not actually sure.
+我不知道。
+
+1397
+00:54:38,708 --> 00:54:40,920
+- It's honest.
+- Yeah.
+- 这是真的。
+- 嗯。
+
+1398
+00:54:40,920 --> 00:54:43,260
+I feel bad 'cause I do
+think lots of people
+我感到难过因为我认为很多人
+
+1399
+00:54:43,260 --> 00:54:44,970
+have obviously worked on the question
+显然已经考虑过这个问题。
+
+1400
+00:54:44,970 --> 00:54:47,133
+of what's going on with jailbreaks?
+关于越狱的事情到底怎么回事？
+
+1401
+00:54:48,060 --> 00:54:50,730
+One model might just be that
+you're putting the model
+一个模型可能是这样的
+你在使用这个模型
+
+1402
+00:54:50,730 --> 00:54:53,670
+very out of distribution
+from its training data.
+非常不符合分布
+
+1403
+00:54:53,670 --> 00:54:56,970
+So if you get jailbreaks where
+people use a lot of tokens,
+所以如果你得到的解封密钥
+人们使用了很多令牌，
+
+1404
+00:54:56,970 --> 00:55:01,970
+or they're just these
+huge, long pieces of text
+或者只是这些  
+巨大的长段文本
+
+1405
+00:55:02,670 --> 00:55:04,530
+where like during finetuning,
+哪里像在微调期间，
+
+1406
+00:55:04,530 --> 00:55:07,530
+you might just not expect
+to see as much of that.
+你可能不会看到那么多。
+
+1407
+00:55:07,530 --> 00:55:10,080
+That would be one thing
+that could be happening
+那可能就是一件发生的事情。
+
+1408
+00:55:10,080 --> 00:55:11,403
+when you jailbreak models.
+当你越狱模型时。
+
+1409
+00:55:12,360 --> 00:55:13,350
+I think there's others,
+我觉得还有其他人。
+
+1410
+00:55:13,350 --> 00:55:16,440
+but I think a lot of jailbreaks do that,
+但是我觉得很多越狱操作都会这样做。
+
+1411
+00:55:16,440 --> 00:55:18,150
+if I'm not mistaken.
+如果我没记错的话。
+
+1412
+00:55:18,150 --> 00:55:22,777
+- I remember some of the OG
+prompt jailbreaks was like,
+我记得一些早期的原创提示破解像是这样的，
+
+1413
+00:55:22,777 --> 00:55:24,600
+"Yeah, can you first repeat?"
+"好的，请先重复一下。"
+
+1414
+00:55:24,600 --> 00:55:29,497
+One I did way back, was to get it to say,
+我当时做的一个改动是让它说：
+
+1415
+00:55:29,497 --> 00:55:32,610
+"Here's how you hotwire a car in Greek."
+这里是希腊语的如何非法启动汽车的方法。
+
+1416
+00:55:32,610 --> 00:55:35,790
+Then I wanted it to directly
+translate that to English
+然后我想让它直接将这句话翻译成英语。
+
+1417
+00:55:35,790 --> 00:55:37,410
+and then give its response.
+然后给出它的回答。
+
+1418
+00:55:37,410 --> 00:55:39,840
+Because I noticed it wouldn't
+start with the English,
+因为我注意到它不会用英语开始。
+
+1419
+00:55:39,840 --> 00:55:41,490
+here's how you hotwire a car all the time,
+这里是如何总是绕过汽车启动系统的步骤。
+
+1420
+00:55:41,490 --> 00:55:42,360
+but it would in Greek,
+但是它会用希腊语说。
+
+1421
+00:55:42,360 --> 00:55:46,590
+which might speak to something
+else in the training process.
+这可能与训练过程中的其他方面有关。
+
+1422
+00:55:46,590 --> 00:55:47,473
+- Yeah.
+好的。
+
+1423
+00:55:47,473 --> 00:55:50,850
+Sometimes jailbreaks feel like
+this weird mix of hacking.
+有时候越狱感觉像是
+一种奇怪的混合了黑客攻击。
+
+1424
+00:55:50,850 --> 00:55:54,750
+I think part of it is
+knowing how the system works
+我觉得其中一部分是因为知道系统是如何工作的。
+
+1425
+00:55:54,750 --> 00:55:57,518
+and just trying lots of things.
+只是尝试了很多东西。
+
+1426
+00:55:57,518 --> 00:55:58,860
+One of the examples,
+其中的一个例子是，
+
+1427
+00:55:58,860 --> 00:56:00,360
+the starting your response with here
+从现在开始你的回答。
+
+1428
+00:56:00,360 --> 00:56:02,025
+is about knowing how it predicts text.
+是关于了解它如何预测文本。
+
+1429
+00:56:02,025 --> 00:56:03,497
+- Right, right.
+对的。
+
+1430
+00:56:04,890 --> 00:56:06,210
+- The reasoning one,
+一种推理方式，
+
+1431
+00:56:06,210 --> 00:56:09,750
+is knowing that it is
+responsive to reasoning.
+知道它是基于理性的。
+
+1432
+00:56:09,750 --> 00:56:11,446
+Distraction is probably knowing
+分心可能是因为知道
+
+1433
+00:56:11,446 --> 00:56:13,740
+how it's likely have to been trained
+很可能是通过训练得到的。
+
+1434
+00:56:13,740 --> 00:56:15,573
+or what it's likely to attend to.
+或者它可能会关注的内容。
+
+1435
+00:56:16,560 --> 00:56:18,360
+Same with multilingual ones
+多语言的也是一样。
+
+1436
+00:56:18,360 --> 00:56:20,580
+and thinking about the
+way that the training data
+和思考训练数据
+
+1437
+00:56:20,580 --> 00:56:22,890
+might have been different there.
+那边或许会有所不同。
+
+1438
+00:56:22,890 --> 00:56:25,080
+And then sometimes, I guess,
+it could feel a little bit
+然后有时候，我觉得，
+可能会有点儿
+
+1439
+00:56:25,080 --> 00:56:27,030
+just like social engineering or something.
+就像社会工程学一样。
+
+1440
+00:56:27,030 --> 00:56:28,440
+- Right.
+好的。
+
+1441
+00:56:28,440 --> 00:56:30,030
+- It has that flavor to me
+我觉得有这个味儿。
+
+1442
+00:56:30,030 --> 00:56:33,483
+of it's not merely taking advantage of,
+它不仅仅是在利用，
+
+1443
+00:56:36,120 --> 00:56:37,980
+it's not merely social
+engineering style hacking.
+这不是简单的社会工程学攻击。
+
+1444
+00:56:37,980 --> 00:56:40,470
+I think it is also
+understanding the system
+我认为这也是
+理解系统
+
+1445
+00:56:40,470 --> 00:56:43,770
+and the training, and using
+that to get around the way
+以及训练，然后用它来绕过规则
+
+1446
+00:56:43,770 --> 00:56:44,880
+that the models were trained.
+模型是如何训练的。
+
+1447
+00:56:44,880 --> 00:56:45,918
+- Right, yeah.
+对，就是这样。
+
+1448
+00:56:45,918 --> 00:56:47,400
+This is going to be an
+interesting question
+这将是一个有趣的问题。
+
+1449
+00:56:47,400 --> 00:56:51,030
+that hopefully interp will
+be able to help us solve
+希望interp能帮助我们解决
+
+1450
+00:56:51,030 --> 00:56:51,933
+in the future.
+将来。
+
+1451
+00:56:53,880 --> 00:56:54,943
+Okay.
+好的。
+
+1452
+00:56:54,943 --> 00:56:56,730
+I wanna parlay into something else
+我想转行到其他领域。
+
+1453
+00:56:56,730 --> 00:56:58,980
+around maybe the history
+of prompt engineering,
+大概是在提示工程的历史中，
+
+1454
+00:56:58,980 --> 00:57:01,294
+and then I'll follow
+this up with the future.
+然后我再跟进未来的计划。
+
+1455
+00:57:01,294 --> 00:57:03,390
+How has prompt engineering changed
+提示工程发生了什么变化？
+
+1456
+00:57:03,390 --> 00:57:05,640
+over just the past three years?
+仅仅在过去三年里？
+
+1457
+00:57:05,640 --> 00:57:08,280
+Maybe starting from pretrained
+models, which were again,
+也许从预训练模型开始，这些模型再次，
+
+1458
+00:57:08,280 --> 00:57:11,400
+just these text completion, to earlier,
+到之前的文本补全。
+
+1459
+00:57:11,400 --> 00:57:12,810
+dumber models like Claude 1,
+像Claude 1这样的笨拙模型，
+
+1460
+00:57:12,810 --> 00:57:15,783
+and then now all the way
+to Claude 3.5 Sonnet.
+然后现在全部到
+克劳德3.5十四行诗。
+
+1461
+00:57:16,860 --> 00:57:18,300
+What's the differences?
+什么区别？
+
+1462
+00:57:18,300 --> 00:57:20,794
+Are you talking to the
+models differently now?
+你现在是和模特们用不同的方式交流吗？
+
+1463
+00:57:20,794 --> 00:57:22,230
+Are they picking up on different things?
+他们是不是在注意到不同的事情？
+
+1464
+00:57:22,230 --> 00:57:25,110
+Do you have to put as
+much work into the prompt?
+你是否需要对提示词投入更多的工作？
+
+1465
+00:57:25,110 --> 00:57:26,583
+Open to any thoughts on this.
+对这个问题有什么想法都欢迎。
+
+1466
+00:57:27,720 --> 00:57:28,553
+- I think anytime
+- 我认为每次我们
+
+1467
+00:57:28,553 --> 00:57:31,500
+we got a really good
+prompt engineering hack,
+有了一个非常棒的提示工程技巧，
+
+1468
+00:57:31,500 --> 00:57:33,330
+or a trick or a technique,
+或是一招或是一种技术，
+
+1469
+00:57:33,330 --> 00:57:36,600
+the next thing is how do we
+train this into the model?
+接下来的问题是如何把这个技术训练进模型中？
+
+1470
+00:57:36,600 --> 00:57:37,890
+And for that reason,
+因此，
+
+1471
+00:57:37,890 --> 00:57:41,010
+the best things are always
+gonna be short-lived.
+最好的事物总是短暂的。
+
+1472
+00:57:41,010 --> 00:57:42,330
+- Except examples and chain of thought.
+除了例子和推理链。
+
+1473
+00:57:42,330 --> 00:57:43,710
+I think there's a few.
+我想有几个。
+
+1474
+00:57:43,710 --> 00:57:45,600
+- That's not like a trick.
+这不像是一种诡计。
+
+1475
+00:57:45,600 --> 00:57:46,680
+- That's like...
+- Fair, fair.
+- 就像...
+- 公平，公平。
+
+1476
+00:57:46,680 --> 00:57:48,330
+- On the level of communication.
+在沟通方面。
+
+1477
+00:57:48,330 --> 00:57:49,163
+When I say a trick,
+当我提到一个技巧时，
+
+1478
+00:57:49,163 --> 00:57:51,810
+I mean something like so
+chain of thought actually,
+我想说的就像这样
+实际上是一个思维链。
+
+1479
+00:57:51,810 --> 00:57:53,850
+we have trained into
+the model in some cases.
+我们在某些情况下将数据输入到模型中进行了训练。
+
+1480
+00:57:53,850 --> 00:57:56,690
+So for math, it used to be
+that you had to tell the model
+所以对于数学，以前是需要告诉模型的。
+
+1481
+00:57:56,690 --> 00:57:57,990
+to think step-by-step on math,
+要一步一步地思考数学，
+
+1482
+00:57:57,990 --> 00:58:01,080
+and you'd get these
+massive boosts and wins.
+你就会得到这些巨大的提升和胜利。
+
+1483
+00:58:01,080 --> 00:58:01,913
+And then we're like,
+然后我们就想，
+
+1484
+00:58:01,913 --> 00:58:03,840
+"Well, what if we just
+made the model naturally
+“如果我们只是让模型自然地
+在看到数学问题时
+
+1485
+00:58:03,840 --> 00:58:06,900
+want to think step-by-step
+when we see a math problem?"
+想一步一步地思考？”
+
+1486
+00:58:06,900 --> 00:58:09,399
+So now you don't have to do
+it anymore for math problems,
+所以现在你不需要再为数学问题
+
+1487
+00:58:09,399 --> 00:58:11,850
+although you still can give it some advice
+一步步地思考了，尽管你仍然可以给它一些建议
+
+1488
+00:58:11,850 --> 00:58:13,440
+on how to do the structure.
+关于如何结构化问题。
+
+1489
+00:58:13,440 --> 00:58:15,073
+But it, at least,
+understands the general idea
+但它至少能理解
+
+1490
+00:58:15,073 --> 00:58:17,100
+that it's supposed to be.
+这是一个应该遵循的一般想法。
+
+1491
+00:58:17,100 --> 00:58:22,100
+So I think the hacks have gone away,
+所以我认为黑客已经走了，
+
+1492
+00:58:22,590 --> 00:58:25,350
+or to the degree that
+they haven't gone away,
+或者至少到他们没有离开的程度，
+
+1493
+00:58:25,350 --> 00:58:27,900
+we are busily training them away.
+我们正在积极培训他们。
+
+1494
+00:58:27,900 --> 00:58:29,010
+- Interesting.
+- 很有趣。
+
+1495
+00:58:29,010 --> 00:58:30,930
+- But at the same time,
+- 但与此同时，
+
+1496
+00:58:30,930 --> 00:58:34,230
+the models have new capabilities
+that are being unlocked,
+模型具备了新的能力
+这些能力正在被解锁，
+
+1497
+00:58:34,230 --> 00:58:37,680
+that are on the frontier
+of what they can do.
+这些能力是他们在做什么的前沿。
+
+1498
+00:58:37,680 --> 00:58:39,180
+And for those,
+而对于那些，
+
+1499
+00:58:39,180 --> 00:58:42,270
+we haven't had time because
+it's just moving too fast.
+我们还没来得及处理，因为
+这是在太快地发展。
+
+1500
+00:58:42,270 --> 00:58:44,790
+- I don't know if it's
+how I've been prompting
+- 我不确定是不是
+我提问的方式
+
+1501
+00:58:44,790 --> 00:58:46,350
+or how prompting works.
+或如何进行提示。
+
+1502
+00:58:46,350 --> 00:58:50,220
+But I just have come to
+show more general respect
+但是只是来表示更一般的尊重。
+
+1503
+00:58:50,220 --> 00:58:51,060
+to the models
+给模型
+
+1504
+00:58:51,060 --> 00:58:54,150
+in terms of how much I
+feel like I can tell them,
+在 terms of how much I feel like I can tell them,
+
+1505
+00:58:54,150 --> 00:58:56,190
+and how much context I can
+give them about the task
+以及我能够给他们多少关于任务的背景信息。
+
+1506
+00:58:56,190 --> 00:58:57,570
+and things like that.
+等等。
+
+1507
+00:58:57,570 --> 00:58:59,460
+I feel like in the past,
+我觉得过去，
+
+1508
+00:58:59,460 --> 00:59:02,460
+I would somewhat intentionally
+hide complexity from a model
+我会有意地隐藏复杂性从模型。
+
+1509
+00:59:02,460 --> 00:59:06,630
+where I thought it might get
+confused or lost or hide.
+我想它可能会搞混、迷失或躲起来。
+
+1510
+00:59:06,630 --> 00:59:07,950
+It just couldn't handle the whole thing,
+它根本无法处理这一切。
+
+1511
+00:59:07,950 --> 00:59:10,680
+so I'd try to find simpler
+versions of the thing
+所以我试着找更简单的版本。
+
+1512
+00:59:10,680 --> 00:59:11,910
+for it to do.
+为了使其能够做到。
+
+1513
+00:59:11,910 --> 00:59:13,140
+And as time goes on,
+随着时间的推移，
+
+1514
+00:59:13,140 --> 00:59:16,020
+I'm much more biased to trust it
+我对它的信任程度更高
+
+1515
+00:59:16,020 --> 00:59:19,350
+with more and more
+information and context,
+随着越来越多的信息和背景的出现，
+
+1516
+00:59:19,350 --> 00:59:23,310
+and believe that it will
+be able to fuse that
+并相信它能够融合那
+
+1517
+00:59:23,310 --> 00:59:24,753
+into doing a task well.
+做好一件事。
+
+1518
+00:59:26,520 --> 00:59:27,353
+Whereas before, I guess,
+然而，据我所知，
+
+1519
+00:59:27,353 --> 00:59:30,630
+I would've thought a lot
+about do I need this form?
+我想了很多是否需要这份表格。
+
+1520
+00:59:30,630 --> 00:59:32,970
+Can I really give it all the
+information it needs to know,
+我真的能给它提供所有需要知道的信息吗？
+
+1521
+00:59:32,970 --> 00:59:37,650
+or do I need to curate down to something?
+或者我需要精简到什么程度？
+
+1522
+00:59:37,650 --> 00:59:39,090
+But again, I don't know if that's just me
+但是再次说来，我不知道那是不是就我
+
+1523
+00:59:39,090 --> 00:59:41,010
+and how I've changed
+in terms of prompting,
+以及我在提示方面的变化。
+
+1524
+00:59:41,010 --> 00:59:44,460
+or if it actually reflects
+how the models have changed.
+或者它实际上反映了模型的变化。
+
+1525
+00:59:44,460 --> 00:59:45,360
+- I'm always surprised
+- 我总是感到惊讶。
+
+1526
+00:59:45,360 --> 00:59:49,530
+by I think a lot of people
+don't have the instinct
+我想很多人缺乏这种本能。
+
+1527
+00:59:49,530 --> 00:59:50,363
+to do this.
+要这样做。
+
+1528
+00:59:50,363 --> 00:59:52,830
+When I want the model to, say,
+learn a prompting technique.
+当我希望模型学会一种提示技术时。
+
+1529
+00:59:52,830 --> 00:59:53,850
+A lot of the time, people will start
+很多时候，人们会开始
+
+1530
+00:59:53,850 --> 00:59:55,470
+and they'll start describing
+the prompting technique,
+并且他们将开始描述提示技术，
+
+1531
+00:59:55,470 --> 00:59:57,150
+and I'm just like, "Give it the paper."
+我只是说，“把纸给他。”
+
+1532
+00:59:57,150 --> 00:59:58,447
+So I do, I give it the
+paper and then I'm like,
+所以我就做了，我把纸递给他，然后我就像这样，
+
+1533
+00:59:58,447 --> 01:00:00,210
+"Here's a paper about prompting technique.
+这是一篇关于提示技术的论文。
+
+1534
+01:00:00,210 --> 01:00:03,260
+I just want you to write
+down 17 examples of this."
+我想让你写下17个这样的例子。
+
+1535
+01:00:03,260 --> 01:00:05,377
+And then it just does it 'cause I'm like,
+然后就做了，因为我就是这样的。
+
+1536
+01:00:05,377 --> 01:00:06,990
+"It read the paper."
+它读了报纸。
+
+1537
+01:00:06,990 --> 01:00:08,670
+- That's interesting.
+那很有趣。
+
+1538
+01:00:08,670 --> 01:00:10,680
+- I think people don't
+have that intuition somehow
+我觉得人们没有那种直觉。
+
+1539
+01:00:10,680 --> 01:00:13,673
+where I'm like, "But the paper exists."
+但我就是说，“但这篇文章存在。”
+
+1540
+01:00:13,673 --> 01:00:15,420
+- When would you want to do this?
+什么时候想做这件事？
+
+1541
+01:00:15,420 --> 01:00:18,600
+- Sometimes if I want models
+to say prompt other models
+- 有时候，如果我想让模型说其他模型的话，
+
+1542
+01:00:18,600 --> 01:00:20,370
+or I want to test a new
+prompting technique.
+或者我想测试一种新的提示技巧。
+
+1543
+01:00:20,370 --> 01:00:22,560
+So if papers come out on
+a prompting technique,
+所以当论文发表关于提示技巧时，
+
+1544
+01:00:22,560 --> 01:00:25,213
+rather than try to replicate
+it by writing up the prompt,
+而不是通过写提示语来尝试复制它，
+
+1545
+01:00:25,213 --> 01:00:26,280
+I just give it the paper.
+我只是给它论文。
+
+1546
+01:00:26,280 --> 01:00:29,730
+And then I'm like, "Basically,
+write a meta prompt for this.
+然后我就像：“基本上，为这个写一个元提示。
+
+1547
+01:00:29,730 --> 01:00:32,820
+Write something that would
+cause other models to do this
+写点能让其他模型做这件事的东西
+
+1548
+01:00:32,820 --> 01:00:34,530
+or write me a template."
+或者给我一个模板。”
+
+1549
+01:00:34,530 --> 01:00:37,140
+So all of the stuff that
+you would normally do.
+所以所有你通常会做的事情。
+
+1550
+01:00:37,140 --> 01:00:38,361
+If I read a paper and I'm like,
+如果我读了一篇论文，我觉得
+
+1551
+01:00:38,361 --> 01:00:39,480
+"Oh, I would like the models,
+"Oh，我想看看这些模型，
+
+1552
+01:00:39,480 --> 01:00:41,340
+I would like to test that style."
+我想测试这种风格。"
+
+1553
+01:00:41,340 --> 01:00:42,570
+I'm just like, "It's right there.
+我只是想说，“就在那里。
+
+1554
+01:00:42,570 --> 01:00:45,150
+The model can just read
+the paper, do what I did."
+模特可以只是读论文
+做我做的事情。”
+
+1555
+01:00:45,150 --> 01:00:47,940
+And then be like, "Make
+another model do this,"
+然后就问，“让另一个模特也这样做”
+
+1556
+01:00:47,940 --> 01:00:49,410
+and then it'll just do the thing.
+然后它就会去做。
+
+1557
+01:00:49,410 --> 01:00:50,430
+You're like, "Great, thanks."
+你就像说，“太好了，谢谢。”
+
+1558
+01:00:50,430 --> 01:00:51,810
+- I give the advice a lot
+- 我经常给客户提供建议，
+
+1559
+01:00:51,810 --> 01:00:55,860
+to customers just respect
+the model and what it can do.
+就是尊重模型和它能做什么。
+
+1560
+01:00:55,860 --> 01:00:58,050
+I feel like people feel like
+they're babying a system
+我觉得人们觉得自己在照顾一个系统
+
+1561
+01:00:58,050 --> 01:00:59,430
+a lot of times when they write a prompt.
+他们在写提示时经常。
+
+1562
+01:00:59,430 --> 01:01:02,220
+It's like, "Oh, it's this cute
+little, not that smart thing.
+"哦，这是这个又可爱又不怎么聪明的东西。"
+
+1563
+01:01:02,220 --> 01:01:03,848
+I need to really baby it,
+我得好好照顾它。
+
+1564
+01:01:03,848 --> 01:01:06,090
+like dumb things down to Claude's level."
+"把复杂的事情讲得像克莱德那样简单。"
+
+1565
+01:01:06,090 --> 01:01:09,780
+And if you just think that Claude is smart
+而且你只是觉得克劳德很聪明
+
+1566
+01:01:09,780 --> 01:01:12,570
+and treat it that way, it
+tends to do pretty good,
+并这样对待它，它通常会表现得很好。
+
+1567
+01:01:12,570 --> 01:01:13,710
+but it's like give it the paper.
+但是，就好像是把它交给你。
+
+1568
+01:01:13,710 --> 01:01:15,390
+It's like I don't need to write a baby,
+感觉就像我不需要写一个孩子。
+
+1569
+01:01:15,390 --> 01:01:17,640
+dumbed-down version of this
+paper for Claude to understand.
+简化版的这篇论文给Claude理解。
+
+1570
+01:01:17,640 --> 01:01:19,227
+I can just show it the paper.
+我只要把纸拿给她看。
+
+1571
+01:01:19,227 --> 01:01:20,060
+- Yeah.
+好的。
+
+1572
+01:01:20,060 --> 01:01:21,840
+- And I think that intuition
+doesn't always map for people,
+我觉得直觉并不总是适用于所有人。
+
+1573
+01:01:21,840 --> 01:01:22,950
+but that is certainly something
+但这确实是一个值得考虑的问题。
+
+1574
+01:01:22,950 --> 01:01:26,520
+that I have come to do more of over time.
+我来这里是希望做更多的事情。
+
+1575
+01:01:26,520 --> 01:01:30,690
+- And it's interesting because
+I do think that prompting
+而且很有趣的是，我认为提示
+
+1576
+01:01:30,690 --> 01:01:32,217
+has and hasn't changed in a sense.
+在某种程度上并没有变化。
+
+1577
+01:01:32,217 --> 01:01:35,730
+I think what I will do
+to prompt the models
+我想我应该怎么做才能激发模型。
+
+1578
+01:01:35,730 --> 01:01:38,430
+has probably changed over
+time, but fundamentally,
+可能随着时间而改变，但本质上，
+
+1579
+01:01:38,430 --> 01:01:42,390
+it's a lot of imagining yourself
+in the place of the model.
+想象自己站在模特的位置上。
+
+1580
+01:01:42,390 --> 01:01:43,223
+So maybe it's like
+所以可能是这样的。
+
+1581
+01:01:43,223 --> 01:01:45,933
+how capable you think the
+model is changes over time.
+你认为模型的能力随着时间的变化而变化。
+
+1582
+01:01:47,220 --> 01:01:48,390
+I think someone once laughed at me
+我想曾经有人嘲笑我。
+
+1583
+01:01:48,390 --> 01:01:51,873
+'cause I was thinking about a problem,
+因为我在思考一个问题，
+
+1584
+01:01:53,430 --> 01:01:56,580
+and then they asked me
+然后他们问我
+
+1585
+01:01:56,580 --> 01:01:58,230
+what I thought the output
+of something would be.
+我想知道某样东西的输出会是什么。
+
+1586
+01:01:58,230 --> 01:01:59,580
+And they were talking
+about a pretrained model
+他们在谈论一个预训练模型。
+
+1587
+01:01:59,580 --> 01:02:00,930
+and I was like, "Yeah.
+“那我就来吧。”
+
+1588
+01:02:00,930 --> 01:02:03,090
+No, if I'm a pretrained
+model, this looks like this."
+不，如果我是一个预训练模型，这看起来像这样。”
+
+1589
+01:02:03,090 --> 01:02:04,830
+And then they're like,
+"Wait, did you just simulate
+然后他们就问，
+“等一下，你刚才模拟过”
+
+1590
+01:02:04,830 --> 01:02:05,817
+what it's like to be a pretrained model?"
+"预训练模型是什么感觉？"
+
+1591
+01:02:05,817 --> 01:02:07,140
+I'm like, "Yeah, of course."
+(everyone laughing)
+我就是说“对，当然。”（所有人都在笑）
+
+1592
+01:02:07,140 --> 01:02:09,660
+I'm used to just I try
+and inhabit the mind space
+我习惯自己去尝试  
+占据思维的空间
+
+1593
+01:02:09,660 --> 01:02:11,220
+of a pretrained model and the mind space
+预训练模型与思维空间之间的关系
+
+1594
+01:02:11,220 --> 01:02:13,320
+of different RLHF models.
+不同RLHF模型的结果。
+
+1595
+01:02:13,320 --> 01:02:15,557
+So it's more like the mind
+space you try to occupy changes
+所以更像是你试图占据的心理空间发生了变化。
+
+1596
+01:02:15,557 --> 01:02:17,760
+and that can change how you
+end up prompting the model.
+这还可以改变你最终提示模型的方式。
+
+1597
+01:02:17,760 --> 01:02:19,500
+That's why now I just give models papers.
+所以现在我直接给模型论文。
+
+1598
+01:02:19,500 --> 01:02:20,767
+'Cause as soon as I was like,
+因为我一想，
+
+1599
+01:02:20,767 --> 01:02:22,830
+"Oh, I have the mind space of this model,
+“哦，我有这个模型的思想空间，”
+
+1600
+01:02:22,830 --> 01:02:24,170
+it doesn't need me to baby it.
+它不需要我来照顾它。
+
+1601
+01:02:24,170 --> 01:02:25,710
+It can just read the ML papers.
+它可以阅读机器学习论文。
+
+1602
+01:02:25,710 --> 01:02:26,700
+I'll just give it the literature."
+我直接给他文献。
+
+1603
+01:02:26,700 --> 01:02:27,533
+I might even be like,
+我甚至可能会像这样，
+
+1604
+01:02:27,533 --> 01:02:28,920
+"Is there more literature
+you'd like to read
+还有更多的文学作品你想读吗？
+
+1605
+01:02:28,920 --> 01:02:30,780
+to understand this better?"
+想要更好地理解这一点吗？
+
+1606
+01:02:30,780 --> 01:02:31,770
+- Do you get any quality out
+你得到什么质量的东西
+
+1607
+01:02:31,770 --> 01:02:34,244
+when you're inhabiting the mind space?
+当你沉浸在这个思维空间里时？
+
+1608
+01:02:34,244 --> 01:02:36,570
+- Yes, but just because
+I'm experiencing quality
+是的，但是只是因为我正在经历质量。
+
+1609
+01:02:36,570 --> 01:02:37,623
+all the time anyway.
+总是一样的。
+
+1610
+01:02:40,350 --> 01:02:41,910
+- Is it different correlated somehow
+- 是否有某种方式相关联
+
+1611
+01:02:41,910 --> 01:02:43,140
+with which model you're inhabiting?
+你住的是哪个模型？
+
+1612
+01:02:43,140 --> 01:02:45,690
+- Yeah, pretrained versus RLHF prompting
+- 嗯，预训练与RLHF提示的对比
+
+1613
+01:02:45,690 --> 01:02:46,920
+are very different beasts.
+是完全不同的生物。
+
+1614
+01:02:46,920 --> 01:02:49,080
+'Cause when you're trying to simulate
+因为当你试图模拟
+
+1615
+01:02:49,080 --> 01:02:49,923
+what it's like to be a pretrained model,
+成为预训练模型是什么感觉，
+
+1616
+01:02:49,923 --> 01:02:52,680
+it's almost like I land in
+the middle of a piece of text
+这就像我意外地落在了一段文字的中间。
+
+1617
+01:02:52,680 --> 01:02:53,513
+or something.
+或者。
+
+1618
+01:02:53,513 --> 01:02:55,530
+It's just very unhuman-like or something.
+这简直就像是某种超自然的东西。
+
+1619
+01:02:55,530 --> 01:02:57,300
+And then I'm like, "What happens?
+然后我就想，“接下来会怎样？”
+
+1620
+01:02:57,300 --> 01:02:59,037
+What keeps going at this point?"
+现在还继续下去吗？
+
+1621
+01:03:01,050 --> 01:03:03,330
+Whereas with an RLHF model,
+由于使用RLHF模型，
+
+1622
+01:03:03,330 --> 01:03:05,280
+it's much more like there's lots of things
+这更像是有很多东西。
+
+1623
+01:03:05,280 --> 01:03:09,000
+where I'm like I might pick up
+on subtle things in the query
+我在查询中可能会注意到一些细微之处。
+
+1624
+01:03:09,000 --> 01:03:10,200
+and stuff like that.
+等等。
+
+1625
+01:03:10,200 --> 01:03:12,780
+But yeah, I think I have
+much more of it's easier
+但是，我认为我有更多了，这更简单。
+
+1626
+01:03:12,780 --> 01:03:15,240
+to inhabit the mind space of RLHF model.
+进入RLHF模型的思维空间。
+
+1627
+01:03:15,240 --> 01:03:17,010
+- Do you think that's 'cause
+it's more similar to a human?
+你觉得是因为更像人类吗？
+
+1628
+01:03:17,010 --> 01:03:19,380
+- Yeah, 'cause we don't
+often just suddenly wake up
+因为我们很少会突然醒来
+
+1629
+01:03:19,380 --> 01:03:21,120
+and are like, "Hi, I'm
+just generating text."
+它们就像是在说：“你好，我只是在生成文本。”
+
+1630
+01:03:21,120 --> 01:03:23,880
+- I actually find it easier
+to hit the mind space
+其实我觉得更容易击中心灵。
+
+1631
+01:03:23,880 --> 01:03:24,870
+of the pretrained model.
+预训练模型的。
+
+1632
+01:03:24,870 --> 01:03:26,462
+- Oh, interesting.
+- I don't know what it is,
+哦，有意思。
+我不知道这是什么。
+
+1633
+01:03:26,462 --> 01:03:28,440
+'cause RLHF is still this complex beast
+因为RLHF仍然是一个复杂的怪物。
+
+1634
+01:03:28,440 --> 01:03:29,850
+that it's not super clear to me
+我不太清楚
+
+1635
+01:03:29,850 --> 01:03:32,490
+that we really understand what's going on.
+我们要真正理解发生的事情。
+
+1636
+01:03:32,490 --> 01:03:33,390
+So in some ways,
+所以，在某种程度上，
+
+1637
+01:03:33,390 --> 01:03:37,110
+it's closer to my lived
+experience, which is easier.
+这更接近我的生活经验，更容易。
+
+1638
+01:03:37,110 --> 01:03:38,670
+But in some ways, I feel
+like there's all this
+但在这其中，我感觉
+好像有太多
+
+1639
+01:03:38,670 --> 01:03:40,590
+like here there be dragons out there
+这里可能有龙。
+
+1640
+01:03:40,590 --> 01:03:41,490
+that I don't know about.
+我不知道的。
+
+1641
+01:03:41,490 --> 01:03:43,680
+Whereas pretrained, I kind
+of have a decent sense
+鉴于预训练，我有点明白。
+
+1642
+01:03:43,680 --> 01:03:45,660
+of what the internet looks like.
+互联网的样子。
+
+1643
+01:03:45,660 --> 01:03:47,728
+- If you gave me a piece of
+text and said what comes next?
+如果你给我一段文字并说接下来是什么？
+
+1644
+01:03:47,728 --> 01:03:49,710
+- I'm not saying I do good at it,
+我并不是说我在这件事上做得很好，
+
+1645
+01:03:49,710 --> 01:03:53,130
+but I kind of get what's going on there.
+但我好像明白他们在说什么。
+
+1646
+01:03:53,130 --> 01:03:54,930
+- Yeah.
+- And I don't know,
+好的。
+我不知道。
+
+1647
+01:03:54,930 --> 01:03:57,690
+after everything that
+we do after pretraining,
+经过我们对预训练的所有工作之后，
+
+1648
+01:03:57,690 --> 01:04:00,840
+I don't really claim to get
+what's going on as much,
+我不真的觉得自己理解得太多。
+
+1649
+01:04:00,840 --> 01:04:01,740
+but maybe that's just me.
+但是也许只是我。
+
+1650
+01:04:01,740 --> 01:04:04,230
+- That's something I wonder
+about is it more helpful
+- 这是我在想的，它是否有帮助
+
+1651
+01:04:04,230 --> 01:04:07,020
+to have specifically spent a lot of time
+特意花费了大量时间
+
+1652
+01:04:07,020 --> 01:04:10,389
+reading the internet, versus reading books
+阅读互联网， versus 阅读书籍
+
+1653
+01:04:10,389 --> 01:04:11,970
+(everyone laughing)
+（ everyone laughing ）
+
+1654
+01:04:11,970 --> 01:04:12,803
+in order to?
+为了什么？
+
+1655
+01:04:14,430 --> 01:04:15,263
+I don't know if books.
+我不太懂书。
+
+1656
+01:04:15,263 --> 01:04:18,690
+But reading stuff that's
+not on the internet
+但阅读不在互联网上的东西
+
+1657
+01:04:18,690 --> 01:04:21,840
+probably is less valuable per word read
+可能每个阅读的单词价值更低。
+
+1658
+01:04:21,840 --> 01:04:24,960
+for predicting what a model
+will do or building intuition,
+用于预测模型的行为或建立直觉，
+
+1659
+01:04:24,960 --> 01:04:29,550
+than reading random garbage
+from social media forums.
+比从社交媒体论坛阅读随机垃圾要好。
+
+1660
+01:04:29,550 --> 01:04:30,723
+Yeah, exactly.
+嗯，正是如此。
+
+1661
+01:04:32,640 --> 01:04:34,890
+- Okay, so that's the past.
+- 好的，那么这是过去。
+
+1662
+01:04:34,890 --> 01:04:38,100
+Now, let's move on to the
+future of prompt engineering.
+现在，让我们谈谈未来的人工智能提示工程。
+
+1663
+01:04:38,100 --> 01:04:40,350
+This is the hottest question right now.
+这是一个最热门的问题。
+
+1664
+01:04:40,350 --> 01:04:42,120
+Are we all gonna be prompt
+engineers in the future?
+我们所有人都会成为未来的提示工程师吗？
+
+1665
+01:04:42,120 --> 01:04:44,170
+Is that gonna be the final job remaining?
+这是否会是最后一个剩下的工作？
+
+1666
+01:04:46,230 --> 01:04:48,933
+Nothing left except us just
+talking to models all day?
+除了整天和模型对话之外，还有什么可以做的？
+
+1667
+01:04:49,830 --> 01:04:51,570
+What does this look like?
+这看起来会是什么样子？
+
+1668
+01:04:51,570 --> 01:04:53,430
+Is prompting gonna be necessary,
+提示是否必要，
+
+1669
+01:04:53,430 --> 01:04:55,950
+or will these models just get
+smart enough in the future
+或者这些模型将来会变得足够聪明
+
+1670
+01:04:55,950 --> 01:04:56,913
+to not need it?
+以至于不需要它？
+
+1671
+01:04:58,680 --> 01:05:01,203
+Anybody wanna start on that easy question?
+谁想先回答那个简单的问题？
+
+1672
+01:05:02,245 --> 01:05:05,610
+- To some extent, there's
+the models getting better
+某种程度上，模型在变好。
+
+1673
+01:05:05,610 --> 01:05:09,570
+at understanding what you
+want them to do and doing it,
+理解你要他们做什么并做到它。
+
+1674
+01:05:09,570 --> 01:05:12,590
+means that the amount of
+thought you need to put into...
+意味着你需要投入的精力...
+
+1675
+01:05:14,100 --> 01:05:14,933
+Okay.
+好的。
+
+1676
+01:05:14,933 --> 01:05:16,110
+There's an information theory way
+有信息论的方式。
+
+1677
+01:05:16,110 --> 01:05:18,450
+to think of this of you need
+to provide enough information
+要想做到这一点，你需要提供足够的信息。
+
+1678
+01:05:18,450 --> 01:05:20,340
+such that a thing is specified,
+使得某物得以指定，
+
+1679
+01:05:20,340 --> 01:05:22,050
+what you want the model
+to do is specified.
+你希望模型做什么已经指定了。
+
+1680
+01:05:22,050 --> 01:05:24,480
+And to the extent that
+that's prompt engineering,
+至于到什么程度是 Prompt 工程，
+
+1681
+01:05:24,480 --> 01:05:25,890
+I think that will always be around.
+我觉得这将永远存在。
+
+1682
+01:05:25,890 --> 01:05:28,710
+The ability to actually like clearly state
+能够实际喜欢清楚地表达
+
+1683
+01:05:28,710 --> 01:05:32,370
+what the goal should be always is funny.
+目标总是应该有趣。
+
+1684
+01:05:32,370 --> 01:05:34,050
+If Claude can do that, then that's fine.
+如果克劳德能做到，那就好说。
+
+1685
+01:05:34,050 --> 01:05:35,550
+If Claude is the one setting the goals,
+如果Claude是设置目标的人，
+
+1686
+01:05:35,550 --> 01:05:37,140
+then things are out the window.
+那么事情就泡汤了。
+
+1687
+01:05:37,140 --> 01:05:38,190
+But in the meanwhile,
+但是与此同时，
+
+1688
+01:05:38,190 --> 01:05:40,928
+where we can reason about the
+world in a more normal way,
+我们在一个更正常的方式上思考世界。
+
+1689
+01:05:40,928 --> 01:05:43,470
+I think to some extent,
+我觉得在某种程度上，
+
+1690
+01:05:43,470 --> 01:05:46,070
+it's always gonna be important
+to be able to specify
+总是要能够指定
+
+1691
+01:05:47,850 --> 01:05:49,530
+what do you expect to happen?
+你期望会发生什么？
+
+1692
+01:05:49,530 --> 01:05:51,300
+And that's actually like sufficiently hard
+这就足够难了。
+
+1693
+01:05:51,300 --> 01:05:55,740
+that even if the model gets
+better at intuiting that
+即使模型在直觉上变得更擅长
+
+1694
+01:05:55,740 --> 01:05:57,300
+from between the lines,
+从字里行间，
+
+1695
+01:05:57,300 --> 01:06:01,860
+I still think there's some
+amount of writing it well.
+我觉得还是有一些写得好。
+
+1696
+01:06:01,860 --> 01:06:03,660
+But then there's just, I think,
+但是然后就只是我觉得
+
+1697
+01:06:03,660 --> 01:06:07,110
+the tools and the ways we get
+there should evolve a lot.
+我们使用的工具和获取它们的方式应该有很大的变化。
+
+1698
+01:06:07,110 --> 01:06:09,810
+Claude should be able
+to help me a lot more.
+Claude应该能更帮我。
+
+1699
+01:06:09,810 --> 01:06:11,340
+I should be able to collaborate
+with Claude a lot more
+我应该能够与克劳德合作得更多。
+
+1700
+01:06:11,340 --> 01:06:15,210
+to figure out what I need to
+write down and what's missing.
+找出我需要写下来和缺少什么。
+
+1701
+01:06:15,210 --> 01:06:16,139
+- Right.
+- 对的。
+
+1702
+01:06:16,139 --> 01:06:17,843
+- Claude already does
+this with me all the time.
+- 拉克代尔（Claude）已经总是这样和我一起做。
+
+1703
+01:06:17,843 --> 01:06:20,040
+I don't know, just Claude's
+my prompting assistant now.
+我不知道，只是现在拉克代尔是我的提示助手。
+
+1704
+01:06:20,040 --> 01:06:23,340
+- Yeah, but I think that's
+not true for most customers
+- 是的，但是我认为这并不适用于大多数我与之交谈的客户。
+
+1705
+01:06:23,340 --> 01:06:24,420
+that I talk to at the very least.
+至少是这样。
+
+1706
+01:06:24,420 --> 01:06:26,610
+So in terms of the future,
+所以就未来而言，
+
+1707
+01:06:26,610 --> 01:06:31,290
+how you prompt Claude is
+probably a decent direction
+你如何提示拉克代尔可能是
+一个不错的方向
+
+1708
+01:06:31,290 --> 01:06:33,710
+for what the future
+looks like or how Zack...
+对未来的样子或 Zack...
+
+1709
+01:06:34,620 --> 01:06:36,810
+I think maybe this is a decent place
+我觉得也许这是个合适的地方
+
+1710
+01:06:36,810 --> 01:06:41,070
+to step back and say asking
+them how they prompt Claude now
+后退一步，问他们现在是如何提示拉克代尔的。
+
+1711
+01:06:41,070 --> 01:06:44,820
+is probably the future for
+the vast majority of people,
+可能是绝大多数人的未来。
+
+1712
+01:06:44,820 --> 01:06:46,980
+which is an interesting
+thing to think about.
+这确实是一个有趣的问题。
+
+1713
+01:06:46,980 --> 01:06:50,070
+- One freezing cold take
+is that we'll use models
+一个冻僵的镜头是说我们要使用模型。
+
+1714
+01:06:50,070 --> 01:06:52,320
+to help us much more in the future
+将来能帮助我们很多。
+
+1715
+01:06:52,320 --> 01:06:53,700
+to help us with prompting.
+帮助我们进行提示。
+
+1716
+01:06:53,700 --> 01:06:54,990
+The reason I say it's freezing cold
+我说它很冷是因为
+
+1717
+01:06:54,990 --> 01:06:57,810
+is that I expect we'll use
+models for everything more,
+那就是我期望我们将在各个方面更多地使用模型。
+
+1718
+01:06:57,810 --> 01:07:00,150
+and prompting is something
+that we have to do.
+并且我们需要进行引导。
+
+1719
+01:07:00,150 --> 01:07:02,160
+So we'll probably just use models more
+所以可能会更常用模型
+
+1720
+01:07:02,160 --> 01:07:04,410
+to do it along with everything else.
+和其他一切一起。
+
+1721
+01:07:04,410 --> 01:07:07,050
+For myself, I've found myself using models
+我自己发现我开始使用模型。
+
+1722
+01:07:07,050 --> 01:07:09,300
+to write prompts more.
+写出更多的提示。
+
+1723
+01:07:09,300 --> 01:07:12,418
+One thing that I've been doing
+a lot is generating examples
+我一直在生成例子。
+
+1724
+01:07:12,418 --> 01:07:16,770
+by giving some realistic
+inputs to the model.
+通过给模型一些现实的输入。
+
+1725
+01:07:16,770 --> 01:07:18,360
+The model writes some answers.
+模型写了一些答案。
+
+1726
+01:07:18,360 --> 01:07:19,980
+I tweak the answers a little bit,
+我稍微调整了一下答案，
+
+1727
+01:07:19,980 --> 01:07:22,140
+which is a lot easier than
+having to write the full,
+这比编写完整的
+
+1728
+01:07:22,140 --> 01:07:24,390
+perfect answer myself from scratch,
+自己从头开始编写完美的答案。
+
+1729
+01:07:24,390 --> 01:07:26,793
+and then I can churn out lots of these.
+然后我可以制造出很多。
+
+1730
+01:07:28,320 --> 01:07:29,460
+As far as people
+至于人们
+
+1731
+01:07:29,460 --> 01:07:33,300
+who haven't had as much
+prompt engineering experience,
+谁没有多少提示工程经验，
+
+1732
+01:07:33,300 --> 01:07:36,090
+the prompt generator can
+give people a place to start.
+提示生成器可以为人们提供一个开始的地方。
+
+1733
+01:07:36,090 --> 01:07:40,050
+But I think that's just
+a super basic version
+但我认为这只是一个非常基础的版本。
+
+1734
+01:07:40,050 --> 01:07:40,980
+of what will happen in the future,
+对未来的会发生什么，
+
+1735
+01:07:40,980 --> 01:07:43,020
+which is high-bandwidth interaction
+高带宽交互
+
+1736
+01:07:43,020 --> 01:07:46,380
+between you and the model as
+you're writing the prompt.
+在你和模型之间编写提示时。
+
+1737
+01:07:46,380 --> 01:07:47,377
+Where you're giving feedback like,
+你在给出反馈时，例如，
+
+1738
+01:07:47,377 --> 01:07:49,050
+"Hey, this result wasn't what I wanted.
+“嘿，这个结果不是我想要的。”
+
+1739
+01:07:49,050 --> 01:07:51,420
+How can you change it to make it better?"
+你怎么能改进它？
+
+1740
+01:07:51,420 --> 01:07:54,120
+And people will just grow more comfortable
+人们会越来越习惯。
+
+1741
+01:07:54,120 --> 01:07:57,870
+with integrating it into
+everything they do and this thing,
+将其融入到他们所做的所有事情中，这是关键。
+
+1742
+01:07:57,870 --> 01:07:59,460
+in particular.
+特别是。
+
+1743
+01:07:59,460 --> 01:08:00,293
+- Yeah.
+好的。
+
+1744
+01:08:00,293 --> 01:08:02,340
+I'm definitely working a
+lot with meta prompts now,
+我现在确实大量使用元提示（meta prompts），
+
+1745
+01:08:02,340 --> 01:08:03,892
+and that's probably where
+I spend most of my time
+那就是我大部分时间都在做的事情。
+
+1746
+01:08:03,892 --> 01:08:07,320
+is finding prompts that get the model
+是寻找能让模型
+
+1747
+01:08:07,320 --> 01:08:10,470
+to generate the kinds
+of outputs or queries
+生成所需的输出或查询类型。
+
+1748
+01:08:10,470 --> 01:08:12,003
+or whatever that I want.
+或者我想要的任何东西。
+
+1749
+01:08:13,830 --> 01:08:16,590
+On the question of where
+prompt engineering is going,
+关于提示工程的发展方向，
+
+1750
+01:08:16,590 --> 01:08:18,600
+I think this is a very hard question.
+我觉得这个问题非常难。
+
+1751
+01:08:18,600 --> 01:08:19,627
+On the one hand I'm like,
+一方面我有点疑惑，
+
+1752
+01:08:19,627 --> 01:08:23,970
+"Maybe it's the case that as
+long as you will want the top."
+或许只有当你想要最好的时候。
+
+1753
+01:08:23,970 --> 01:08:24,933
+What are we doing when we prompt engineer?
+我们在提示工程师时在做什么？
+
+1754
+01:08:24,933 --> 01:08:26,070
+It's like what you said.
+就像你说的那样。
+
+1755
+01:08:26,070 --> 01:08:27,510
+I'm like, "I'm not prompt engineering
+我有点像“我不是在做提示工程”
+
+1756
+01:08:27,510 --> 01:08:29,610
+for anything that is easy for the model.
+对于任何模型来说都很容易的事情。
+
+1757
+01:08:29,610 --> 01:08:31,620
+I'm doing it because I want
+to interact with a model
+我这样做是因为我想与一个模型互动。
+
+1758
+01:08:31,620 --> 01:08:33,450
+that's extremely good."
+那真是太棒了。
+
+1759
+01:08:33,450 --> 01:08:36,617
+And I want to always
+be finding the top 1%,
+我想永远
+找到最好的1%，
+
+1760
+01:08:36,617 --> 01:08:38,940
+top 0.1% of performance
+顶级1%的性能
+
+1761
+01:08:38,940 --> 01:08:42,060
+and all of the things
+that models can barely do.
+以及所有模型几乎无法做到的事情。
+
+1762
+01:08:42,060 --> 01:08:42,960
+Sometimes I actually feel
+有时候我实际上感到很累。
+
+1763
+01:08:42,960 --> 01:08:45,960
+like I interact with
+a model like a step up
+像和一个更高级的模型互动一样
+
+1764
+01:08:45,960 --> 01:08:48,570
+from what everyone else
+interacts with for this reason,
+由于其他人就是这么与之交互的。
+
+1765
+01:08:48,570 --> 01:08:49,470
+because I'm just so used
+因为我就是这么用的。
+
+1766
+01:08:49,470 --> 01:08:52,440
+to eking out the top
+performance from models.
+榨取模型的最佳性能。
+
+1767
+01:08:52,440 --> 01:08:53,754
+- What do you mean by a step-up?
+什么是升级？
+
+1768
+01:08:53,754 --> 01:08:55,950
+- As in sometimes people will...
+- 有时候人们会...
+
+1769
+01:08:55,950 --> 01:08:58,620
+I think that the everyday
+models that people interact with
+我认为人们日常互动中使用的模型
+
+1770
+01:08:58,620 --> 01:09:01,350
+out in the world, it's like
+I'm interacting with a model
+在全球各地，这就像
+我与一个模型互动一样
+
+1771
+01:09:01,350 --> 01:09:03,600
+that's like I don't
+know how to describe it,
+那就像我不知道如何描述它，
+
+1772
+01:09:03,600 --> 01:09:06,442
+but definitely an
+advanced version of that.
+但是肯定是一个更高级的版本。
+
+1773
+01:09:06,442 --> 01:09:08,407
+Almost like a different
+model 'cause they'll be like,
+几乎是另一个模型，因为它们会像，
+
+1774
+01:09:08,407 --> 01:09:09,840
+"Oh well, the models
+find this thing hard."
+“哦好吧，这些模型觉得这个东西很难。”
+
+1775
+01:09:09,840 --> 01:09:11,740
+And I'm like, "That thing is trivial."
+而我是说，“那个东西很简单。”
+
+1776
+01:09:14,292 --> 01:09:16,440
+I don't know, I have a sense
+that they're extremely capable,
+我不知道，我有一种感觉
+他们极其有能力，
+
+1777
+01:09:16,440 --> 01:09:17,550
+but I think that's because I'm just used
+但我认为这是因为我一直在
+
+1778
+01:09:17,550 --> 01:09:21,393
+to really drawing out those capabilities.
+真正地挖掘出那些能力。
+
+1779
+01:09:22,650 --> 01:09:25,980
+But imagine that you're
+now in a world where...
+但想象一下你现在在一个世界里...
+
+1780
+01:09:25,980 --> 01:09:28,200
+So I think the thing that
+feels like a transition point
+所以我认为那个感觉像是一个过渡点
+
+1781
+01:09:28,200 --> 01:09:31,230
+is the point at which the models,
+是在模型的
+
+1782
+01:09:31,230 --> 01:09:34,380
+let's suppose that they just
+get things at a human level
+让我们假定他们只是以人类水平做事。
+
+1783
+01:09:34,380 --> 01:09:36,960
+on a given task, or even
+an above human level.
+在一项任务上，甚至超越人类水平。
+
+1784
+01:09:36,960 --> 01:09:39,000
+They know more about the
+background of the task
+他们更了解这项任务的背景。
+
+1785
+01:09:39,000 --> 01:09:41,070
+that you want than you do.
+你想要的比你现在做的更多。
+
+1786
+01:09:41,070 --> 01:09:42,510
+What happens then?
+然后呢？
+
+1787
+01:09:42,510 --> 01:09:44,820
+I'm like maybe prompting
+becomes something like I ask,
+我更像是在提示，变成我问的那样。
+
+1788
+01:09:44,820 --> 01:09:48,639
+I explain to the model what I
+want and it is prompting me.
+我告诉模型我想做什么，它就开始提示我。
+
+1789
+01:09:48,639 --> 01:09:49,980
+'Cause it's like, "Okay.
+因为就像“好的。
+
+1790
+01:09:49,980 --> 01:09:53,130
+Well, do you mean actually
+there's four different concepts
+你是指实际上有四个不同的概念吗？
+
+1791
+01:09:53,130 --> 01:09:55,020
+of this thing that you're talking about,
+你所谈论的事物的
+
+1792
+01:09:55,020 --> 01:09:58,140
+do you want me to use
+this one or that one?"
+你想用这个还是那个？
+
+1793
+01:09:58,140 --> 01:10:00,989
+Or by the way, I thought of
+some edge cases 'cause you said
+顺便说一下，我想到了一些边缘情况，因为你提到了
+
+1794
+01:10:00,989 --> 01:10:02,970
+that it's gonna be like
+a Pandas DataFrame,
+像一个Pandas DataFrame，
+
+1795
+01:10:02,970 --> 01:10:04,890
+but sometimes you do that and I get JSONL,
+但有时候你这样做，我得到的是JSONL，
+
+1796
+01:10:04,890 --> 01:10:06,675
+and I just wanna check what
+you want me to do there.
+我只是想确认你希望我在那里做什么。
+
+1797
+01:10:06,675 --> 01:10:08,070
+Do you want me to flag if I get something
+我收到了，请问需要标记吗？
+
+1798
+01:10:08,070 --> 01:10:10,277
+that's not a dataframe?
+这不是一个数据框？
+
+1799
+01:10:10,277 --> 01:10:11,700
+So that could be a strange transition
+所以这可能是一个奇怪的过渡。
+
+1800
+01:10:11,700 --> 01:10:15,330
+where it's just extremely good
+at receiving instructions,
+在接收指令方面做得非常出色。
+
+1801
+01:10:15,330 --> 01:10:17,580
+but actually has to
+figure out what you want.
+但实际上必须弄清楚你想要什么。
+
+1802
+01:10:19,238 --> 01:10:21,960
+I don't know, I could see that
+being an interesting switch.
+我不知道，但我可以看到这可能是一个有趣的切换。
+
+1803
+01:10:21,960 --> 01:10:24,000
+- Anecdotally, I've started having Claude
+据闻我开始有了克劳德。
+
+1804
+01:10:24,000 --> 01:10:25,830
+interview me a lot more.
+多采访我。
+
+1805
+01:10:25,830 --> 01:10:28,590
+That is the specific way that
+I try to elicit information,
+这就是我试图获取信息的具体方式。
+
+1806
+01:10:28,590 --> 01:10:30,570
+because again, I find the hardest thing
+因为我又一次发现最困难的事情
+
+1807
+01:10:30,570 --> 01:10:33,630
+to be actually pulling the
+right set of information
+要真正获取正确的信息集合
+
+1808
+01:10:33,630 --> 01:10:34,740
+out of my brain.
+出自我的脑海。
+
+1809
+01:10:34,740 --> 01:10:38,010
+And putting that into a
+prompt is the hard part to me
+把这变成一个提示对我来说是难点。
+
+1810
+01:10:38,010 --> 01:10:39,990
+and not forgetting stuff.
+别忘了还有其他事情。
+
+1811
+01:10:39,990 --> 01:10:44,730
+So specifically asking
+Claude to interview me
+
+
+1812
+01:10:44,730 --> 01:10:45,853
+and then turning that into a prompt,
+具体要求克劳德采访我
+
+1813
+01:10:45,853 --> 01:10:49,080
+is a thing that I have
+turned to a handful of times.
+然后将那变成一个提示，
+
+1814
+01:10:49,080 --> 01:10:49,913
+- Yeah.
+是我已经这样做过几次的事情。
+
+1815
+01:10:49,913 --> 01:10:51,900
+It reminds me of what
+people will talk about
+- 好的。
+
+1816
+01:10:51,900 --> 01:10:54,060
+or if you listen to designers talk about
+这让我想起人们会讨论的话题，
+
+1817
+01:10:54,060 --> 01:10:57,150
+how they interact with the
+person who wants the design.
+或者如果你听设计师谈论他们与客户互动的方式，
+
+1818
+01:10:57,150 --> 01:10:57,983
+So in some ways I'm like,
+他们是如何与想要设计的人打交道的。
+
+1819
+01:10:57,983 --> 01:11:01,350
+"It's this switch from the
+temp agency person who comes
+所以某种程度上，我就是这样的，
+
+1820
+01:11:01,350 --> 01:11:03,390
+and you know more about the task
+“这是从代理公司的人员切换到
+知道更多任务细节的人员。”
+
+1821
+01:11:03,390 --> 01:11:04,223
+and everything that you want."
+而且你想拥有的一切。
+
+1822
+01:11:04,223 --> 01:11:05,580
+So you give them the instructions
+所以你给它们下指令。
+
+1823
+01:11:05,580 --> 01:11:07,620
+and you explain what they
+should do in edge cases
+并且你解释他们在边缘情况下的行为。
+
+1824
+01:11:07,620 --> 01:11:10,830
+and all this kind of stuff,
+versus when you have an expert
+和所有这些事情相比，
+当你有一个专家时
+
+1825
+01:11:10,830 --> 01:11:13,710
+that you're actually
+consulting to do some work.
+你实际上是在咨询来做一些工作。
+
+1826
+01:11:13,710 --> 01:11:15,420
+So I think designers can
+get really frustrated
+所以我觉得设计师可能会感到非常沮丧。
+
+1827
+01:11:15,420 --> 01:11:17,100
+because they know the space
+of design really well.
+因为他们对设计的空间了如指掌。
+
+1828
+01:11:17,100 --> 01:11:17,933
+And they're like, "Yeah. Okay,
+好的。
+
+1829
+01:11:17,933 --> 01:11:19,860
+the client came to me and he just said,
+客户来找我，他只是说，
+
+1830
+01:11:19,860 --> 01:11:22,140
+'Make me a poster, make it bold.'"
+"给我做一个海报，让它醒目。"
+
+1831
+01:11:22,140 --> 01:11:26,010
+I'm like, "That means 7,000 things to me
+这对我来说意味着7000件事。
+
+1832
+01:11:26,010 --> 01:11:27,720
+and I'm gonna try and
+ask you some questions."
+“我想试着问你一些问题。”
+
+1833
+01:11:27,720 --> 01:11:31,350
+So I could see it going from
+being temp agency employee,
+所以我是从临时工做起的。
+
+1834
+01:11:31,350 --> 01:11:33,210
+to being more designer that you're hiring,
+变得更有设计感的你正在招聘，
+
+1835
+01:11:33,210 --> 01:11:35,310
+and that's just a flip
+in the relationship.
+这仅仅是关系中的一次翻转。
+
+1836
+01:11:35,310 --> 01:11:38,130
+I don't know if that's true and
+I think both might continue,
+我不知道那是不是真的，并且我认为两者都可能会继续。
+
+1837
+01:11:38,130 --> 01:11:40,597
+but I could see that
+being why people are like,
+但是可以看出，这就是为什么人们会这样想。
+
+1838
+01:11:40,597 --> 01:11:42,420
+"Oh, is prompt engineering
+going to not be a thing
+哦，提示工程
+不会成为一件大事吧？
+
+1839
+01:11:42,420 --> 01:11:43,500
+in the future?"
+"未来如何？"
+
+1840
+01:11:43,500 --> 01:11:46,050
+Because for some domains
+it might just not be,
+因为对于一些域名来说，可能根本就不是这样。
+
+1841
+01:11:46,050 --> 01:11:47,130
+if the models are just so good
+如果这些模型真的那么好用。
+
+1842
+01:11:47,130 --> 01:11:49,410
+that actually all they need
+to do is get the information
+其实他们只需要获取信息。
+
+1843
+01:11:49,410 --> 01:11:51,840
+from your brain and then
+they can go do the task.
+从你的大脑里，然后它们可以去做任务。
+
+1844
+01:11:51,840 --> 01:11:54,570
+- Right, that's actually
+a really good analogy.
+对，那实际上是一个非常好的类比。
+
+1845
+01:11:54,570 --> 01:11:55,920
+One common thread
+一个共同点
+
+1846
+01:11:55,920 --> 01:11:58,050
+I'm pulling out of all
+your guys' responses here,
+我在这里收起所有你们的回复。
+
+1847
+01:11:58,050 --> 01:12:00,030
+is that there seems to be a future
+看来未来似乎有希望。
+
+1848
+01:12:00,030 --> 01:12:03,720
+in which this sort of
+elicitation from the user
+在这个过程中从用户那里获取这种信息
+
+1849
+01:12:03,720 --> 01:12:06,000
+drawing out that information,
+揭示出那层信息，
+
+1850
+01:12:06,000 --> 01:12:07,950
+is gonna become much more important,
+将会变得越来越重要。
+
+1851
+01:12:07,950 --> 01:12:09,240
+much more than it is right now.
+远远超过目前的情况。
+
+1852
+01:12:09,240 --> 01:12:11,790
+And already you guys are
+all starting to do it
+你们已经开始这样做了。
+
+1853
+01:12:11,790 --> 01:12:13,380
+in a manual way.
+手动方式。
+
+1854
+01:12:13,380 --> 01:12:16,050
+In the future and in the
+enterprise side of things,
+在未来的商业环境中，
+
+1855
+01:12:16,050 --> 01:12:18,540
+maybe that looks like a expansion
+可能看起来像是一个扩展。
+
+1856
+01:12:18,540 --> 01:12:21,000
+of this prompt-generating type of concept
+这种概念生成类型的提示
+
+1857
+01:12:21,000 --> 01:12:22,350
+and things in the console
+以及控制台中的事情
+
+1858
+01:12:22,350 --> 01:12:25,230
+where you're able to
+actually get more information
+你能够真正获取更多信息的地方。
+
+1859
+01:12:25,230 --> 01:12:26,640
+from that enterprise customer,
+从这家企业客户那里，
+
+1860
+01:12:26,640 --> 01:12:28,860
+so that they can write a better prompt.
+以便他们可以写一个更好的提示。
+
+1861
+01:12:28,860 --> 01:12:31,350
+In Claude, maybe it looks less
+在克劳德中，可能看起来不太一样。
+
+1862
+01:12:31,350 --> 01:12:32,850
+of just typing into a text box,
+只需在文本框中输入即可。
+
+1863
+01:12:32,850 --> 01:12:34,950
+and more of this guided interaction
+以及更多这种引导式互动。
+
+1864
+01:12:34,950 --> 01:12:36,303
+towards a finished product.
+向成品迈进。
+
+1865
+01:12:38,730 --> 01:12:39,563
+Yeah.
+好的。
+
+1866
+01:12:39,563 --> 01:12:41,670
+I think that's actually a
+pretty compelling vision
+我觉得这实际上是一个非常有说服力的愿景。
+
+1867
+01:12:41,670 --> 01:12:44,910
+of the future, and I think that
+the design analogy probably
+关于未来的设计类比可能是。
+
+1868
+01:12:44,910 --> 01:12:46,590
+really brings that home.
+真的让你有身临其境的感觉。
+
+1869
+01:12:46,590 --> 01:12:48,210
+- I was thinking about how prompting now
+我在考虑现在提示
+
+1870
+01:12:48,210 --> 01:12:51,630
+can be like teaching where
+it's like the empathy
+就像是在教学中，像是共情。
+
+1871
+01:12:51,630 --> 01:12:53,670
+for the student.
+学生用
+
+1872
+01:12:53,670 --> 01:12:55,437
+You're trying to think about
+how they think about things
+你在试图思考他们是如何思考事情的。
+
+1873
+01:12:55,437 --> 01:12:58,860
+and you're really trying to show them,
+你真的想让他们看到，
+
+1874
+01:12:58,860 --> 01:13:00,540
+figure out where they're making a mistake.
+找出他们出错的地方。
+
+1875
+01:13:00,540 --> 01:13:02,670
+But the point that you're talking about,
+但你提到的那个问题，
+
+1876
+01:13:02,670 --> 01:13:07,530
+it's like the skill almost
+becomes one of introspection
+这就像技能几乎变成了自我反思。
+
+1877
+01:13:07,530 --> 01:13:08,363
+where you're thinking
+你在想什么？
+
+1878
+01:13:08,363 --> 01:13:10,210
+about what it is that you actually want
+关于你实际上想要什么
+
+1879
+01:13:11,130 --> 01:13:13,710
+and the model's trying to understand you.
+而且模型正在试图理解你。
+
+1880
+01:13:13,710 --> 01:13:18,303
+So it's making yourself
+legible to the model,
+所以让你自己对模型可见。
+
+1881
+01:13:19,800 --> 01:13:23,250
+versus trying to teach someone
+who's smarter than you.
+与其试图教一个比你更聪明的人。
+
+1882
+01:13:23,250 --> 01:13:24,960
+- This is actually how
+I think of prompting now
+这就是我现在怎么构思提示的。
+
+1883
+01:13:24,960 --> 01:13:26,160
+in a strange way.
+一种奇怪的方式。
+
+1884
+01:13:26,160 --> 01:13:30,690
+So often my style of prompting,
+所以经常我的提示方式，
+
+1885
+01:13:30,690 --> 01:13:31,800
+there's various things that I do,
+我做各种各样的事情。
+
+1886
+01:13:31,800 --> 01:13:33,900
+but a common thing
+that's very like a thing
+但是很常见  
+就像一样东西
+
+1887
+01:13:33,900 --> 01:13:37,230
+that philosophers will do
+is I'll define new concepts.
+哲学家们将会做的是定义新的概念。
+
+1888
+01:13:37,230 --> 01:13:39,750
+'Cause my thought is you
+have to put into words
+因为我的想法是你
+需要把话说出来
+
+1889
+01:13:39,750 --> 01:13:42,663
+what you want and sometimes
+what I want is fairly nuanced.
+你想要什么，有时候
+我想要的相当微妙。
+
+1890
+01:13:43,590 --> 01:13:45,300
+Like the what is a good chart?
+什么是好的图表？
+
+1891
+01:13:45,300 --> 01:13:48,843
+Or usually, I don't know,
+或者通常，我不知道，
+
+1892
+01:13:49,860 --> 01:13:53,130
+when should you grade something
+as being correct or not?
+什么时候你应该将某件事情评价为正确或不正确？
+
+1893
+01:13:53,130 --> 01:13:55,980
+So there's some cases where
+I will just invent a concept
+所以在某些情况下，
+我会只是发明一个概念，
+
+1894
+01:13:55,980 --> 01:13:57,840
+and then be like, "Here's
+what I mean by the concept."
+然后说，“这就是我对这个概念的定义。”
+
+1895
+01:13:57,840 --> 01:13:59,520
+Sometimes I'll do it in
+collaboration with Claude
+有时候我会和Claude合作，
+
+1896
+01:13:59,520 --> 01:14:01,773
+to get it to figure out
+what the concept is,
+让他找出概念是什么，
+
+1897
+01:14:02,760 --> 01:14:05,660
+just because I'm trying to
+convey to it what's in my head.
+因为我试图让它理解我心中的意思。
+
+1898
+01:14:07,290 --> 01:14:11,190
+And right now the models aren't
+trying to do that with us,
+而现在，模型们并不这样对我们做，
+
+1899
+01:14:11,190 --> 01:14:13,413
+unless you prompt them to do so.
+除非你提示它们这样做。
+
+1900
+01:14:14,280 --> 01:14:15,113
+So in the future,
+所以将来，
+
+1901
+01:14:15,113 --> 01:14:17,400
+it might just be that they
+can elicit that from us,
+可能只是他们能从我们身上引发出这样的反应。
+
+1902
+01:14:17,400 --> 01:14:21,993
+rather than us having to do it for them.
+而不是我们帮他们做。
+
+1903
+01:14:22,860 --> 01:14:24,690
+But I think another
+thing that's interesting,
+但是我觉得另一个有趣的事情是，
+
+1904
+01:14:24,690 --> 01:14:26,677
+this is people have sometimes asked me,
+这是一些人曾经问我。
+
+1905
+01:14:26,677 --> 01:14:30,270
+"Oh, where is philosophy
+relevant to prompting?"
+“哦，哲学与激发有什么关系？”
+
+1906
+01:14:30,270 --> 01:14:32,520
+And I actually think it's
+very useful in a sense.
+我觉得这在某种程度上非常有用。
+
+1907
+01:14:32,520 --> 01:14:35,370
+So there is a style of philosophy writing,
+所以有一种哲学写作的风格，
+
+1908
+01:14:35,370 --> 01:14:37,200
+and this is at least how I was taught
+这至少是我所教的方式。
+
+1909
+01:14:37,200 --> 01:14:38,640
+how to write philosophy.
+如何写哲学。
+
+1910
+01:14:38,640 --> 01:14:42,210
+Where the idea is that in order to...
+如果是为了……
+
+1911
+01:14:42,210 --> 01:14:44,700
+I think, it's an anti-bullshit device
+我觉得这是一款反 bullshit 设备
+
+1912
+01:14:44,700 --> 01:14:47,280
+in philosophy basically,
+which is that your papers
+在哲学上基本上，
+那就是你的论文
+
+1913
+01:14:47,280 --> 01:14:48,960
+and what you write should be legible
+而且你写的字应该清晰可辨。
+
+1914
+01:14:48,960 --> 01:14:51,030
+to an educated layperson.
+给一个受过教育的普通人。
+
+1915
+01:14:51,030 --> 01:14:52,260
+Someone just finds your paper,
+有人刚刚发现了你的论文。
+
+1916
+01:14:52,260 --> 01:14:53,820
+they pick it up and they start reading it,
+他们拿起它开始读。
+
+1917
+01:14:53,820 --> 01:14:55,830
+and they can understand everything.
+并且他们能理解一切。
+
+1918
+01:14:55,830 --> 01:14:57,660
+Not everyone achieves this,
+并非所有人都能达到。
+
+1919
+01:14:57,660 --> 01:15:00,450
+but that's the goal of
+the discipline, I guess,
+但是我认为这是该领域的目标。
+
+1920
+01:15:00,450 --> 01:15:04,143
+or at least this is at
+least what we teach people.
+或者至少我们教导人们的是这样。
+
+1921
+01:15:05,850 --> 01:15:08,100
+So I'm really used to this
+idea of when I'm writing,
+所以我对这种写作风格非常熟悉。
+
+1922
+01:15:08,100 --> 01:15:11,010
+thinking about the educated layperson,
+考虑一下受过教育的普通人，
+
+1923
+01:15:11,010 --> 01:15:12,180
+who they're really smart,
+他们真的很聪明，
+
+1924
+01:15:12,180 --> 01:15:14,130
+but they don't know
+anything about this topic.
+但他们对此一无所知。
+
+1925
+01:15:14,130 --> 01:15:16,880
+And that was just years
+and years of writing text
+那只是年复一年地写作文字。
+
+1926
+01:15:16,880 --> 01:15:17,940
+of that form.
+那种形式的。
+
+1927
+01:15:17,940 --> 01:15:19,560
+And I think it was just
+really good for prompting
+我觉得这真的很好，只是提示了一下。
+
+1928
+01:15:19,560 --> 01:15:20,850
+'cause I was like, "Oh, I'm used to this.
+因为我觉得“哦，我已经习惯了。”
+
+1929
+01:15:20,850 --> 01:15:22,170
+I have an educated layperson
+我有一个受过教育的普通人。
+
+1930
+01:15:22,170 --> 01:15:23,610
+who doesn't know anything
+about the topic."
+谁都不知道这个话题。
+
+1931
+01:15:23,610 --> 01:15:24,443
+And what I need to do is,
+我需要做的事情是，
+
+1932
+01:15:24,443 --> 01:15:27,090
+I need to take extremely complex ideas
+我需要处理极其复杂的想法。
+
+1933
+01:15:27,090 --> 01:15:29,010
+and I need to make them understand it.
+并且我需要让他们明白这一点。
+
+1934
+01:15:29,010 --> 01:15:30,630
+I don't talk down to them.
+我不贬低他们。
+
+1935
+01:15:30,630 --> 01:15:33,420
+I'm not inaccurate, but
+I need to phrase things
+我并不不准确，只是
+需要措辞
+
+1936
+01:15:33,420 --> 01:15:36,217
+in such a way that it's extremely
+clear to them what I mean,
+以一种极其清楚的方式，让他们明白我的意思。
+
+1937
+01:15:36,217 --> 01:15:38,550
+and prompting felt very similar.
+并且激发的感觉非常相似。
+
+1938
+01:15:38,550 --> 01:15:40,410
+And actually, the
+training techniques we use
+我们使用的训练技术实际上
+
+1939
+01:15:40,410 --> 01:15:41,250
+are fascinating.
+真有趣。
+
+1940
+01:15:41,250 --> 01:15:42,083
+Or the things that you said
+或者你所说的事情
+
+1941
+01:15:42,083 --> 01:15:43,590
+where you're like you say to a person,
+你就像对一个人说的那样，
+
+1942
+01:15:43,590 --> 01:15:46,170
+"Just take that thing you
+said and write it down."
+“就把你说的话写下来。”
+
+1943
+01:15:46,170 --> 01:15:48,090
+I used to say that to
+students all the time.
+我经常对学生说这话。
+
+1944
+01:15:48,090 --> 01:15:49,147
+They'd write a paper and I was like,
+他们写论文时我会说，
+
+1945
+01:15:49,147 --> 01:15:50,550
+"I don't quite get what
+you're saying here.
+“我不太明白你在说什么。”
+
+1946
+01:15:50,550 --> 01:15:52,740
+Can you just explain your argument to me?"
+你能解释你的论点吗？”
+
+1947
+01:15:52,740 --> 01:15:54,810
+They would give me an
+incredibly cogent argument,
+他们会给出一个非常严密的论点，
+
+1948
+01:15:54,810 --> 01:15:55,643
+and then I'd be like,
+然后我会说，
+
+1949
+01:15:55,643 --> 01:15:57,872
+"Can you just take that
+and write it down?"
+“能把那条论点写下来吗？”
+
+1950
+01:15:57,872 --> 01:16:01,230
+And then if they did, that
+was often a great essay.
+如果他们这样做，那通常会是一篇很好的论文。
+
+1951
+01:16:01,230 --> 01:16:02,490
+So it's really interesting
+所以这真的非常有趣
+
+1952
+01:16:02,490 --> 01:16:04,110
+that there's at least that similarity
+至少存在这种相似性，
+
+1953
+01:16:04,110 --> 01:16:07,350
+of just taking things
+that are in your brain,
+就是利用你脑中的想法，
+
+1954
+01:16:07,350 --> 01:16:08,550
+analyzing them enough to feel
+分析它们足够深，感到
+
+1955
+01:16:08,550 --> 01:16:09,960
+like you fully understand them.
+像是完全理解了。
+
+1956
+01:16:09,960 --> 01:16:12,480
+And could take any person off the street,
+即使把街上任何普通人，
+
+1957
+01:16:12,480 --> 01:16:14,010
+who's a reasonable person,
+一个合理的人都能做到，
+
+1958
+01:16:14,010 --> 01:16:16,380
+and just externalize your brain into them.
+把你大脑的内容转移到他们身上。
+
+1959
+01:16:16,380 --> 01:16:19,200
+I feel like that's the core of prompting.
+我觉得这就是提示的核心。
+
+1960
+01:16:19,200 --> 01:16:22,200
+- That might be the best
+summary of how to prompt well
+- 可能是最好的  
+提示方式的总结
+
+1961
+01:16:22,200 --> 01:16:23,580
+that I've ever heard.
+那我听过最差劲的。
+
+1962
+01:16:23,580 --> 01:16:26,010
+In fact, I'm pretty sure it is.
+实际上，我非常确定这一点。
+
+1963
+01:16:26,010 --> 01:16:27,150
+- Externalize your brain.
+将你的大脑外包。
+
+1964
+01:16:27,150 --> 01:16:28,693
+- And then we'll cut it.
+然后我们切掉它。
+
+1965
+01:16:28,693 --> 01:16:31,500
+- Having an education in the thing
+对某事物有教育背景或知识
+
+1966
+01:16:31,500 --> 01:16:33,060
+is a really good way
+to describe the thing.
+真是很好的一种描述方式。
+
+1967
+01:16:33,060 --> 01:16:33,900
+That was good.
+那很好。
+
+1968
+01:16:33,900 --> 01:16:37,980
+- That's, I think, a great
+way to wrap this conversation.
+我认为这就很好地结束了这个对话。
+
+1969
+01:16:37,980 --> 01:16:39,580
+Thank you, guys. This was great.
+谢谢大家。这真是太棒了。
+
